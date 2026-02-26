@@ -1,0 +1,1950 @@
+<!DOCTYPE html>
+<html prefix="og:http://ogp.me/ns#" lang="zh-tw">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type"  name="viewport" content="text/html; charset=utf-8;"/>
+	<meta http-equiv="pragma" content="no-cache"/>
+	<meta http-equiv="cache-control" content="no-cache"/>
+	<meta http-equiv="expires" content="0"/>
+	<!-- user add start -->
+	<script type="text/javascript" src="bspjs/UrlSetting.js"></script>
+	<script type="text/javascript" src="bspjs/sensorstracker.js"></script>
+	<!-- user add end -->
+    <script type="text/javascript" src="resources/js/jquery-3.6.0.min.securejs"></script>
+    <script type="text/javascript" src="resources/js/swiper.jquery.min.js"></script>
+    <script type="text/javascript" src="resources/js/device.js"></script>
+    <script type="text/javascript" src="resources/js/BSP4Search.js"></script>
+    <script type="text/javascript" src="resources/js/outsideLinkCheck.js"></script>
+	<script type="text/javascript" src="resources/js/jquery.mmenu.min.all.js"></script>
+	<script type="text/javascript" src="resources/js/jquery.cookie.js"></script>
+	
+	<link href="resources/style/css/swiper.min.css" rel="stylesheet" type="text/css"/>
+    <link href="resources/style/css/edit.css" rel="stylesheet" type="text/css"/>
+	<link href="resources/images/icon/favicon.ico" rel="shortcut icon" />
+	<link href="resources/style/css/jquery.mmenu.all.css" rel="stylesheet" media="all" type="text/css" />
+	<link href="resources/style/css/sidemenu.css" rel="stylesheet" media="all" type="text/css" />
+    
+	<meta name="description" content="永豐銀行以綿密的營業網路、高度創新的商品組合，為客戶提供最佳的金融服務，朝「翻轉金融 共創美好生活 Together, a better life.」的願景前進，打造華人金融第一品牌。"/><title>永豐銀行 Bank SinoPac</title>
+		<style>
+		a[href=""], a:not([href]).cursorDefaultCheck  { cursor:default;}
+	</style>
+</head>
+<body>
+	<script>
+		var searchUrl = 'https://bank.sinopac.com/search/SearchIndex.aspx';
+		var searchHotKeywordUrl = 'https://bank.sinopac.com/search/Listhotkeyword.aspx';
+		var serviceDomain = 'bank.sinopac.com';
+		if (device.mobile()) {
+			$('head').append('<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">');		
+		}
+	</script>	
+	<div id="header" class="header">
+			<div class="container pc" hidden>
+	<div class="head-menu">
+		<ul class="menu-r cf">
+			<li>
+							<a class="img" href="https://mma.sinopac.com/MemberPortal/Member/MMALogin.aspx" target="_blank">
+								<img src="https://bank.sinopac.com/upload/sinopac/picture/191216d555a00000a9fb.png"/>
+							</a>
+							</li>
+					<li>
+							<a class="icon" href="https://bank.sinopac.com/GCSDsp/DspFAQList.aspx" target="_blank" style="background-image: url(https://bank.sinopac.com/upload/sinopac/picture/1725decabbb000006798.png);">
+								常見問題</a>
+							</li>
+					<li>
+							<a class="icon" href="https://bank.sinopac.com/sinopacBT/rwd.html?w=https://bank.sinopac.com/MMA8/CustomerService/BranchService/branch.html&amp;m=https://m.sinopac.com/m/m_menu.aspx?num=5" target="_self" style="background-image: url(https://bank.sinopac.com/upload/sinopac/picture/16914a98cc000000674b.png);">
+								營業據點</a>
+							</li>
+					<li class="searchSet">
+							<a class="icon icon-3" href="#" style="background-image: url(https://bank.sinopac.com/upload/sinopac/picture/16914aa158400000c158.png);">搜尋</a>
+							<div class="searchBlock" style="display: none;">
+								<div class="searchTxt">
+									<input type="text" id="txtKeyword" placeholder="請輸入關鍵字" value="">
+									<div class="searchType">
+										<p>全部</p>
+										<ul>
+											<li value="/">全部</li>
+											<li value="/F01數位金融">數位金融</li>
+					                        <li value="/A01存款貸款">存款貸款</li>
+					                        <li value="/C01外匯">外匯</li>
+					                        <li value="/D01基金理財">基金理財</li>
+					                        <li value="/B01信用卡">信用卡</li>
+					                        <li value="/E01法人金融">法人金融</li>
+										</ul>
+									</div>
+								</div>
+								<div class="bt_search">
+									<a style="cursor: pointer;"></a>
+								</div>
+								<div class="searchTag">
+									<p>熱搜:</p>
+									<ul id="hotKeyword"></ul>
+								</div>
+								<div class="bt_adv">
+									<a href="https://bank.sinopac.com/search/Advance.aspx" target="_self">進階搜尋</a>
+								</div>
+							</div>
+						</li>
+					<li>
+							<a class="img" href="https://www.facebook.com/SinoPac?fref=ts" target="_blank">
+								<img src="https://bank.sinopac.com/upload/sinopac/picture/191216eb5890000091eb.png"/>
+							</a>
+							</li>
+					<li>
+							<a class="img" href="https://lin.ee/UjEWWi" target="_blank">
+								<img src="https://bank.sinopac.com/upload/sinopac/picture/191216f39d5000003b1e.png"/>
+							</a>
+							</li>
+					<li>
+							<a class="img" href="https://bank.sinopac.com/sinopacBT/en/index.html" target="_self">
+								<img src="https://bank.sinopac.com/upload/sinopac/picture/19121752581000006134.png"/>
+							</a>
+							</li>
+					<li>
+							<a class="img" href="https://www.cdic.gov.tw/main_ch/chinese.html" target="_blank">
+								<img src="https://bank.sinopac.com/upload/sinopac/picture/1764707238800000399e.png"/>
+							</a>
+							</li>
+					</ul>
+	</div>
+</div>
+<div class="main-menu">
+	<div class="container pc" hidden>
+		<div class="logo"><a href="index.html"></a></div>
+		<!-- type1[有第二層選單], 2[連結], 3[內容] -->
+		<!-- 第一層選單 -->
+		<ul class="nav cf">
+			<li >
+					<!-- 只找第二層選單第一筆作為預設動作 -->
+							</li>
+			<li >
+					<!-- 是否有子功能首頁 -->
+							<a href="about.html">關於永豐</a>
+						</li>
+			<li >
+					<!-- 是否有子功能首頁 -->
+							<a href="personal.html">個人服務</a>
+						</li>
+			<li >
+					<!-- 是否有子功能首頁 -->
+							<a href="digital.html">數位金融</a>
+						</li>
+			<li >
+					<!-- 是否有子功能首頁 -->
+							<a href="sme.html">中小企業</a>
+						</li>
+			<li >
+					<!-- 是否有子功能首頁 -->
+							<a href="coroperate.html">法人企業</a>
+						</li>
+			<li>
+				<a style="cursor: pointer;">網路銀行</a>
+				<ul>
+					<li><a href="https://mma.sinopac.com/MemberPortal/Member/NextWebLogin.aspx" target="_self">個人網銀</a></li>
+					<li><a href="https://global.sinopac.com/sinopacGB/index.html" target="_self">企業網銀</a></li>
+					<li><a href="https://webatm.sinopac.com/" target="_self">網路ATM</a></li>
+				</ul>
+			</li>
+			</ul>
+	</div>
+</div><div class="headerbar mobile">
+	<a id="aMobileMenu" class="menu" href="#menu"></a> 
+	<a class="logo" href="index.html"></a> 
+	<a id="aSearchMenu" class="search close" href="#"></a> 
+</div>
+<div class="mobile-menu">
+	<div class="search-area" style="display: none;">
+		<div class="search">
+			<input type="text" class="searchTerm" placeholder="請輸入關鍵字">
+			<div class="searchButton">
+				<a href="#"></a>
+			</div>
+		</div>
+		<div class="search-hot">
+			<span>熱搜：</span>
+		</div>
+		<div class="talk">
+			<a href="https://chatservice.sinopac.com/index.php/chat/startchat/(department)/1?site=bank" target="_blank"></a>
+		</div>
+	</div>
+</div>
+<script>
+	$(function(){
+		$("#aSearchMenu").click(function(){
+			if($(this).hasClass("open")){
+				$(this).removeClass("open");
+				$(this).addClass("close");
+				$("div.search-area").hide();
+				$("div.mobile-menu-bg").hide();
+			} else {
+				$(this).removeClass("close");
+				$(this).addClass("open");
+				$("div.mobile-menu-bg").show();
+				$("div.search-area").show();
+			}
+		});
+	});
+	function openLayer3ByPath(path){}
+	function returnMenu(){}
+</script></div>
+	<link href="resources/style/css/reset.css?20240726" rel="stylesheet" type="text/css"/>
+<link href="resources/style/css/index.css?20240726" rel="stylesheet" type="text/css" media="screen and (min-width: 800px)"/>
+<link href="resources/style/css/m-index.css?20240726" rel="stylesheet" type="text/css" media="only screen and (max-width: 799px)"/>
+
+<!-- popup -->
+<div class="popup_box popup_detail" id="spbtAnnouncement_19c507d2e2d0000077662d8e91381783" style="display:none">
+		<div class="popup_con">
+			<div class="popup_txt">
+				<a href="#" class="btn_close" onclick="closePOP('19c507d2e2d0000077662d8e91381783');return false;"></a>
+				<!-- img -->
+				<a href="https://line.me/R/home/public/post?postId=1177087480054317706" target="_blank" >
+								<div class="imgBox">
+									<picture>
+										<source srcset="/upload/sinopac/spbtAnnouncement/19c507d2e28000001abc.jpg" type="image/jpeg" media="(min-width: 768px)">
+										<img src="/upload/sinopac/spbtAnnouncement/19c507d2e2b000001612.jpg" />
+									</picture>
+								</div>
+							</a>
+						</div>
+		</div>
+	</div>
+<div class="content">
+	<!--回到頂部-->
+<div class="sideMenu">
+      <a href="" class="beeIcon"><img src="resources/images/icon/icon_sidemenubee.svg" alt=""></a>
+      <div class="yellowBlock">
+      	<a href="https://lin.ee/fikv8c2" class="blockStyle"><img src="resources/images/icon/icon_sidemenuline.svg" alt=""><span>個人化通知</span></a>
+        <a href="https://chatservice.sinopac.com/Webhook/?site=bank#department/1" class="blockStyle"><img src="resources/images/icon/icon_sidemenuheadphone.svg" alt=""><span>智慧小豐</span></a>
+        <a href="https://bank.sinopac.com/search/Advance.aspx" class="blockStyle"><img src="resources/images/icon/icon_sidemenuscope.svg" alt=""><span>搜尋</span></a>
+      </div>
+      <a href="#" class="blockStyle"><img src="resources/images/icon/icon_gotop.svg" alt=""></a>
+    </div><div class="breadcrumbs pc" hidden>
+	<ul>
+		
+		</ul>
+</div>
+<div class="indexBn">
+		<div class="bnSlides pc" id="slider">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" style="background-image: url(https://bank.sinopac.com/upload/sinopac/picture/19bfe884d76000005654.png);" data-p="other">
+									<a href="https://bank.sinopac.com/sinopacBT/personal/article/bee-together/list.html?utm_source=bank&amp;utm_medium=banner&amp;utm_campaign=generalnewyearlottery20260201" target="_blank"></a>
+										</div>
+		          			<div class="swiper-slide" style="background-image: url(https://bank.sinopac.com/upload/sinopac/picture/19c31b1a5f20000071f8.jpg);" data-p="netmb_lines">
+									<a href="https://wm.sinopac.com/wmline?utm_source=gwbanner&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=NA&amp;utm_campaign=gwbanner_202602" target="_blank"></a>
+										</div>
+		          			<div class="swiper-slide" style="background-image: url(https://bank.sinopac.com/upload/sinopac/picture/19bfec3845d000002559.png);" data-p="netmb_dawho">
+									<a href="https://dawho.tw/hot/2026dawhoplus/?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=2026dawhoplus&amp;utm_campaign=dawhocustomer_account_acquisition_reward_na_na_202602" target="_blank"></a>
+										</div>
+		          			<div class="swiper-slide" style="background-image: url(https://bank.sinopac.com/upload/sinopac/picture/19bfe001830000005f36.jpg);" data-p="other">
+									<a href="https://bank.sinopac.com/sinopacBT/webevents/advance-trust-arrangement/index.html?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=na&amp;utm_campaign=na192x380202602" target="_blank"></a>
+										</div>
+		          			<div class="swiper-slide" style="background-image: url(https://bank.sinopac.com/upload/sinopac/picture/19bfe00c2c6000005f3c.png);" data-p="netmb_dawho">
+									<a href="https://bank.sinopac.com/sinopacBT/webevents/2026funguys/" target="_blank"></a>
+										</div>
+		          			<div class="swiper-slide" style="background-image: url(https://bank.sinopac.com/upload/sinopac/picture/19be3727370000008214.jpg);" data-p="netmb_frfix">
+									<a href="https://bank.sinopac.com/sinopacBT/webevents/2024foreigndeposit/index.html?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=1920x380&amp;utm_campaign=2026foreigndeposit2026" target="_blank"></a>
+										</div>
+		          			<div class="swiper-slide" style="background-image: url(https://bank.sinopac.com/upload/sinopac/picture/19c4c0c003d00000bc71.png);" data-p="other">
+									<a href="https://tixcraft.com/activity/detail/26_gem" target="_blank"></a>
+										</div>
+		          			<div class="swiper-slide" style="background-image: url(https://bank.sinopac.com/upload/sinopac/picture/19b585e7ac5000000af1.jpg);" data-p="netmb_loan1">
+									<a href="https://bank.sinopac.com/sinopacBT/webevents/1910_PLdigital/index.html?LinkSource=859&amp;utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=1920x380&amp;utm_campaign=PLMONEY20191001" target="_blank"></a>
+										</div>
+		          			<div class="swiper-slide" style="background-image: url(https://bank.sinopac.com/upload/sinopac/picture/19b90ead65f000008fdf.png);" data-p="netmb_dwhto">
+									<a href="https://dawho.tw/hot/2026q1financial/?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=bttop&amp;utm_campaign=fund_gen_newyear100_na_na_20260106_dawhocustomer_c000009768" target="_blank"></a>
+										</div>
+		          			<div class="swiper-slide" style="background-image: url(https://bank.sinopac.com/upload/sinopac/picture/19b5877bb4d000003cc2.jpg);" data-p="netmb_frdps">
+									<a href="https://bank.sinopac.com/sinopacBT/webevents/2026q1daway/index.html?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=1920x380&amp;utm_campaign=2026q1daway2026q1" target="_blank"></a>
+										</div>
+		          			<div class="swiper-slide" style="background-image: url(https://bank.sinopac.com/upload/sinopac/picture/19a99cb394f000000740.png);" data-p="other">
+									<a href="https://youtu.be/TyhFncK2ZFw?si=IgobDXshgqIAXROB" target="_blank"></a>
+										</div>
+		          			<div class="swiper-slide" style="background-image: url(https://bank.sinopac.com/upload/sinopac/picture/19bfe654b08000003e09.jpg);" data-p="netmb_dawho">
+									<a href="https://dawho.tw/hot/2026h1-dawho-plus/?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=BTtop&amp;utm_campaign=account_dawhoplus_202602" target="_blank"></a>
+										</div>
+		          			</div>
+			<div class="pagination"></div>
+		</div>
+		<div class="bnSlides mobile" id="slider-m">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" data-p="other">
+									<a href="https://bank.sinopac.com/sinopacBT/personal/article/bee-together/list.html?utm_source=bank&amp;utm_medium=banner&amp;utm_campaign=generalnewyearlottery20260201" target="_blank" >
+												<img src="https://bank.sinopac.com/upload/sinopac/picture/19bfe01841c000001dde.jpg" >
+											</a>
+										</div>
+							<div class="swiper-slide" data-p="netmb_lines">
+									<a href="https://wm.sinopac.com/wmline?utm_source=gwbanner&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=NA&amp;utm_campaign=gwbanner_202602" target="_blank" >
+												<img src="https://bank.sinopac.com/upload/sinopac/picture/19c31b1fd1b000009f5d.jpg" >
+											</a>
+										</div>
+							<div class="swiper-slide" data-p="netmb_dawho">
+									<a href="https://dawho.tw/hot/2026dawhoplus/?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=2026dawhoplus&amp;utm_campaign=dawhocustomer_account_acquisition_reward_na_na_202602" target="_blank" >
+												<img src="https://bank.sinopac.com/upload/sinopac/picture/19bfe7d8d5900000b5fa.jpg" >
+											</a>
+										</div>
+							<div class="swiper-slide" data-p="other">
+									<a href="https://bank.sinopac.com/sinopacBT/webevents/advance-trust-arrangement/index.html?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=na&amp;utm_campaign=na192x380202602" target="_blank" >
+												<img src="https://bank.sinopac.com/upload/sinopac/picture/19bfe0044b9000002b95.jpg" >
+											</a>
+										</div>
+							<div class="swiper-slide" data-p="netmb_dawho">
+									<a href="https://bank.sinopac.com/sinopacBT/webevents/2026funguys/" target="_blank" >
+												<img src="https://bank.sinopac.com/upload/sinopac/picture/19bfe01037d000000dff.png" >
+											</a>
+										</div>
+							<div class="swiper-slide" data-p="netmb_frfix">
+									<a href="https://bank.sinopac.com/sinopacBT/webevents/2024foreigndeposit/index.html?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=1920x380&amp;utm_campaign=2026foreigndeposit2026" target="_blank" >
+												<img src="https://bank.sinopac.com/upload/sinopac/picture/19be372bc97000009c9a.jpg" >
+											</a>
+										</div>
+							<div class="swiper-slide" data-p="other">
+									<a href="https://tixcraft.com/activity/detail/26_gem" target="_blank" >
+												<img src="https://bank.sinopac.com/upload/sinopac/picture/19c4c0c34de00000a4b5.png" >
+											</a>
+										</div>
+							<div class="swiper-slide" data-p="netmb_loan1">
+									<a href="https://bank.sinopac.com/sinopacBT/webevents/1910_PLdigital/index.html?LinkSource=859&amp;utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=1920x380&amp;utm_campaign=PLMONEY20191001" target="_blank" >
+												<img src="https://bank.sinopac.com/upload/sinopac/picture/19b585eaa15000008435.jpg" >
+											</a>
+										</div>
+							<div class="swiper-slide" data-p="netmb_dwhto">
+									<a href="https://dawho.tw/hot/2026q1financial/?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=bttop&amp;utm_campaign=fund_gen_newyear100_na_na_20260106_dawhocustomer_c000009768" target="_blank" >
+												<img src="https://bank.sinopac.com/upload/sinopac/picture/19b90eb07eb000005010.png" >
+											</a>
+										</div>
+							<div class="swiper-slide" data-p="netmb_frdps">
+									<a href="https://bank.sinopac.com/sinopacBT/webevents/2026q1daway/index.html?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=1920x380&amp;utm_campaign=2026q1daway2026q1" target="_blank" >
+												<img src="https://bank.sinopac.com/upload/sinopac/picture/19b5877e59200000587a.jpg" >
+											</a>
+										</div>
+							<div class="swiper-slide" data-p="other">
+									<a href="https://youtu.be/TyhFncK2ZFw?si=IgobDXshgqIAXROB" target="_blank" >
+												<img src="https://bank.sinopac.com/upload/sinopac/picture/19a99cb8107000003e8e.png" >
+											</a>
+										</div>
+							<div class="swiper-slide" data-p="netmb_dawho">
+									<a href="https://dawho.tw/hot/2026h1-dawho-plus/?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=BTtop&amp;utm_campaign=account_dawhoplus_202602" target="_blank" >
+												<img src="https://bank.sinopac.com/upload/sinopac/picture/19bfdfdf0c000000a31a.jpg" >
+											</a>
+										</div>
+							</div>
+			<div class="pagination"></div>
+		</div>
+	</div>
+	<div class="servise-area act">
+		<div class="servise-wrapper">
+		<div class="servise-list cf pc" id="serviseList">
+			 <div class="swiper-wrapper">
+				<div class="swiper-slide">
+						<a class="alink" href="https://bank.sinopac.com/sinopacBT/webevents/TCF/friendly.html" target="_blank"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/18417471ccb000009c70.png" /></div>
+			            <div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/1841746b864000005794.png" /></div>
+			            <h3>金融友善</h3>
+			        </div>
+				<div class="swiper-slide">
+						<a class="alink" href="https://bank.sinopac.com/sinopacBT/webevents/anti-fraudbee/index.html" target="_blank"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/196d2982fa100000a6fa.png" /></div>
+			            <div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/196d297d0310000094ea.png" /></div>
+			            <h3>防詐先豐</h3>
+			        </div>
+				<div class="swiper-slide">
+						<a class="alink" href="https://bank.sinopac.com/sinopacBT/about/operation/mechanism/uncover.html" target="_self"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/18a68fd4c180000019f9.png" /></div>
+			            <div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/18a68fd85f7000001954.png" /></div>
+			            <h3>盡職治理</h3>
+			        </div>
+				<div class="swiper-slide">
+						<a class="alink" href="https://bank.sinopac.com/sinopacBT/personal/article/bee-together/list.html?utm_source=bank&amp;utm_medium=button&amp;utm_content=belt&amp;utm_campaign=generalbeemission" target="_blank"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/1855ca2201a000008396.png" /></div>
+			            <div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/1855ca28b9600000228b.png" /></div>
+			            <h3>小蜜豐點數</h3>
+			        </div>
+				<div class="swiper-slide">
+						<a class="alink" href="https://bank.sinopac.com/sinopacBT/personal/credit-card/discount/list.html" target="_self"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01c0bba000000ae73.png" /></div>
+			            <div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01c0f127000005244.png" /></div>
+			            <h3>信用卡優惠</h3>
+			        </div>
+				<div class="swiper-slide">
+						<a class="alink" href="https://dawho.tw/?utm_source=bank&amp;utm_medium=banner&amp;utm_term=non-paid&amp;utm_content=bankbig&amp;utm_campaign=dawho-launch20190617" target="_blank"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01c1daad000004c97.png" /></div>
+			            <div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01c20d1800000059a.png" /></div>
+			            <h3>DAWHO</h3>
+			        </div>
+				<div class="swiper-slide">
+						<a class="alink" href="https://bank.sinopac.com/sinopacBT/webevents/mmainformation" target="_blank"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/199136795180000098cc.png" /></div>
+			            <div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/1991368004f000001237.png" /></div>
+			            <h3>網銀會員</h3>
+			        </div>
+				<div class="swiper-slide">
+						<a class="alink" href="https://ibranch.sinopac.com/Funguys/instructions?utm_source=bankbelt&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=na&amp;utm_campaign=generalfirst20250115" target="_blank"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/19932902daf00000ada7.png" /></div>
+			            <div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/19932905a6a000009e11.png" /></div>
+			            <h3>玩咖優惠券</h3>
+			        </div>
+				<div class="swiper-slide">
+						<a class="alink" href="https://daboss.tw" target="_blank"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/1956e6c7b850000066e3.png" /></div>
+			            <div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/1956e6d588100000a075.png" /></div>
+			            <h3>DA BOSS</h3>
+			        </div>
+				<div class="swiper-slide">
+						<a class="alink" href="https://bank.sinopac.com/sinopacBT/webevents/2211_green/index.html" target="_blank"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/19592b3ef65000008bcb.png" /></div>
+			            <div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/19592b395c10000039be.png" /></div>
+			            <h3>Show Time</h3>
+			        </div>
+				<div class="swiper-slide">
+						<a class="alink" href="https://global.sinopac.com/upload/event/gb/dafu/index.html" target="_blank"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/194fdf7988f00000b88b.png" /></div>
+			            <div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/194fdf66051000009921.png" /></div>
+			            <h3>DAFU專區</h3>
+			        </div>
+				<div class="swiper-slide">
+						<a class="alink" href="https://bank.sinopac.com/sinopacBT/webevents/psn_loan/index.html" target="_self"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01c13564000006210.png" /></div>
+			            <div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01c187da000003422.png" /></div>
+			            <h3>個人信貸</h3>
+			        </div>
+				<div class="swiper-slide">
+						<a class="alink" href="https://bank.sinopac.com/sinopacBT/personal/property.html" target="_self"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01be4d0f00000685d.png" /></div>
+			            <div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01be9c58000004cbe.png" /></div>
+			            <h3>財富管理</h3>
+			        </div>
+				<div class="swiper-slide">
+						<a class="alink" href="https://bank.sinopac.com/sinopacBT/webevents/ibrain/index?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=a&amp;utm_campaign=ibrainbank2025" target="_blank"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/192ac9e24c50000066ba.png" /></div>
+			            <div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/192ac9f1e5a000006616.png" /></div>
+			            <h3>智能理財</h3>
+			        </div>
+				<div class="swiper-slide">
+						<a class="alink" href="https://bank.sinopac.com/sinopacBT/webevents/202003_happyweb/index.html?utm_source=bank&amp;utm_medium=links&amp;utm_term=nonpaid&amp;utm_content=na&amp;utm_campaign=happybankicon202005" target="_blank"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01c259f00000069f5.png" /></div>
+			            <div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01c2c339000007314.png" /></div>
+			            <h3>薪轉專區</h3>
+			        </div>
+				<div class="swiper-slide">
+						<a class="alink" href="https://donation.sinopac.com/OnlineSinoPac/" target="_blank"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/186c91ce0370000035e2.png" /></div>
+			            <div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/186c91d3ec20000057f1.png" /></div>
+			            <h3>公益專區</h3>
+			        </div>
+				<div class="swiper-slide">
+						<a class="alink" href="https://bank.sinopac.com/sinopacBT/webevents/ipiggybank/index.html?utm_source=bank&amp;utm_medium=links&amp;utm_term=nonpaid&amp;utm_content=bankicon&amp;utm_campaign=ipiggybank20201015" target="_self"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01bef3a0000006943.png" /></div>
+			            <div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01bf37ae00000613e.png" /></div>
+			            <h3>智能撲滿</h3>
+			        </div>
+				<div class="swiper-slide">
+						<a class="alink" href="https://bank.sinopac.com/sinopacBT/personal/article/deposit/multiple-account-management.html?utm_source=bank&amp;utm_medium=button&amp;utm_term=nonpaid&amp;utm_content=icon&amp;utm_campaign=School20210823" target="_self"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01c30d9100000a245.png" /></div>
+			            <div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01c349ee00000540d.png" /></div>
+			            <h3>豐收學堂</h3>
+			        </div>
+				<div class="swiper-slide">
+						<a class="alink" href="https://bank.sinopac.com/bsp/web15/mortgage/index.html" target="_self"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01bfa9d10000014a2.png" /></div>
+			            <div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01bfee2d00000313f.png" /></div>
+			            <h3>豐雲房貸</h3>
+			        </div>
+				<div class="swiper-slide">
+						<a class="alink" href="https://bank.sinopac.com/sinopacBT/webevents/FXplatform/index.html?utm_source=bank&amp;utm_medium=links&amp;utm_term=nonpaid&amp;utm_content=bankicon&amp;utm_campaign=FXplatform202008" target="_self"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01c0387500000af0c.png" /></div>
+			            <div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01c073c90000083f8.png" /></div>
+			            <h3>豐雲匯</h3>
+			        </div>
+				<div class="swiper-slide">
+						<a class="alink" href="https://dacard.tw/?utm_source=bank&amp;utm_medium=text&amp;utm_term=nonpaid&amp;utm_content=na&amp;utm_campaign=paymentdacardlaunch20211214" target="_self"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01bd8e13000007607.png" /></div>
+			            <div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01bde25e000002bde.png" /></div>
+			            <h3>繳費信用卡</h3>
+			        </div>
+				<div class="swiper-slide">
+						<a class="alink" href="https://bank.sinopac.com/sinopacBT/webevents/ECPAY/index.html" target="_self"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f62e81065000005ef6.png" /></div>
+			            <div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f62e8cbd600000c194.png" /></div>
+			            <h3>綠界專區</h3>
+			        </div>
+				</div>
+			<div class="slider-arrow pc">
+	          <a class="arrow prev" href="#"></a>
+	          <a class="arrow next" href="#"></a>
+	        </div>
+		</div>
+		<div class="servise-list cf mobile">			 
+				<div class="swiper-slide">
+			            <a class="alink" href="https://bank.sinopac.com/sinopacBT/webevents/TCF/friendly.html" target="_blank"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/18417471ccb000009c70.png" /></div>
+						<div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/1841746b864000005794.png" /></div>
+						<h3>金融友善</h3>
+			          </div>
+				<div class="swiper-slide">
+			            <a class="alink" href="https://bank.sinopac.com/sinopacBT/webevents/anti-fraudbee/index.html" target="_blank"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/196d2982fa100000a6fa.png" /></div>
+						<div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/196d297d0310000094ea.png" /></div>
+						<h3>防詐先豐</h3>
+			          </div>
+				<div class="swiper-slide">
+			            <a class="alink" href="https://bank.sinopac.com/sinopacBT/about/operation/mechanism/uncover.html" target="_self"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/18a68fd4c180000019f9.png" /></div>
+						<div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/18a68fd85f7000001954.png" /></div>
+						<h3>盡職治理</h3>
+			          </div>
+				<div class="swiper-slide">
+			            <a class="alink" href="https://bank.sinopac.com/sinopacBT/personal/article/bee-together/list.html?utm_source=bank&amp;utm_medium=button&amp;utm_content=belt&amp;utm_campaign=generalbeemission" target="_blank"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/1855ca2201a000008396.png" /></div>
+						<div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/1855ca28b9600000228b.png" /></div>
+						<h3>小蜜豐點數</h3>
+			          </div>
+				<div class="swiper-slide">
+			            <a class="alink" href="https://bank.sinopac.com/sinopacBT/personal/credit-card/discount/list.html" target="_self"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01c0bba000000ae73.png" /></div>
+						<div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01c0f127000005244.png" /></div>
+						<h3>信用卡優惠</h3>
+			          </div>
+				<div class="swiper-slide">
+			            <a class="alink" href="https://dawho.tw/?utm_source=bank&amp;utm_medium=banner&amp;utm_term=non-paid&amp;utm_content=bankbig&amp;utm_campaign=dawho-launch20190617" target="_self"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01c1daad000004c97.png" /></div>
+						<div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01c20d1800000059a.png" /></div>
+						<h3>DAWHO</h3>
+			          </div>
+				<div class="swiper-slide">
+			            <a class="alink" href="https://bank.sinopac.com/sinopacBT/webevents/mmainformation" target="_blank"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/199136795180000098cc.png" /></div>
+						<div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/1991368004f000001237.png" /></div>
+						<h3>網銀會員</h3>
+			          </div>
+				<div class="swiper-slide">
+			            <a class="alink" href="https://ibranch.sinopac.com/Funguys/instructions?utm_source=bankbelt&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=na&amp;utm_campaign=generalfirst20250115" target="_blank"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/19932902daf00000ada7.png" /></div>
+						<div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/19932905a6a000009e11.png" /></div>
+						<h3>玩咖優惠券</h3>
+			          </div>
+				<div class="swiper-slide">
+			            <a class="alink" href="https://daboss.tw" target="_blank"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/1956e6c7b850000066e3.png" /></div>
+						<div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/1956e6d588100000a075.png" /></div>
+						<h3>DA BOSS</h3>
+			          </div>
+				<div class="swiper-slide">
+			            <a class="alink" href="https://bank.sinopac.com/sinopacBT/webevents/2211_green/index.html" target="_blank"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/19592b3ef65000008bcb.png" /></div>
+						<div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/19592b395c10000039be.png" /></div>
+						<h3>Show Time</h3>
+			          </div>
+				<div class="swiper-slide">
+			            <a class="alink" href="https://global.sinopac.com/upload/event/gb/dafu/index.html" target="_blank"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/194fdf7988f00000b88b.png" /></div>
+						<div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/194fdf66051000009921.png" /></div>
+						<h3>DAFU專區</h3>
+			          </div>
+				<div class="swiper-slide">
+			            <a class="alink" href="https://bank.sinopac.com/sinopacBT/webevents/psn_loan/index.html" target="_self"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01c13564000006210.png" /></div>
+						<div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01c187da000003422.png" /></div>
+						<h3>個人信貸</h3>
+			          </div>
+				<div class="swiper-slide">
+			            <a class="alink" href="https://bank.sinopac.com/sinopacBT/personal/property.html" target="_self"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01be4d0f00000685d.png" /></div>
+						<div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01be9c58000004cbe.png" /></div>
+						<h3>財富管理</h3>
+			          </div>
+				<div class="swiper-slide">
+			            <a class="alink" href="https://bank.sinopac.com/sinopacBT/webevents/ibrain/index?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=a&amp;utm_campaign=ibrainbank2025" target="_blank"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/192ac9e24c50000066ba.png" /></div>
+						<div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/192ac9f1e5a000006616.png" /></div>
+						<h3>智能理財</h3>
+			          </div>
+				<div class="swiper-slide">
+			            <a class="alink" href="https://bank.sinopac.com/sinopacBT/webevents/202003_happyweb/index.html?utm_source=bank&amp;utm_medium=links&amp;utm_term=nonpaid&amp;utm_content=na&amp;utm_campaign=happybankicon202005" target="_self"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01c259f00000069f5.png" /></div>
+						<div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01c2c339000007314.png" /></div>
+						<h3>薪轉專區</h3>
+			          </div>
+				<div class="swiper-slide">
+			            <a class="alink" href="https://donation.sinopac.com/OnlineSinoPac/" target="_blank"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/186c91ce0370000035e2.png" /></div>
+						<div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/186c91d3ec20000057f1.png" /></div>
+						<h3>公益專區</h3>
+			          </div>
+				<div class="swiper-slide">
+			            <a class="alink" href="https://bank.sinopac.com/sinopacBT/webevents/ipiggybank/index.html?utm_source=bank&amp;utm_medium=links&amp;utm_term=nonpaid&amp;utm_content=bankicon&amp;utm_campaign=ipiggybank20201015" target="_blank"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01bef3a0000006943.png" /></div>
+						<div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01bf37ae00000613e.png" /></div>
+						<h3>智能撲滿</h3>
+			          </div>
+				<div class="swiper-slide">
+			            <a class="alink" href="https://bank.sinopac.com/sinopacBT/personal/article/deposit/multiple-account-management.html?utm_source=bank&amp;utm_medium=button&amp;utm_term=nonpaid&amp;utm_content=icon&amp;utm_campaign=School20210823" target="_blank"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01c30d9100000a245.png" /></div>
+						<div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01c349ee00000540d.png" /></div>
+						<h3>豐收學堂</h3>
+			          </div>
+				<div class="swiper-slide">
+			            <a class="alink" href="https://bank.sinopac.com/bsp/web15/mortgage/index.html" target="_self"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01bfa9d10000014a2.png" /></div>
+						<div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01bfee2d00000313f.png" /></div>
+						<h3>豐雲房貸</h3>
+			          </div>
+				<div class="swiper-slide">
+			            <a class="alink" href="https://bank.sinopac.com/sinopacBT/webevents/FXplatform/index.html?utm_source=bank&amp;utm_medium=links&amp;utm_term=nonpaid&amp;utm_content=bankicon&amp;utm_campaign=FXplatform202008" target="_self"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01c0387500000af0c.png" /></div>
+						<div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01c073c90000083f8.png" /></div>
+						<h3>豐雲匯</h3>
+			          </div>
+				<div class="swiper-slide">
+			            <a class="alink" href="https://dacard.tw/?utm_source=bank&amp;utm_medium=text&amp;utm_term=nonpaid&amp;utm_content=na&amp;utm_campaign=paymentdacardlaunch20211214" target="_self"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01bd8e13000007607.png" /></div>
+						<div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f01bde25e000002bde.png" /></div>
+						<h3>繳費信用卡</h3>
+			          </div>
+				<div class="swiper-slide">
+			            <a class="alink" href="https://bank.sinopac.com/sinopacBT/webevents/ECPAY/index.html" target="_blank"></a>
+			            <div class="icon"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f62e81065000005ef6.png" /></div>
+						<div class="icon_h"><img src="https://bank.sinopac.com/upload/sinopac/picture/17f62e8cbd600000c194.png" /></div>
+						<h3>綠界專區</h3>
+			          </div>
+				</div>
+		<div class="box act">			
+			<div class="more mobile" style="z-index: 10"><a href="javascript:;" style="cursor: pointer;" onclick="moreData();">更多</a></div>
+		</div>
+		</div>
+	</div>
+	<div class="bank-area cf">
+		<div class="rate-area">
+			<h2>牌告匯率</h2>
+			<div class="rate-list">
+				 <div class="item _NONE" style="width: 480px;">載入中....</div>
+		          <div class="item _USD" hidden><div class="icon"><img src="resources/images/serv/icon-rate-1.png" ></div><h3 class="_currency"></h3><p><span>買入</span><label class="_bankBuying"></label></p><p><span>賣出</span><label class="_bankSelling"></label></p></div>
+		          <div class="item _CNY" hidden><div class="icon"><img src="resources/images/serv/icon-rate-2.png" ></div><h3 class="_currency"></h3><p><span>買入</span><label class="_bankBuying"></label></p><p><span>賣出</span><label class="_bankSelling"></label></p></div>
+		          <div class="item _EUR" hidden><div class="icon"><img src="resources/images/serv/icon-rate-3.png" ></div><h3 class="_currency"></h3><p><span>買入</span><label class="_bankBuying"></label></p><p><span>賣出</span><label class="_bankSelling"></label></p></div>
+		          <div class="item _JPY" hidden><div class="icon"><img src="resources/images/serv/icon-rate-4.png" ></div><h3 class="_currency"></h3><p><span>買入</span><label class="_bankBuying"></label></p><p><span>賣出</span><label class="_bankSelling"></label></p></div>
+			 </div>			
+			<div class="more">
+				<a href="https://bank.sinopac.com/sinopacBT/rwd.html?w=https://bank.sinopac.com/MMA8/bank/html/rate/bank_Interest.html&m=https://m.sinopac.com/m/share/rate/m_InterestTWD.aspx" target="_self">臺幣利率</a> / 
+				<a href="https://bank.sinopac.com/sinopacBT/rwd.html?w=https://bank.sinopac.com/MMA8/bank/html/rate/bank_GoldRemittance.html&m=https://m.sinopac.com/m/share/rate/m_goldRate.aspx" target="_self">黃金牌價</a> / 
+				<a href="https://bank.sinopac.com/sinopacBT/rwd.html?w=https://bank.sinopac.com/MMA8/bank/html/rate/bank_ExchangeRate.html&m=https://m.sinopac.com/m/share/rate/m_exchange.aspx" target="_self">更多匯率</a>
+			</div>
+		</div>
+		<div class="msg-area">
+			<h2>重要訊息</h2>
+			<ul class="msg-list">
+				<li><a href="https://bank.sinopac.com/sinopacBT/about/introduction/announcement/content/20250911092354180000000000000330.html" target="_blank">【公告】永豐銀行短碼簡訊「68807」不會提供任何連結要求客戶輸入銀行帳號或密碼</a></li>
+					<li><a href="https://bank.sinopac.com/sinopacBT/about/introduction/announcement/content/20240418092021160000000000000867.html" target="_self">【公告】重要提醒，反詐騙及永豐銀行正確社群帳號識別</a></li>
+					<li><a href="https://bank.sinopac.com/sinopacBT/about/introduction/announcement/content/20251017115649725000000000000792.html" target="_self">【公告】臺/外幣存款久未往來帳戶管控措施</a></li>
+					<li><a href="https://bank.sinopac.com/sinopacBT/about/introduction/announcement/content/20250912114407914000000000000847.html" target="_blank">【公告】本行停止受理線上申請「虛擬通貨平台之入金帳號」作為數位帳戶約定轉入帳號之服務事宜</a></li>
+					<li><a href="https://bank.sinopac.com/sinopacBT/about/introduction/announcement/content/20250902091721838000000000000073.html" target="_self">【公告】本行預計於114年9月30日起停止行動銀行APP「語音辨識」相關功能。</a></li>
+					</ul>
+			<div class="more"><a href="https://bank.sinopac.com/sinopacBT/about/introduction/announcement/content.html" target="_self">更多訊息</a></div>
+		</div>
+	</div>
+	
+	<div class="slide-area">
+		<div class="slide cf pc" id="cfList">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" data-p="other">
+				       		<a href="https://bank.sinopac.com/sinopacBT/personal/article/bee-together/list.html?utm_source=bank&amp;utm_medium=banner&amp;utm_campaign=generalbeemission" target="_blank"  ></a>
+				            <div class="img"><img src="https://bank.sinopac.com/upload/sinopac/picture/19bfe1a0503000000486.jpg"  /></div>
+				            <h2><a href="https://bank.sinopac.com/sinopacBT/personal/article/bee-together/list.html?utm_source=bank&amp;utm_medium=banner&amp;utm_campaign=generalbeemission" target="_blank">小蜜豐點數</a></h2>
+								<p><a href="https://bank.sinopac.com/sinopacBT/personal/article/bee-together/list.html?utm_source=bank&amp;utm_medium=banner&amp;utm_campaign=generalbeemission" target="_blank">探索小蜜豐金Bee，驚喜獎勵等你拿！!</a></p>
+				        </div>
+				<div class="swiper-slide" data-p="other">
+				       		<a href="https://dawho.tw/hot/2026h1-dawho-plus/?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=BTbottom&amp;utm_campaign=account_dawhoplus_202602" target="_blank"  ></a>
+				            <div class="img"><img src="https://bank.sinopac.com/upload/sinopac/picture/19bfe020b5b000004aad.jpg"  /></div>
+				            <h2><a href="https://dawho.tw/hot/2026h1-dawho-plus/?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=BTbottom&amp;utm_campaign=account_dawhoplus_202602" target="_blank">完成任務抽精品行李箱</a></h2>
+								<p><a href="https://dawho.tw/hot/2026h1-dawho-plus/?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=BTbottom&amp;utm_campaign=account_dawhoplus_202602" target="_blank">躍升百萬大戶Plus，月月抽Rimowa行李箱！</a></p>
+				        </div>
+				<div class="swiper-slide" data-p="other">
+				       		<a href="https://bank.sinopac.com/sinopacBT/personal/credit-card/online-apply/gift.html" target="_blank"  ></a>
+				            <div class="img"><img src="https://bank.sinopac.com/upload/sinopac/picture/19c1d01b2c9000004401.jpg"  /></div>
+				            <h2><a href="https://bank.sinopac.com/sinopacBT/personal/credit-card/online-apply/gift.html" target="_blank">薪轉戶獨享信用卡優惠</a></h2>
+								<p><a href="https://bank.sinopac.com/sinopacBT/personal/credit-card/online-apply/gift.html" target="_blank">新戶消費滿額加贈300元、再抽8,888元刷卡金！</a></p>
+				        </div>
+				<div class="swiper-slide" data-p="other">
+				       		<a href="https://bank.sinopac.com/sinopacBT/webevents/TCF/index.html" target="_blank"  ></a>
+				            <div class="img"><img src="https://bank.sinopac.com/upload/sinopac/picture/184186ade1a00000a356.jpg"  /></div>
+				            <h2><a href="https://bank.sinopac.com/sinopacBT/webevents/TCF/index.html" target="_blank">公平待客</a></h2>
+								<p><a href="https://bank.sinopac.com/sinopacBT/webevents/TCF/index.html" target="_blank">秉持公平待客精神，落實消費者保護</a></p>
+				        </div>
+				<div class="swiper-slide" data-p="netmb_lines">
+				       		<a href="https://wm.sinopac.com/wmline?utm_source=gwbanner&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=NA&amp;utm_campaign=gwbanner_202602" target="_blank"  ></a>
+				            <div class="img"><img src="https://bank.sinopac.com/upload/sinopac/picture/19c31b246290000028ed.jpg"  /></div>
+				            <h2><a href="https://wm.sinopac.com/wmline?utm_source=gwbanner&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=NA&amp;utm_campaign=gwbanner_202602" target="_blank">解【馬】玩輪盤！</a></h2>
+								<p><a href="https://wm.sinopac.com/wmline?utm_source=gwbanner&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=NA&amp;utm_campaign=gwbanner_202602" target="_blank">綁定財富LINE抽8,888紅包喔</a></p>
+				        </div>
+				<div class="swiper-slide" data-p="netmb_frdps">
+				       		<a href="https://bank.sinopac.com/sinopacBT/webevents/2026birthdaydeposit/index.html?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=280*250&amp;utm_campaign=2026birthdaydeposit2026" target="_blank"  ></a>
+				            <div class="img"><img src="https://bank.sinopac.com/upload/sinopac/picture/19b58a85f370000091e6.jpg"  /></div>
+				            <h2><a href="https://bank.sinopac.com/sinopacBT/webevents/2026birthdaydeposit/index.html?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=280*250&amp;utm_campaign=2026birthdaydeposit2026" target="_blank">生日專屬禮</a></h2>
+								<p><a href="https://bank.sinopac.com/sinopacBT/webevents/2026birthdaydeposit/index.html?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=280*250&amp;utm_campaign=2026birthdaydeposit2026" target="_blank">壽星生日當月兌領享外幣活存8天7.5%加碼年利率</a></p>
+				        </div>
+				<div class="swiper-slide" data-p="netmb_cards">
+				       		<a href="https://bank.sinopac.com/sinopacBT/personal/credit-card/online-apply/gift.html" target="_blank"  ></a>
+				            <div class="img"><img src="https://bank.sinopac.com/upload/sinopac/picture/197aa5bc85400000053f.jpg"  /></div>
+				            <h2><a href="https://bank.sinopac.com/sinopacBT/personal/credit-card/online-apply/gift.html" target="_blank">新戶獨享好禮</a></h2>
+								<p><a href="https://bank.sinopac.com/sinopacBT/personal/credit-card/online-apply/gift.html" target="_blank">新戶申辦指定信用卡，刷卡滿額享好禮3選1</a></p>
+				        </div>
+				<div class="swiper-slide" data-p="netmb_cards">
+				       		<a href="https://bank.sinopac.com/sinopacBT/webevents/2003_dualcc/index.html?Branch=2026H1AD&amp;utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=homepage&amp;utm_campaign=DU2026H1" target="_blank"  ></a>
+				            <div class="img"><img src="https://bank.sinopac.com/upload/sinopac/picture/19b58a93d27000002a5e.jpg"  /></div>
+				            <h2><a href="https://bank.sinopac.com/sinopacBT/webevents/2003_dualcc/index.html?Branch=2026H1AD&amp;utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=homepage&amp;utm_campaign=DU2026H1" target="_blank">永豐幣倍卡</a></h2>
+								<p><a href="https://bank.sinopac.com/sinopacBT/webevents/2003_dualcc/index.html?Branch=2026H1AD&amp;utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=homepage&amp;utm_campaign=DU2026H1" target="_blank">精選通路最高6% 新戶國外享最高10%現金回饋</a></p>
+				        </div>
+				<div class="swiper-slide" data-p="other">
+				       		<a href="https://www.sinopac.com/upload/event/2403_life/about.html" target="_blank"  ></a>
+				            <div class="img"><img src="https://bank.sinopac.com/upload/sinopac/picture/19c2d2288b300000b8db.jpg"  /></div>
+				            <h2><a href="https://www.sinopac.com/upload/event/2403_life/about.html" target="_blank">永豐生活</a></h2>
+								<p><a href="https://www.sinopac.com/upload/event/2403_life/about.html" target="_blank">讓綠色行動成為習慣，每一天都是永豐生活！</a></p>
+				        </div>
+				<div class="swiper-slide" data-p="other">
+				       		<a href="https://bank.sinopac.com/sinopacBT/webevents/2401mma/index.html?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=2026mma280x250&amp;utm_campaign=deposit2026mma2026" target="_blank"  ></a>
+				            <div class="img"><img src="https://bank.sinopac.com/upload/sinopac/picture/19b58a7f69f0000058cb.jpg"  /></div>
+				            <h2><a href="https://bank.sinopac.com/sinopacBT/webevents/2401mma/index.html?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=2026mma280x250&amp;utm_campaign=deposit2026mma2026" target="_blank">mma新戶好有利</a></h2>
+								<p><a href="https://bank.sinopac.com/sinopacBT/webevents/2401mma/index.html?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=2026mma280x250&amp;utm_campaign=deposit2026mma2026" target="_blank">開mma兒童帳戶享活存加碼1.2%年息優利</a></p>
+				        </div>
+				<div class="swiper-slide" data-p="netmb_loan1">
+				       		<a href="https://bank.sinopac.com/sinopacBT/webevents/22revolvingloan/index.html?LinkSource=800&amp;utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=280x250&amp;utm_campaign=personalloan22revolvingloan202208" target="_blank"  ></a>
+				            <div class="img"><img src="https://bank.sinopac.com/upload/sinopac/picture/19b728ea856000003f25.jpg"  /></div>
+				            <h2><a href="https://bank.sinopac.com/sinopacBT/webevents/22revolvingloan/index.html?LinkSource=800&amp;utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=280x250&amp;utm_campaign=personalloan22revolvingloan202208" target="_blank">手刀開啟 永豐私房錢</a></h2>
+								<p><a href="https://bank.sinopac.com/sinopacBT/webevents/22revolvingloan/index.html?LinkSource=800&amp;utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=280x250&amp;utm_campaign=personalloan22revolvingloan202208" target="_blank">e鍵動用信貸額度，動用年利率2個月2.88%</a></p>
+				        </div>
+				<div class="swiper-slide" data-p="netmb_cards">
+				       		<a href="https://bank.sinopac.com/sinopacBT/webevents/2008_SportCard2/index.html?Branch=SP2026H1&amp;utm_source=bank&amp;utm_medium=button&amp;utm_term=nonpaid&amp;utm_content=sportcard&amp;utm_campaign=creditcardsport2026h1" target="_blank"  ></a>
+				            <div class="img"><img src="https://bank.sinopac.com/upload/sinopac/picture/19b58a798d60000060f2.jpg"  /></div>
+				            <h2><a href="https://bank.sinopac.com/sinopacBT/webevents/2008_SportCard2/index.html?Branch=SP2026H1&amp;utm_source=bank&amp;utm_medium=button&amp;utm_term=nonpaid&amp;utm_content=sportcard&amp;utm_campaign=creditcardsport2026h1" target="_blank">永豐SPORT卡</a></h2>
+								<p><a href="https://bank.sinopac.com/sinopacBT/webevents/2008_SportCard2/index.html?Branch=SP2026H1&amp;utm_source=bank&amp;utm_medium=button&amp;utm_term=nonpaid&amp;utm_content=sportcard&amp;utm_campaign=creditcardsport2026h1" target="_blank">行動支付最高享5%豐點，新戶限定再加碼20%回饋</a></p>
+				        </div>
+				<div class="swiper-slide" data-p="other">
+				       		<a href="https://global.sinopac.com/upload/event/gb/2026atm/index.html" target="_blank"  ></a>
+				            <div class="img"><img src="https://bank.sinopac.com/upload/sinopac/picture/19b58c6262100000225d.jpg"  /></div>
+				            <h2><a href="https://global.sinopac.com/upload/event/gb/2026atm/index.html" target="_blank">領錢好方便</a></h2>
+								<p><a href="https://global.sinopac.com/upload/event/gb/2026atm/index.html" target="_blank">郵局ATM提款，每月3次免手續費</a></p>
+				        </div>
+				<div class="swiper-slide" data-p="netmb_dawho">
+				       		<a href="https://dawho.tw/hot/2026h1offer/?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=BTbottom&amp;utm_campaign=account_official_202601" target="_blank"  ></a>
+				            <div class="img"><img src="https://bank.sinopac.com/upload/sinopac/picture/19b58a13684000008f47.jpg"  /></div>
+				            <h2><a href="https://dawho.tw/hot/2026h1offer/?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=BTbottom&amp;utm_campaign=account_official_202601" target="_blank">DAWHO優惠升級</a></h2>
+								<p><a href="https://dawho.tw/hot/2026h1offer/?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=BTbottom&amp;utm_campaign=account_official_202601" target="_blank">全新等級上線!!大戶Plus優惠重量登場</a></p>
+				        </div>
+				<div class="swiper-slide" data-p="other">
+				       		<a href="https://bank.sinopac.com/sinopacBT/personal/credit-card/introduction/bankcard/list.html" target="_blank"  ></a>
+				            <div class="img"><img src="https://bank.sinopac.com/upload/sinopac/picture/19b68c6c1050000087fd.jpg"  /></div>
+				            <h2><a href="https://bank.sinopac.com/sinopacBT/personal/credit-card/introduction/bankcard/list.html" target="_blank">傳富世界 體驗不凡</a></h2>
+								<p><a href="https://bank.sinopac.com/sinopacBT/personal/credit-card/introduction/bankcard/list.html" target="_blank">永傳世界卡/永富世界卡為您準備美饌、旅遊等尊榮禮遇</a></p>
+				        </div>
+				</div>
+			<div class="slider-arrow pc">
+	          	<a class="arrow prev" href="#"></a>
+	          	<a class="arrow next" href="#"></a>
+        	</div>
+		</div>
+		<div class="slide cf mobile" id="cfList-m">
+			<div class="slide-m">
+			<div class="swiper-slide"  data-p="other">
+						<div class="img">
+							<a href="https://bank.sinopac.com/sinopacBT/personal/article/bee-together/list.html?utm_source=bank&amp;utm_medium=banner&amp;utm_campaign=generalbeemission" target="_blank">
+			       				<img src="https://bank.sinopac.com/upload/sinopac/picture/19bfe1a0503000000486.jpg"  />
+			       			</a>
+						</div>
+						<h2><a href="https://bank.sinopac.com/sinopacBT/personal/article/bee-together/list.html?utm_source=bank&amp;utm_medium=banner&amp;utm_campaign=generalbeemission" target="_blank">小蜜豐點數</a></h2>
+						<p><a href="https://bank.sinopac.com/sinopacBT/personal/article/bee-together/list.html?utm_source=bank&amp;utm_medium=banner&amp;utm_campaign=generalbeemission" target="_blank">探索小蜜豐金Bee，驚喜獎勵等你拿！!</a></p>
+					</div>
+			<div class="swiper-slide"  data-p="other">
+						<div class="img">
+							<a href="https://dawho.tw/hot/2026h1-dawho-plus/?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=BTbottom&amp;utm_campaign=account_dawhoplus_202602" target="_blank">
+			       				<img src="https://bank.sinopac.com/upload/sinopac/picture/19bfe020b5b000004aad.jpg"  />
+			       			</a>
+						</div>
+						<h2><a href="https://dawho.tw/hot/2026h1-dawho-plus/?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=BTbottom&amp;utm_campaign=account_dawhoplus_202602" target="_blank">完成任務抽精品行李箱</a></h2>
+						<p><a href="https://dawho.tw/hot/2026h1-dawho-plus/?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=BTbottom&amp;utm_campaign=account_dawhoplus_202602" target="_blank">躍升百萬大戶Plus，月月抽Rimowa行李箱！</a></p>
+					</div>
+			<div class="swiper-slide"  data-p="other">
+						<div class="img">
+							<a href="https://bank.sinopac.com/sinopacBT/personal/credit-card/online-apply/gift.html" target="_blank">
+			       				<img src="https://bank.sinopac.com/upload/sinopac/picture/19c1d01b2c9000004401.jpg"  />
+			       			</a>
+						</div>
+						<h2><a href="https://bank.sinopac.com/sinopacBT/personal/credit-card/online-apply/gift.html" target="_blank">薪轉戶獨享信用卡優惠</a></h2>
+						<p><a href="https://bank.sinopac.com/sinopacBT/personal/credit-card/online-apply/gift.html" target="_blank">新戶消費滿額加贈300元、再抽8,888元刷卡金！</a></p>
+					</div>
+			<div class="swiper-slide"  data-p="other">
+						<div class="img">
+							<a href="https://bank.sinopac.com/sinopacBT/webevents/TCF/index.html" target="_blank">
+			       				<img src="https://bank.sinopac.com/upload/sinopac/picture/184186ade1a00000a356.jpg"  />
+			       			</a>
+						</div>
+						<h2><a href="https://bank.sinopac.com/sinopacBT/webevents/TCF/index.html" target="_blank">公平待客</a></h2>
+						<p><a href="https://bank.sinopac.com/sinopacBT/webevents/TCF/index.html" target="_blank">秉持公平待客精神，落實消費者保護</a></p>
+					</div>
+			<div class="swiper-slide" style="display: none;" data-p="netmb_lines">
+						<div class="img">
+							<a href="https://wm.sinopac.com/wmline?utm_source=gwbanner&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=NA&amp;utm_campaign=gwbanner_202602" target="_blank">
+			       				<img src="https://bank.sinopac.com/upload/sinopac/picture/19c31b246290000028ed.jpg"  />
+			       			</a>
+						</div>
+						<h2><a href="https://wm.sinopac.com/wmline?utm_source=gwbanner&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=NA&amp;utm_campaign=gwbanner_202602" target="_blank">解【馬】玩輪盤！</a></h2>
+						<p><a href="https://wm.sinopac.com/wmline?utm_source=gwbanner&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=NA&amp;utm_campaign=gwbanner_202602" target="_blank">綁定財富LINE抽8,888紅包喔</a></p>
+					</div>
+			<div class="swiper-slide" style="display: none;" data-p="netmb_frdps">
+						<div class="img">
+							<a href="https://bank.sinopac.com/sinopacBT/webevents/2026birthdaydeposit/index.html?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=280*250&amp;utm_campaign=2026birthdaydeposit2026" target="_blank">
+			       				<img src="https://bank.sinopac.com/upload/sinopac/picture/19b58a85f370000091e6.jpg"  />
+			       			</a>
+						</div>
+						<h2><a href="https://bank.sinopac.com/sinopacBT/webevents/2026birthdaydeposit/index.html?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=280*250&amp;utm_campaign=2026birthdaydeposit2026" target="_blank">生日專屬禮</a></h2>
+						<p><a href="https://bank.sinopac.com/sinopacBT/webevents/2026birthdaydeposit/index.html?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=280*250&amp;utm_campaign=2026birthdaydeposit2026" target="_blank">壽星生日當月兌領享外幣活存8天7.5%加碼年利率</a></p>
+					</div>
+			<div class="swiper-slide" style="display: none;" data-p="netmb_cards">
+						<div class="img">
+							<a href="https://bank.sinopac.com/sinopacBT/personal/credit-card/online-apply/gift.html" target="_blank">
+			       				<img src="https://bank.sinopac.com/upload/sinopac/picture/197aa5bc85400000053f.jpg"  />
+			       			</a>
+						</div>
+						<h2><a href="https://bank.sinopac.com/sinopacBT/personal/credit-card/online-apply/gift.html" target="_blank">新戶獨享好禮</a></h2>
+						<p><a href="https://bank.sinopac.com/sinopacBT/personal/credit-card/online-apply/gift.html" target="_blank">新戶申辦指定信用卡，刷卡滿額享好禮3選1</a></p>
+					</div>
+			<div class="swiper-slide" style="display: none;" data-p="netmb_cards">
+						<div class="img">
+							<a href="https://bank.sinopac.com/sinopacBT/webevents/2003_dualcc/index.html?Branch=2026H1AD&amp;utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=homepage&amp;utm_campaign=DU2026H1" target="_blank">
+			       				<img src="https://bank.sinopac.com/upload/sinopac/picture/19b58a93d27000002a5e.jpg"  />
+			       			</a>
+						</div>
+						<h2><a href="https://bank.sinopac.com/sinopacBT/webevents/2003_dualcc/index.html?Branch=2026H1AD&amp;utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=homepage&amp;utm_campaign=DU2026H1" target="_blank">永豐幣倍卡</a></h2>
+						<p><a href="https://bank.sinopac.com/sinopacBT/webevents/2003_dualcc/index.html?Branch=2026H1AD&amp;utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=homepage&amp;utm_campaign=DU2026H1" target="_blank">精選通路最高6% 新戶國外享最高10%現金回饋</a></p>
+					</div>
+			<div class="swiper-slide" style="display: none;" data-p="other">
+						<div class="img">
+							<a href="https://www.sinopac.com/upload/event/2403_life/about.html" target="_blank">
+			       				<img src="https://bank.sinopac.com/upload/sinopac/picture/19c2d2288b300000b8db.jpg"  />
+			       			</a>
+						</div>
+						<h2><a href="https://www.sinopac.com/upload/event/2403_life/about.html" target="_blank">永豐生活</a></h2>
+						<p><a href="https://www.sinopac.com/upload/event/2403_life/about.html" target="_blank">讓綠色行動成為習慣，每一天都是永豐生活！</a></p>
+					</div>
+			<div class="swiper-slide" style="display: none;" data-p="other">
+						<div class="img">
+							<a href="https://bank.sinopac.com/sinopacBT/webevents/2401mma/index.html?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=2026mma280x250&amp;utm_campaign=deposit2026mma2026" target="_blank">
+			       				<img src="https://bank.sinopac.com/upload/sinopac/picture/19b58a7f69f0000058cb.jpg"  />
+			       			</a>
+						</div>
+						<h2><a href="https://bank.sinopac.com/sinopacBT/webevents/2401mma/index.html?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=2026mma280x250&amp;utm_campaign=deposit2026mma2026" target="_blank">mma新戶好有利</a></h2>
+						<p><a href="https://bank.sinopac.com/sinopacBT/webevents/2401mma/index.html?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=2026mma280x250&amp;utm_campaign=deposit2026mma2026" target="_blank">開mma兒童帳戶享活存加碼1.2%年息優利</a></p>
+					</div>
+			<div class="swiper-slide" style="display: none;" data-p="netmb_loan1">
+						<div class="img">
+							<a href="https://bank.sinopac.com/sinopacBT/webevents/22revolvingloan/index.html?LinkSource=800&amp;utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=280x250&amp;utm_campaign=personalloan22revolvingloan202208" target="_blank">
+			       				<img src="https://bank.sinopac.com/upload/sinopac/picture/19b728ea856000003f25.jpg"  />
+			       			</a>
+						</div>
+						<h2><a href="https://bank.sinopac.com/sinopacBT/webevents/22revolvingloan/index.html?LinkSource=800&amp;utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=280x250&amp;utm_campaign=personalloan22revolvingloan202208" target="_blank">手刀開啟 永豐私房錢</a></h2>
+						<p><a href="https://bank.sinopac.com/sinopacBT/webevents/22revolvingloan/index.html?LinkSource=800&amp;utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=280x250&amp;utm_campaign=personalloan22revolvingloan202208" target="_blank">e鍵動用信貸額度，動用年利率2個月2.88%</a></p>
+					</div>
+			<div class="swiper-slide" style="display: none;" data-p="netmb_cards">
+						<div class="img">
+							<a href="https://bank.sinopac.com/sinopacBT/webevents/2008_SportCard2/index.html?Branch=SP2026H1&amp;utm_source=bank&amp;utm_medium=button&amp;utm_term=nonpaid&amp;utm_content=sportcard&amp;utm_campaign=creditcardsport2026h1" target="_blank">
+			       				<img src="https://bank.sinopac.com/upload/sinopac/picture/19b58a798d60000060f2.jpg"  />
+			       			</a>
+						</div>
+						<h2><a href="https://bank.sinopac.com/sinopacBT/webevents/2008_SportCard2/index.html?Branch=SP2026H1&amp;utm_source=bank&amp;utm_medium=button&amp;utm_term=nonpaid&amp;utm_content=sportcard&amp;utm_campaign=creditcardsport2026h1" target="_blank">永豐SPORT卡</a></h2>
+						<p><a href="https://bank.sinopac.com/sinopacBT/webevents/2008_SportCard2/index.html?Branch=SP2026H1&amp;utm_source=bank&amp;utm_medium=button&amp;utm_term=nonpaid&amp;utm_content=sportcard&amp;utm_campaign=creditcardsport2026h1" target="_blank">行動支付最高享5%豐點，新戶限定再加碼20%回饋</a></p>
+					</div>
+			<div class="swiper-slide" style="display: none;" data-p="other">
+						<div class="img">
+							<a href="https://global.sinopac.com/upload/event/gb/2026atm/index.html" target="_blank">
+			       				<img src="https://bank.sinopac.com/upload/sinopac/picture/19b58c6262100000225d.jpg"  />
+			       			</a>
+						</div>
+						<h2><a href="https://global.sinopac.com/upload/event/gb/2026atm/index.html" target="_blank">領錢好方便</a></h2>
+						<p><a href="https://global.sinopac.com/upload/event/gb/2026atm/index.html" target="_blank">郵局ATM提款，每月3次免手續費</a></p>
+					</div>
+			<div class="swiper-slide" style="display: none;" data-p="netmb_dawho">
+						<div class="img">
+							<a href="https://dawho.tw/hot/2026h1offer/?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=BTbottom&amp;utm_campaign=account_official_202601" target="_blank">
+			       				<img src="https://bank.sinopac.com/upload/sinopac/picture/19b58a13684000008f47.jpg"  />
+			       			</a>
+						</div>
+						<h2><a href="https://dawho.tw/hot/2026h1offer/?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=BTbottom&amp;utm_campaign=account_official_202601" target="_blank">DAWHO優惠升級</a></h2>
+						<p><a href="https://dawho.tw/hot/2026h1offer/?utm_source=bank&amp;utm_medium=banner&amp;utm_term=nonpaid&amp;utm_content=BTbottom&amp;utm_campaign=account_official_202601" target="_blank">全新等級上線!!大戶Plus優惠重量登場</a></p>
+					</div>
+			<div class="swiper-slide" style="display: none;" data-p="other">
+						<div class="img">
+							<a href="https://bank.sinopac.com/sinopacBT/personal/credit-card/introduction/bankcard/list.html" target="_blank">
+			       				<img src="https://bank.sinopac.com/upload/sinopac/picture/19b68c6c1050000087fd.jpg"  />
+			       			</a>
+						</div>
+						<h2><a href="https://bank.sinopac.com/sinopacBT/personal/credit-card/introduction/bankcard/list.html" target="_blank">傳富世界 體驗不凡</a></h2>
+						<p><a href="https://bank.sinopac.com/sinopacBT/personal/credit-card/introduction/bankcard/list.html" target="_blank">永傳世界卡/永富世界卡為您準備美饌、旅遊等尊榮禮遇</a></p>
+					</div>
+			</div>
+			<div class="box">
+	          <div class="more"><a style="cursor: pointer;" onclick="moreData4Shortcut()">更多</a></div>	           
+	        </div>
+        </div>
+	</div>
+</div>
+<div id="gdpr-cookie-block">
+	<p>為了優化網站服務，本網站使用「Cookies」來改善使用者體驗。當您繼續使用本網站即表示您同意Cookies政策與隱私權政策。</p>
+	<!-- <p>Our website uses cookies to enhance your experience and to help us improve the website. Please see our <a style="text-decoration: underline; color: blue;" href="https://bank.sinopac.com/sinopacBT/footer/privacy-statement.html" target="_blank">Privacy Statement</a> for further information. If you continue without changing your settings, we will assume that you are happy to receive these cookies. You can change your cookie settings at any time.</p> -->
+	<div class="gdpr-btn-block">
+		<button onclick="iunderstandgdpr();">繼續使用</button>
+		<button onclick="window.open('https://bank.sinopac.com/sinopacBT/footer/privacy-statement.html');">更多資訊</button>
+	</div>
+</div>
+<style>
+	#gdpr-cookie-block { position: fixed;z-index: 9999;left:0;right:0;bottom:0;border-top: 1px solid #aaa;background: #fff;color: #474747;padding: 15px;line-height: 1.5;display: -webkit-box;display: -ms-flexbox;display: flex;display: -webkit-flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;-webkit-justify-content: space-between;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-align-items: center;}
+	#gdpr-cookie-block p { margin: 0;line-height: 1.5;font-size: 16px; color: #474747;padding-right: 10px;text-align: justify;text-justify: inter-ideograph;}
+	#gdpr-cookie-block p a { text-decoration: underline; color: blue;}
+	#gdpr-cookie-block .gdpr-btn-block { display: -webkit-box;display: -ms-flexbox;display: flex;display: -webkit-flex;-ms-flex-negative: 0;flex-shrink: 0;-webkit-flex-shrink: 0;}
+	#gdpr-cookie-block .gdpr-btn-block button { cursor: pointer;-webkit-appearance: none;background: white;margin:0 5px;line-height: 1.5;border: 1px solid #474747;font-size: 16px;border-radius: 5px;padding: 5px 10px;-webkit-flex-shrink: 0;-ms-flex-negative: 0;flex-shrink: 0;}
+	@media (max-width: 768px) {
+		#gdpr-cookie-block {position: fixed;z-index: 9999;left:0;right:0;bottom:0;border-top: 1px solid #aaa;background: #fff;color: #474747;padding: 0 1em;line-height: 1.5;display: -webkit-box;display: -ms-flexbox;display: flex;display: -webkit-flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;-webkit-justify-content: space-between;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-align-items: center;}
+		#gdpr-cookie-block p {margin: 0;line-height: 1.25;font-size: 1.3rem;color: #474747;padding-right: 10px;text-align: justify;text-justify: inter-ideograph;}
+		#gdpr-cookie-block p a { text-decoration: underline; color: blue;}
+		#gdpr-cookie-block .gdpr-btn-block {flex-shrink: 0;-webkit-flex-shrink: 0;display: block;}
+		#gdpr-cookie-block .gdpr-btn-block button {cursor: pointer;-webkit-appearance: none;background: white;margin: .6em 0;line-height: 1.5;border: 1px solid #474747;font-size: 1.3rem;border-radius: 5px;padding: 5px 10px;-webkit-flex-shrink: 0;-ms-flex-negative: 0;flex-shrink: 0;display: block;width: 100%;}
+	}
+</style>
+<script>
+var visionSwiper = null;
+var visionSwiperS = null;
+var shortCutSwiper = null;
+	$(function(){
+		ajaxExchange();//牌告匯率
+		
+		//大網 menu固定
+		$(window).scroll(function() {
+			if ($(document).scrollTop() > 50) {
+				$('.header').addClass("fixed");
+			} else {
+				$('.header').removeClass("fixed");
+			}
+		});
+		var isView = $.trim('false') == 'true';
+		var optionB = {};
+		var visionSize = 12;
+		if(visionSize > 0 && !isView){
+			optionB = {
+				pagination: {
+			        el: '#slider .pagination',
+				    clickable : true
+			    },
+			    autoplay: {
+			        delay: 8000,
+			    }
+			};
+		}
+		//大網 大圖輪播
+	    visionSwiper = new Swiper('#slider', {
+	      pagination: {
+	        el: '#slider .pagination',
+	        clickable: true
+	      },
+	      autoplay: {
+	        delay: 8000,
+	      },
+	      effect: 'fade',
+	      speed: 1000
+	    });
+	    
+	    $('#slider').hover(function() {
+	    	visionSwiper.autoplay.stop();
+	      return false;
+	    }, function() {
+	    	visionSwiper.autoplay.start();
+	      return false;
+	    });
+
+	    //小網 小圖輪播
+	    visionSwiperS = new Swiper('#slider-m', {
+	      pagination: {
+	        el: '#slider-m .pagination',
+	        clickable: true
+	      },
+	      autoplay: {
+	        delay: 8000,
+	      },
+	      effect: 'fade',
+	      speed: 1000
+	    });
+		//大網icon輪播
+	    var swiperIcon = new Swiper('#serviseList', {
+	      navigation: {
+	        nextEl: '#serviseList .next',
+	        prevEl: '#serviseList .prev'
+	      },
+	      slidesPerView: 'auto',
+	      spaceBetween: 0,
+	      slidesPerGroup: 6
+	    });
+		//大網 4圖輪播
+		shortCutSwiper = new Swiper('#cfList', {
+			navigation: {
+		        nextEl: '#cfList .next',
+		        prevEl: '#cfList .prev'
+		      },
+		      slidesPerView: 'auto',
+		      spaceBetween: 15,
+		      slidesPerGroup: 4
+		});
+	});
+	
+	var gdpr_block = document.getElementById('gdpr-cookie-block');
+    var dom_body = document.body;
+    dom_body.style.marginBottom = gdpr_block.offsetHeight + 'px';
+    if ($.cookie("sinopacGDPR") != null) {
+        gdpr_block.parentNode.removeChild(gdpr_block);
+        dom_body.style.marginBottom = '';
+    } 
+    function iunderstandgdpr() {
+        gdpr_block.parentNode.removeChild(gdpr_block);
+        dom_body.style.marginBottom = '';
+        var date = new Date();
+        var now = new Date();
+        var duedate = new Date(now);
+        duedate.setDate(now.getDate() + 365);
+        
+        if ($.cookie("sinopacGDPR") == null) {
+            $.cookie("sinopacGDPR", 1, {expires: duedate , domain: '.sinopac.com', secure: true, path:'/'});
+        }
+    }
+    
+	//服務專區
+	function moreData(){
+		$("div.mobile ul.servise-list.cf li").show();
+		$('div.servise-area').removeClass("act");
+	}
+	//服務專區
+	function moreData4Shortcut(){
+		$("div.slide.cf.mobile div.swiper-slide").show();
+		$('div.slide-area div.box').hide();
+	}
+	
+	//牌告匯率
+	function ajaxExchange(){
+		var url = "https://mma.sinopac.com/ws/share/rate/ws_exchange.ashx?exchangeType=REMIT&Cross=genREMITResult";
+		var pattern = /(\?)/;
+		if (pattern.test(url)) {
+            url=url+"&"+new Date().getTime();
+        } else {
+            url=url+"?"+new Date().getTime();
+        }
+		var jsonpParam = "genREMITResult";
+		$.ajax({
+			type : "POST",
+			cache : false,
+			jsonpCallback: jsonpParam,
+			url : url,
+			dataType : "jsonp",
+			async : true,
+			success : function(data) {		
+				//var content ="";
+				//var currencyContentArr = [];
+				var list = data[0].SubInfo;
+				var count = 0;
+				list.forEach(function(item, index){
+					if(count == 4){
+						//最多顯示四筆
+						return false;
+					}
+					
+					//只截中文:item.DataValue1 中英混和幣別example:美元(USD), item.DataValue4 USD
+					var currencyEn = item.DataValue4;
+					var currency = item.DataValue1.replace("("+currencyEn+")","");
+					var bankBuying = item.DataValue2;
+					var bankSelling = item.DataValue3;
+					//var record = "<tr><td>" + currency + "</td><td>" + bankBuying + "</td><td>" + bankSelling + "</td></tr>";
+					 
+					$('.rate-list .item').each(function(){
+						 if($(this).hasClass('_' + currencyEn)){
+							$(this).find('._currency').text(currency + currencyEn);
+							$(this).find('._bankBuying').text(bankBuying);
+							$(this).find('._bankSelling').text(bankSelling);
+						 }
+					 });
+
+					/*
+					switch(currencyEn){
+						case 'USD':currencyContentArr[0]="<div class=\"item\"><div class=\"icon\"><img src=\"resources/images/serv/icon-rate-1.png\" ></div><h3>"+currency+currencyEn+"</h3><p><span>買入</span>"+bankBuying+"</p><p><span>賣出</span>"+bankSelling+"</p></div>";count++;break;
+						case 'CNY':currencyContentArr[1]="<div class=\"item\"><div class=\"icon\"><img src=\"resources/images/serv/icon-rate-2.png\" ></div><h3>"+currency+currencyEn+"</h3><p><span>買入</span>"+bankBuying+"</p><p><span>賣出</span>"+bankSelling+"</p></div>";count++;break;
+						case 'EUR':currencyContentArr[2]="<div class=\"item\"><div class=\"icon\"><img src=\"resources/images/serv/icon-rate-4.png\" ></div><h3>"+currency+currencyEn+"</h3><p><span>買入</span>"+bankBuying+"</p><p><span>賣出</span>"+bankSelling+"</p></div>";count++;break;
+						case 'JPY':currencyContentArr[3]="<div class=\"item\"><div class=\"icon\"><img src=\"resources/images/serv/icon-rate-3.png\" ></div><h3>"+currency+currencyEn+"</h3><p><span>買入</span>"+bankBuying+"</p><p><span>賣出</span>"+bankSelling+"</p></div>";count++;break;
+					}
+					*/
+				});
+				$('.rate-list .item').toggle();
+				/*
+				for(var i in currencyContentArr){
+					content += currencyContentArr[i];
+				}
+				$( ".rate-list").html(content);
+				*/
+			}
+		});
+	}
+	
+	function closePOP(id){
+		$("#spbtAnnouncement_"+id).hide();
+	}
+</script>
+<script>
+var spbtAnnouncement_ = $.cookie('spbtAnnouncement_19c507d2e2d0000077662d8e91381783');
+if(spbtAnnouncement_ == undefined || spbtAnnouncement_ == 'undefined'){
+	$("#spbtAnnouncement_19c507d2e2d0000077662d8e91381783").show();
+	
+	function adjustPopupPosition() {
+		if (window.innerWidth <= 800) {
+			$('.popup_con').css({
+				'top': '100px',
+				'transform': 'none'
+			});
+		} else {
+			$('.popup_con').css({
+				'top': '',
+				'transform': ''
+			});
+		}
+	}
+	
+	adjustPopupPosition();
+	
+	$(window).on('resize', adjustPopupPosition);
+	
+	$.cookie('spbtAnnouncement_19c507d2e2d0000077662d8e91381783', '19c507d2e2d0000077662d8e91381783');
+}
+</script>
+<script>
+$(function(){personalStart();});
+
+function personalStart(){
+	try{		
+		personalProcess(sensors.store.getDistinctId());//個人化廣告投放處理
+	}catch(err){
+		console.log(err);
+		setTimeout(function(){personalStart()},1000);
+	}
+}
+
+function personalProcess(uuid){
+	
+	if(!uuid || uuid.length >= 15){
+		console.log('Empty uuid');
+		return;//無uuid或長度>=15
+	}
+	
+	$.ajax({
+		type : 'GET',
+		cache : false,
+		url : 'https://bank.sinopac.com/sinopacBT/PeronsalPush.html?uuid=' + uuid,
+		headers : {
+            'X-KeyID'  : '66718c25-7128-4625-981e-68e9f472cf34'
+        },
+		dataType : 'json',
+		async : false,
+		success : function(data) {
+			toSwiperProcess(data);
+		}
+	});
+	
+}
+
+function toSwiperProcess(data){
+	var sortKey = new Array();
+	$.each(data.ranking, function (key, value) {
+		sortKey.push(key);
+	});
+	console.log(sortKey);
+	var visionBlocks = '2,4,7,10,11,12'.split(',');
+	var shortcutBlocks = '2,3,5,6,9,11,12,13,15'.split(',');
+	if(visionBlocks.length > 0){
+		swiperProcess('slider .swiper-wrapper', visionSwiper, visionBlocks, sortKey);//主視覺(大網)
+		swiperProcess('slider-m .swiper-wrapper', visionSwiperS, visionBlocks, sortKey);//主視覺(小網)
+	}
+	if(shortcutBlocks.length > 0){
+		swiperProcess('cfList .swiper-wrapper', shortCutSwiper, shortcutBlocks, sortKey);//快捷專區(大網)
+		swiperProcess('cfList-m .slide-m', null, shortcutBlocks, sortKey);//快捷專區(大網)
+	}
+}
+
+function swiperProcess(id, swiperObj, blocks, sortKey){
+	//console.log('[personal process : #'+id+']')
+	if(swiperObj){
+		//暫停
+		swiperObj.autoplay.stop();
+		swiperObj.slideTo(0);
+	}
+	var finalArray = new Array();
+	var personalArray = new Array();
+	var unpersonalArray = new Array();
+	var defaultArray = new Array();
+	var defaultLeftArray = new Array();
+	$('#'+id+' .swiper-slide').each(function(index){
+		finalArray.push(null);
+		defaultArray.push($(this));//無設定個人化商品
+	});
+	
+	//設定非個人化版位
+	for(var i=0;i<finalArray.length;i++){
+		if(blocks.includes(''+(i+1))){
+			defaultLeftArray.push(defaultArray[i]);//個人化版位
+		}else{
+			finalArray[i] = defaultArray[i];//非個人化版位
+		}
+	}
+	
+	defaultLeftArray.forEach(function(obj){
+		if(obj.data('p')){
+			var pArray = personalArray[obj.data('p')];
+			if(null==pArray){
+				pArray = new Array();
+			}
+			var href = $(obj).find('a').attr('href');
+			if(href){
+				href += '#personalization';
+				$(obj).find('a').attr('href',href);
+			}
+			pArray.push(obj);
+			personalArray[obj.data('p')] = pArray;//有設定個人化商品
+		}else{
+			unpersonalArray.push(obj);
+		}
+	});
+	
+	var html = '';
+	var existKey= new Array();
+	var sortArray = new Array();
+	sortKey.forEach(function(key){
+		var typeArray = personalArray[key];
+		if(typeArray){
+			typeArray.forEach(function(obj){
+				sortArray.push(obj);
+			});
+			existKey.push(key);
+		}
+	});
+
+	for (var key in personalArray){
+		if(!existKey.includes(key)){
+			//lost key
+			var typeArray = personalArray[key];
+			typeArray.forEach(function(obj){
+				sortArray.push(obj);
+			});
+			existKey.push(key);
+		}
+	}
+	
+	leftArray = new Array();
+	Object.keys(personalArray).forEach((key) => {
+		var typeArray = personalArray[key];
+		if(typeArray){
+			typeArray.forEach(function(obj){
+				leftArray.push(obj);
+			});
+		}
+	});
+	
+	//設定個人化版位
+	blocks.forEach(function(key){
+		var index = parseInt(key)-1;
+		if(sortArray.length > 0 && finalArray.length > index){
+			finalArray[index] = sortArray.shift();
+		}
+	});
+
+	//填補剩餘空位
+	if(finalArray.includes(null)){
+		for(var i=0;i<finalArray.length;i++){
+			if(finalArray[i]==null){
+				if(unpersonalArray.length > 0){
+					finalArray[i] = unpersonalArray.shift();
+				}else if(leftArray.length > 0){
+					finalArray[i] = leftArray.shift();
+				}
+			}
+		}
+	}
+	$('#'+id).html('');
+	finalArray.forEach(function(obj){
+		$('#'+id).append(obj);
+	});
+	
+	if(swiperObj){
+		//更新啟動
+		swiperObj.update();
+		swiperObj.autoplay.start();
+	}else{
+		//修正小網快捷專區前4筆顯示
+		var index = 0;
+		finalArray.forEach(function(obj){
+			$(obj).css('display', index < 4 ? 'block' : 'none');
+			index++;
+		});
+	}
+}
+</script>
+<!--footer-->
+<div class="footer">
+	<div class="footer-menu">
+		<div class="toggle-footlist">
+			<p class="close pc footer" style="cursor: pointer;">
+				<span></span>服務條款&nbsp;&nbsp;關於永豐銀行&nbsp;&nbsp;永豐金控集團&nbsp;&nbsp;線上服務<span></span>
+			</p>
+			<p class="open pc footer" style="cursor: pointer;">
+				<span></span>關閉<span></span>
+			</p>
+		</div>
+		<div class="toggle-list pc">
+			<ul class="foot-nav cf">
+				<li>
+						<h2>服務條款</h2>
+						<ul class="lv2 cf">
+							<li>
+											<a href="https://bank.sinopac.com/sinopacBT/about/introduction/announcement/legal-disclaimers.html" title="法定公告事項" target="_self">
+												法定公告事項</a>
+										</li>
+									<li><!-- 內頁 -->
+											<a href="footer/privacy-statement.html" title="隱私權保護聲明">
+												隱私權保護聲明</a>
+										</li>
+									<li><!-- 內頁 -->
+											<a href="footer/copyright-notice.html" title="著作權聲明">
+												著作權聲明</a>
+										</li>
+									<li>
+											<a href="https://www.sinopac.com/footer/2018110216150226800000000000011.html" title="客戶資料保護措施" target="_blank">
+												客戶資料保護措施</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/MMA8/DocDownload/永豐銀行各項收費標準及公告事項.pdf" title="各項收費標準公告事項" target="_blank">
+												各項收費標準公告事項</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/GCSDsp/DspDocDownload.aspx" title="各項表單及文件下載" target="_blank">
+												各項表單及文件下載</a>
+										</li>
+									</ul>
+					</li>
+				<li>
+						<h2>關於本站</h2>
+						<ul class="lv2 cf">
+							<li>
+											<a href="https://bank.sinopac.com/sinopacBT/footer/sitemap.html" title="網站導覽" target="_self">
+												網站導覽</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/MMA8/CustomerService/BranchService/branch.html" title="營業據點" target="_blank">
+												營業據點</a>
+										</li>
+									<li>
+											<a href="https://bankrecruit.sinopac.com" title="菁英招募" target="_blank">
+												菁英招募</a>
+										</li>
+									<li>
+											<img src="resources/images/icon/icon-yt.png">
+											<a href="https://www.youtube.com/user/mmasinopac" title="永豐銀行官方頻道" target="_blank">
+												永豐銀行官方頻道</a>
+										</li>
+									<li>
+											<img src="resources/images/icon/icon-fLine.png">
+											<a href="https://lin.ee/mKcmEJy" title="永豐銀行官方帳號" target="_blank">
+												永豐銀行官方帳號</a>
+										</li>
+									<li>
+											<img src="resources/images/icon/icon-fb.png">
+											<a href="https://www.facebook.com/SinoPac?fref=ts" title="永豐銀行" target="_blank">
+												永豐銀行</a>
+										</li>
+									<li>
+											<img src="resources/images/icon/icon-fb.png">
+											<a href="https://www.facebook.com/BSIBsinopac/" title="DA BOSS" target="_blank">
+												DA BOSS</a>
+										</li>
+									<li>
+											<img src="resources/images/icon/icon-ig.png">
+											<a href="https://instagram.com/dawho.tw?igshid=1rzs2o66tcgvy" title="DAWHO Chill生活" target="_blank">
+												DAWHO Chill生活</a>
+										</li>
+									<li>
+											<img src="resources/images/icon/icon-ig.png">
+											<a href="https://www.instagram.com/sinopac.card/" title="永豐信用卡|刷卡享優惠" target="_blank">
+												永豐信用卡|刷卡享優惠</a>
+										</li>
+									<li>
+											<img src="resources/images/icon/icon-ig.png">
+											<a href="https://www.instagram.com/sinopaccareers/" title="永豐人才Sinopac careers" target="_blank">
+												永豐人才Sinopac careers</a>
+										</li>
+									</ul>
+					</li>
+				<li>
+						<h2>永豐金控集團</h2>
+						<ul class="lv2 cf">
+							<li>
+											<a href="https://www.sinopac.com/" title="永豐金控" target="_blank">
+												永豐金控</a>
+										</li>
+									<li>
+											<a href="https://securities.sinopac.com/" title="永豐金證券" target="_blank">
+												永豐金證券</a>
+										</li>
+									<li>
+											<a href="https://spl.sinopac.com/" title="永豐金租賃" target="_blank">
+												永豐金租賃</a>
+										</li>
+									<li>
+											<a href="https://sitc.sinopac.com/newweb/" title="永豐投信" target="_blank">
+												永豐投信</a>
+										</li>
+									<li>
+											<a href="https://www.spf.com.tw/" title="永豐期貨" target="_blank">
+												永豐期貨</a>
+										</li>
+									<li>
+											<a href="https://www.sinopac.com/about/20211210153412507506/20211210153412554888.html" title="永豐創投" target="_blank">
+												永豐創投</a>
+										</li>
+									<li>
+											<a href="https://www.sinopac.com.cn/" title="永豐銀行(中國)" target="_blank">
+												永豐銀行(中國)</a>
+										</li>
+									<li>
+											<a href="https://www.amret.com.kh/en/home" title="Amret Plc.(柬埔寨)" target="_blank">
+												Amret Plc.(柬埔寨)</a>
+										</li>
+									<li>
+											<a href="https://customer.ktb.com.tw/new/" title="京城銀行" target="_blank">
+												京城銀行</a>
+										</li>
+									</ul>
+					</li>
+				<li>
+						<h2>線上服務</h2>
+						<ul class="lv2 cf">
+							<li>
+											<a href="https://mma.sinopac.com/" title="MMA金融交易網" target="_blank">
+												MMA金融交易網</a>
+										</li>
+									<li>
+											<a href="https://global.sinopac.com/sinopacGB/index.html" title="寰宇金融網" target="_blank">
+												寰宇金融網</a>
+										</li>
+									<li>
+											<a href="https://www.mmab2c.com/" title="MMAb2c華商個人金融網" target="_blank">
+												MMAb2c華商個人金融網</a>
+										</li>
+									<li>
+											<a href="https://webatm.sinopac.com" title="網路ATM" target="_blank">
+												網路ATM</a>
+										</li>
+									<li>
+											<a href="https://funcashier.sinopac.com/digital_payment/index.html" title="數位支付整合服務" target="_blank">
+												數位支付整合服務</a>
+										</li>
+									<li>
+											<a href="https://paybill.sinopac.com/Home/index?utm_source=bank&amp;utm_medium=links&amp;utm_term=nonpaid&amp;utm_content=footer&amp;utm_campaign=paybill20210220" title="大咖繳費網" target="_blank">
+												大咖繳費網</a>
+										</li>
+									<li>
+											<a href="https://trust.sinopac.com/ETrust/Web" title="永豐信託網" target="_blank">
+												永豐信託網</a>
+										</li>
+									<li>
+											<a href="https://www.sinotrade.com.tw/" title="永豐金證券理財網" target="_blank">
+												永豐金證券理財網</a>
+										</li>
+									<li>
+											<a href="https://accessibility.sinopac.com" title="MMA金融友善網" target="_blank">
+												MMA金融友善網</a>
+										</li>
+									<li>
+											<a href="https://dawho.tw/?utm_source=bank&amp;utm_medium=links&amp;utm_term=non-paid&amp;utm_content=bankgsaving&amp;utm_campaign=dawho-launch20190617" title="大戶DAWHO" target="_self">
+												大戶DAWHO</a>
+										</li>
+									</ul>
+					</li>
+				</ul>
+		</div>
+		<div class="footer mobile" id="mobileFooter">
+			<ul class="foot-nav cf">
+				<li><a href="https://chatservice.sinopac.com/index.php/chat/startchat/(department)/1?site=bank" title="客服中心" target="_blank">客服中心</a></li>
+				<li><a href="https://bank.sinopac.com/sinopacBT/rwd.html?w=https://bank.sinopac.com/MMA8/CustomerService/BranchService/branch.html&amp;m=https://m.sinopac.com/m/m_menu.aspx?num=5" title="營業據點" target="_self">營業據點</a></li>
+				<li><a href="https://bankrecruit.sinopac.com" title="菁英招募">菁英招募</a></li>
+			</ul>
+			<div class="foot-bt" id="mobileCopyright">
+				<p>&copy;永豐銀行版權所有</p></div>
+		</div>
+		<div class="copyright">
+			<p class="pc">客服電話：銀&nbsp;行&nbsp;<a href="tel:+886-2-25059999">02-2505-9999</a>&nbsp;&nbsp;&nbsp;信用卡&nbsp;&nbsp;<a href="tel:+886-2-25287776">02-2528-7776</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://bank.sinopac.com/mma8/bank/service/service-index.html" target="_self">客服中心</a>&nbsp;&nbsp;&nbsp; <a href="https://accessibility.sinopac.com">金融友善網</a></p>
+<p class="pc">&copy;永豐銀行版權所有&nbsp;&nbsp;&nbsp;<a href="https://mma.sinopac.com/Bank/BankFrame.aspx?url=browser/upgrade.html">建議使用之瀏覽器</a>/建議<a class="cursorDefaultCheck">解析度1024*768</a>&nbsp;&nbsp;&nbsp;&nbsp;營業人名稱：永豐商業銀行股份有限公司&nbsp;&nbsp;統一編號：86517384</p></div>
+	</div>
+</div>
+
+<script>
+    $(window).on("load", function() {
+        //大網 footer開合
+        function toggleFootList() {
+            var toggleFoot = 1;
+            $('.toggle-footlist').click(function() {
+                toggleFoot ^= 1;
+                $('.toggle-list').slideToggle({
+                    duration: 400,
+                    start: function() {
+                        $('html, body').animate({
+                            scrollTop: document.body.scrollHeight
+                        }, 400);
+                    },
+                    complete: function() {
+                        $('.toggle-footlist p').eq(toggleFoot ^ 1).fadeOut(100, function() {
+                            $('.toggle-footlist p').eq(toggleFoot).fadeIn();
+                        });
+                    }
+                });
+            });
+        }
+        toggleFootList();
+    });
+</script><nav id="menu">
+	<ul>
+			<li>
+							<a href="https://bank.sinopac.com/sinopacBT/index.html" target="_self">
+								永豐銀行首頁</a>
+						</li>
+					<li>
+							<a href="#">關於永豐銀行</a>
+							<ul>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/about.html" target="_self">
+												永豐銀行介紹</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/about/introduction/announcement/content.html" target="_self">
+												公告訊息</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/about/news-center/news/list.html" target="_self">
+												新聞中心</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/about/introduction/announcement/legal-disclaimers.html" target="_self">
+												法定公開揭露事項</a>
+										</li>
+									</ul>
+							</li>
+					<li>
+							<a href="#">個人服務</a>
+							<ul>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/personal.html" target="_self">
+												個人服務總覽</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/personal/credit-card.html" target="_self">
+												信用卡</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/personal/loan.html" target="_self">
+												貸款服務</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/personal/desposit-forex.html" target="_self">
+												存款/外匯</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/personal/property.html" target="_self">
+												財富/信託</a>
+										</li>
+									<li>
+											<a href="https://wm.sinopac.com/markets?utm_source=bank&amp;utm_medium=links&amp;utm_term=nopaid&amp;utm_content=na&amp;utm_campaign=wm_bankmobile_202504" target="_self">
+												金融情報</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/personal/insurance.html" target="_self">
+												保險</a>
+										</li>
+									</ul>
+							</li>
+					<li>
+							<a href="#">數位金融</a>
+							<ul>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/digital.html" target="_self">
+												數位金融總覽</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/digital/online-banking.html" target="_self">
+												數位理財</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/digital/mobile-banking.html" target="_self">
+												行動理財</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/digital/smart-customer-service.html" target="_self">
+												智慧客服</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/digital/paybill.html" target="_self">
+												繳費繳稅</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/webevents/myData/index.html" target="_self">
+												MyData</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/webevents/ec/simple/index.html" target="_blank">
+												豐雲櫃台</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/digital/acclink.html" target="_self">
+												帳戶連結付款</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/digital/donation.html" target="_self">
+												公益捐款</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/digital/Cross-border-payment.html" target="_self">
+												跨境付款</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/digital/bussiness-Pay-receive.html" target="_self">
+												豐收款</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/coroperate/cash.html" target="_self">
+												企業現金管理</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/digital/special-bank.html" target="_self">
+												特色分行</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/digital/local-finance.html" target="_self">
+												場域金融</a>
+										</li>
+									<li>
+											<a href="https://global.sinopac.com/sinopacGB/index.html" target="_self">
+												寰宇金融網</a>
+										</li>
+									<li>
+											<a href="https://developer.sinopac.com/" target="_blank">
+												API開發者專區</a>
+										</li>
+									<li>
+											<a href="https://apply.sinopac.com/KYCSurvey/KYCSurvey/Login#" target="_blank">
+												個人基本資料更新</a>
+										</li>
+									</ul>
+							</li>
+					<li>
+							<a href="#">中小企業</a>
+							<ul>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/sme.html" target="_self">
+												中小企業總覽</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/sme/cash-mgt.html" target="_self">
+												現金管理</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/sme/commercial-financing.html" target="_self">
+												商業融資</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/sme/store-billing.html" target="_self">
+												商店收單</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/sme/digital_application.html" target="_self">
+												數位申請</a>
+										</li>
+									</ul>
+							</li>
+					<li>
+							<a href="#">法人企業</a>
+							<ul>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/coroperate.html" target="_self">
+												法人企業總覽</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/coroperate/desposit-remittance.html" target="_self">
+												存款/外匯</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/coroperate/finance.html" target="_self">
+												融資服務</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/coroperate/cash.html" target="_self">
+												現金管理</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/coroperate/service.html" target="_self">
+												金融服務</a>
+										</li>
+									</ul>
+							</li>
+					<li>
+							<a href="#">小蜜豐點數</a>
+							<ul>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/personal/article/bee-together/list.html" target="_self">
+												小蜜豐點數活動</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/webevents/ec/MyPoints/index.html?openApp=MyPoints&amp;openExternalBrowser=1&amp;utm_source=bank&amp;utm_medium=button&amp;utm_campaign=generalbeemission" target="_self">
+												金Bee點數查詢</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/personal/article/about-bee/about-bee.html" target="_self">
+												關於小蜜豐</a>
+										</li>
+									</ul>
+							</li>
+					<li>
+							<a href="#">小學堂</a>
+							<ul>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/personal/article/eco-friendly/Net-Zero-Emissions.html" target="_self">
+												綠色行動力</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/personal/article/financial-management/pension-plan.html" target="_self">
+												投資理財</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/personal/article/deposit/save-money.html" target="_self">
+												聰明儲蓄</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/personal/article/smart-consumption/make-money.html" target="_self">
+												精打細算</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/personal/article/intelligence/what-is-e-commerce.html" target="_self">
+												企業情報</a>
+										</li>
+									<li>
+											<a href="https://bank.sinopac.com/sinopacBT/personal/article/trend/news.html" target="_self">
+												金融趨勢</a>
+										</li>
+									</ul>
+							</li>
+					<li>
+							<a href="#">網路銀行</a>
+							<ul>
+									<li>
+											<a href="https://m.sinopac.com/m/m_home.aspx" target="_self">
+												行動網路銀行</a>
+										</li>
+									<li>
+											<a href="https://global.sinopac.com/sinopacGB/index.html" target="_self">
+												寰宇金融網</a>
+										</li>
+									</ul>
+							</li>
+					<li>
+							<a href="#">營業據點</a>
+							<ul>
+									<li>
+											<a href="https://m.sinopac.com/m/bank/easy_index_preServiceNum/m_branches_nearby.aspx" target="_self">
+												分行據點</a>
+										</li>
+									<li>
+											<a href="https://m.sinopac.com/m/bank/atm/m_ATM_nearby.aspx" target="_self">
+												ATM據點</a>
+										</li>
+									</ul>
+							</li>
+					<li>
+							<a href="#">社群網站</a>
+							<ul>
+									<li>
+											<a href="https://www.youtube.com/user/mmasinopac" target="_blank">
+												YT_永豐銀行官方頻道</a>
+										</li>
+									<li>
+											<a href="https://lin.ee/mKcmEJy" target="_blank">
+												LINE_永豐銀行官方帳號</a>
+										</li>
+									<li>
+											<a href="https://www.facebook.com/SinoPac" target="_blank">
+												FB_永豐銀行</a>
+										</li>
+									<li>
+											<a href="https://www.facebook.com/BSIBsinopac/" target="_blank">
+												FB_DA BOSS</a>
+										</li>
+									<li>
+											<a href="https://www.instagram.com/sinopac.card?igsh=bnNhb21xb3lrNW02" target="_blank">
+												IG_永豐信用卡|刷卡享優惠</a>
+										</li>
+									<li>
+											<a href="https://instagram.com/dawho.tw?igshid=1rzs2o66tcgvy" target="_blank">
+												IG_ DAWHO Chill生活</a>
+										</li>
+									<li>
+											<a href="https://www.instagram.com/sinopaccareers/" target="_blank">
+												IG_永豐人才SinoPac Careers</a>
+										</li>
+									</ul>
+							</li>
+					<li>
+							<a href="https://chatservice.sinopac.com/Webhook/?site=bank#department/1" target="_blank">
+								智慧小豐</a>
+						</li>
+					<li>
+							<a href="https://bank.sinopac.com/sinopacBT/footer/privacy-statement.html" target="_self">
+								隱私權保護聲明</a>
+						</li>
+					<li><a href="en/index.html" target="_self">English</a></li>
+		</ul>
+	</nav><div class="mobile-menu-bg" style="display: none"></div>
+	<input type="hidden" id="createTime" value="20260223161806"/>
+	<script>
+		if (device.mobile()) {
+			$("*").css("cursor", "pointer");
+			$("#templateContent img").each(function(){
+				if($(this).is(":visible")){
+					if($(this).width() <= 50 && $(this).height() <= 50){
+						//size過小就不顯示放大鏡
+						return;
+					}
+					$(this).wrap('<div class="mag_img"></div>');
+					$(this).each(function(index) {
+						var src = $(this).attr("src");
+						$(this).parent().prepend('<a href="'+src+'" target="_blank"></a>');
+					});
+				}
+			});
+		}
+		var isViewLinkEnable = $.trim("true")=="true";
+		$(function() {
+			$("ul.lv1 h2").click(function(e) {
+				if (e.target !== this){ //當點選h2時才往下執行, 避免按到a 無反應
+				    return;
+				}
+				var parentLiSelect = $(this).parent("li");
+				if (parentLiSelect.hasClass("df")) {
+					return false;
+				}
+				if (parentLiSelect.hasClass("open")) {
+					parentLiSelect.removeClass("open");
+				} else {
+					$("div.left-side li").removeClass("open");
+					parentLiSelect.addClass("open");
+				}
+			});
+			//開圖
+			$(".edit_box img,.guide-list img").each(function(index) {
+				if($(this).width() <= 50 && $(this).height() <= 50){
+					//size過小就不顯示放大鏡
+					return;
+				}
+				$(this).wrap('<div class="zoom"></div>')
+				$(this).addClass("in");
+				$(this).after('<a class="zoomin" href="'+$(this).attr("src")+'" target="_blank"></a>');
+			});
+			//處理麵包屑onlick 事件, 去找選單的連結(除首頁跟目前頁面)
+			$(".breadcrumbs.pc a:not(:first,:last)").click(function(){
+				var text = $(this).text().trim();
+				var isFound = false;
+				$(".menu-l.cf a").each(function(i){
+					if(text == $(this).text().trim()){
+						location.href = $(this).attr("href");
+						isFound = true;
+						return false;
+					}
+				});
+				if(isFound){
+					return false;
+				}
+				$(".nav.cf>li.act a").each(function(i){
+					if(text == $(this).text().trim()){
+						location.href = $(this).attr("href");
+						isFound = true;
+						return false;
+					}
+				});
+				if(isFound){
+					return false;
+				}
+				$(".left-side.pc li.act a").each(function(i){
+					if(text == $(this).text().trim()){
+						location.href = $(this).attr("href");
+						return false;
+					}
+				});
+			});
+			//避免menu path相同造成開啟，未被選擇的子項目選單
+			$(".left-side.pc ul.lv1 li.open").each(function(){
+				if($(this).find("ul.lv2 li.act").length==0){
+					$(this).removeClass("open");
+				}
+			});
+			
+			$('a.blockStyle,a.btn_top').click(function() {
+				$('body,html').animate({scrollTop:0},300);
+			});
+			$("nav#menu").mmenu({
+				slidingSubmenus : false,
+				onClick : {
+					close : false
+				}
+			});
+			handleFunApp();
+		});
+		(function($) {
+			var $minHeight = $(window).height() - $('.header').outerHeight() - $('.nav').outerHeight() - $('.footer').outerHeight();
+			$('.pagesize').css( "min-height", $minHeight );
+			$(window).on("resize", function() {
+				switchDevice();
+				//$("#footerClose").hide();
+				//$("div.footer div.toggle-list").hide();
+				handleFunApp();
+			});
+		})(jQuery);
+		
+		function switchDevice(){
+			if (device.mobile()) {
+				$(".pc").hide();
+				$(".mobile").show();
+			}else{
+				$(".mobile").hide();
+				$(".pc").show();
+				$('.close.pc.footer').hide();
+			}
+		}
+		switchDevice();
+		
+		//$("#footerClose").hide();
+		//$("div.footer div.toggle-list").hide();
+		
+		function getQueryVariable(variable) {
+			var query = window.location.search.substring(1);
+			var vars = query.split("&");
+			for (var i = 0; i < vars.length; i++) {
+				var pair = vars[i].split("=");
+				if (pair[0] == variable) {
+					return decodeURIComponent(pair[1]);
+				}
+			}
+		}
+
+		function handleFunApp(){
+			//for Fund App
+			if(getQueryVariable("isApp") == "true"){
+				$("#header").hide();
+				$("#phoneInTopMenu").hide();
+				$("#mobileFooter").hide();
+				$("#mobileCopyright").hide();
+			}
+		}
+	</script>
+</body>
+</html>

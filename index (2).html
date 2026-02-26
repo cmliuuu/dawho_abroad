@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+  <title>大戶 DAWHO 留學攻略 | 海外生活與學費神級備援</title>
+  <meta name="description" content="專為留學生、交換生、遊學生與家長設計的海外金融指南。大戶DAWHO提供精準換匯、ISIC國際學生證Debit卡國外2%回饋、最高6%海外刷卡回饋、大戶速匯58秒到帳等服務，短期長期出國都適用。">
+  <meta property="og:title" content="大戶 DAWHO 留學攻略 | ISIC國際學生證 × 多幣Debit × 留學金融神備援">
+  <meta property="og:description" content="留學不用怕資金卡關！ISIC國際學生證卡全球130國優惠、學費換匯到當地生活費，長期留學或短期交換都有解。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://dawho.tw/hot/study-abroad/images/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://dawho.tw/hot/study-abroad/">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:site_name" content="DAWHO 大戶數位帳戶">
+  <meta name="robots" content="index, follow">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="大戶 DAWHO 留學攻略 | ISIC國際學生證 × 多幣Debit × 留學金融神備援">
+  <meta name="twitter:description" content="留學不用怕資金卡關！ISIC國際學生證卡全球130國優惠、學費換匯到當地生活費，長期留學或短期交換都有解。">
+  <meta name="twitter:image" content="https://dawho.tw/hot/study-abroad/images/og-cover.jpg">
+  <link rel="canonical" href="https://dawho.tw/hot/study-abroad/">
+
+  <link rel="preload" href="./images/logo_dawho.svg" as="image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;800;900&family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
+
+  <style>
+    /* =========================================
+       設計系統 (Design Tokens)
+       ========================================= */
+    :root {
+      --bg: #08080b; --card: #16161d;
+      --glass-bg: rgba(25, 25, 35, 0.4); --glass-bdr: rgba(255, 255, 255, 0.08);
+      --gold: #C9A96E; --gold-l: #E8D5A8; --gold-d: #8A6F3E;
+      --gold-bg: rgba(201,169,110,0.06); --gold-bg2: rgba(201,169,110,0.12);
+      --red: #d32f2f; --cherry: #f4a0a0;
+      --t1: #FDFBF7; --t2: rgba(253,251,247,0.85); --t3: rgba(253,251,247,0.6);
+      --bdr: rgba(255,255,255,0.08);
+      --font-serif: 'Noto Serif TC', 'Georgia', serif;
+      --font-sans: 'Noto Sans TC', 'Helvetica Neue', sans-serif;
+    }
+
+    /* =========================================
+       全域 Reset
+       ========================================= */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; scroll-padding-top: 100px; }
+    body { background-color: var(--bg); color: var(--t1); font-family: var(--font-sans); overflow-x: hidden; line-height: 1.5; }
+    ::selection { background: var(--gold); color: var(--bg); }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--gold-d); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--gold); }
+    a { text-decoration: none; color: inherit; }
+    button { border: none; background: none; font-family: inherit; cursor: pointer; }
+    ul { list-style: none; }
+
+    /* =========================================
+       共用元件
+       ========================================= */
+    .glass-panel { background: var(--glass-bg); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid var(--glass-bdr); box-shadow: 0 8px 32px 0 rgba(0,0,0,0.3); }
+    .glass-panel:has(.stat-item) { transition: border-color 0.4s ease; }
+    .hover-card { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    .hover-card:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 15px 35px rgba(0,0,0,0.5), inset 0 2px 10px rgba(201,169,110,0.15); border-color: rgba(201,169,110,0.4) !important; }
+    a.hover-card:hover { border-color: rgba(201,169,110,0.5) !important; background: rgba(201,169,110,0.06) !important; }
+    .hover-icon { transition: transform 0.4s ease; }
+    .hover-card:hover .hover-icon { transform: scale(1.15) rotate(5deg); }
+
+    .text-gradient { background: linear-gradient(135deg, #FFDF73 0%, #D4AF37 30%, #FFFFFF 50%, #D4AF37 70%, #FFDF73 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-size: 200% auto; animation: shimmerText 3s linear infinite; filter: drop-shadow(0 0 10px rgba(255,223,115,0.5)); }
+    .highlight-gradient { background: linear-gradient(135deg, var(--cherry) 0%, var(--gold-l) 40%, #FFF 50%, var(--gold-l) 60%, var(--cherry) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-size: 200% auto; animation: shimmerText 4s linear infinite; }
+
+    /* 動畫 */
+    @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-15px); } }
+    @keyframes shimmerBtn { 0% { left: -100%; } 100% { left: 200%; } }
+    @keyframes shimmerText { 0% { background-position: 200% center; } 100% { background-position: -200% center; } }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes arrowPulse { 0%, 100% { transform: translateY(-50%) translateX(0); opacity: 0.3; } 50% { transform: translateY(-50%) translateX(8px); opacity: 1; } }
+    @keyframes loadingBar { 0% { width: 0%; transform: translateX(-100%); } 50% { width: 70%; transform: translateX(0); } 100% { width: 100%; transform: translateX(0); } }
+    @keyframes nfcPulse { 0% { transform: translate(-50%, -50%) scale(0.95); opacity: 0.8; } 100% { transform: translate(-50%, -50%) scale(1.4); opacity: 0; } }
+
+    /* 按鈕 */
+    .glow-btn { position: relative; padding: 1rem 2.8rem; background: linear-gradient(135deg, var(--gold-l), var(--gold)); color: #1A150D; border-radius: 50px; font-size: 1.1rem; font-weight: 900; letter-spacing: 2px; box-shadow: 0 0 15px rgba(201,169,110,0.2), 0 5px 15px rgba(0,0,0,0.4), inset 0 2px 0 rgba(255,255,255,0.5); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); display: inline-flex; align-items: center; justify-content: center; gap: 10px; overflow: hidden; }
+    .glow-btn.full { width: 100%; }
+    .glow-btn:hover { transform: translateY(-4px) scale(1.03); box-shadow: 0 0 25px rgba(201,169,110,0.5), 0 10px 30px rgba(0,0,0,0.6), inset 0 2px 0 rgba(255,255,255,0.8); }
+    .glow-btn::before { content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent); transform: skewX(-20deg); }
+    .glow-btn:hover::before { animation: shimmerBtn 1s forwards; }
+
+    .outline-btn { position: relative; padding: 0.9rem 2.6rem; overflow: hidden; background: rgba(0,0,0,0.6); color: var(--gold-l); border: 1px solid var(--gold-d); border-radius: 50px; font-size: 1.1rem; font-weight: 800; letter-spacing: 1.5px; backdrop-filter: blur(10px); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); box-shadow: 0 4px 15px rgba(0,0,0,0.4); display: inline-flex; align-items: center; justify-content: center; gap: 8px; }
+    .outline-btn.full { width: 100%; }
+    .outline-btn:hover { background: rgba(201,169,110,0.15); border-color: var(--gold-l); transform: translateY(-3px) scale(1.02); box-shadow: 0 0 25px rgba(201,169,110,0.3), inset 0 0 15px rgba(201,169,110,0.2); }
+    .outline-btn::before { content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%; background: linear-gradient(90deg, transparent, rgba(201,169,110,0.4), transparent); transform: skewX(-20deg); animation: shimmerBtn 4s infinite linear; pointer-events: none; }
+
+    /* 網格系統 */
+    .grid-responsive, .grid-responsive-3, .grid-responsive-4 { display: grid; gap: 1.5rem; grid-template-columns: 1fr; }
+    @media (min-width: 768px) { .grid-responsive { grid-template-columns: repeat(2, 1fr); } .grid-responsive-3, .grid-responsive-4 { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1024px) { .grid-responsive-3 { grid-template-columns: repeat(3, 1fr); } .grid-responsive-4 { grid-template-columns: repeat(4, 1fr); } }
+
+    /* 等高 Flex 卡片容器 */
+    .flex-col-equal { display: flex; flex-direction: column; height: 100%; }
+    .flex-grow-content { flex-grow: 1; }
+
+    /* 導覽列 */
+    nav { position: fixed; top: 0; left: 0; width: 100%; z-index: 990; background: rgba(8,8,11,0.6); backdrop-filter: blur(20px); border-bottom: 1px solid transparent; transition: all 0.4s ease; }
+    nav.scrolled { background: rgba(8,8,11,0.98); border-bottom: 1px solid var(--bdr); }
+    .nav-inner { max-width: 1200px; margin: 0 auto; padding: 1.2rem 2rem; display: flex; justify-content: space-between; align-items: center; transition: padding 0.4s; gap: 2rem; }
+    nav.scrolled .nav-inner { padding: 0.8rem 2rem; }
+    .nav-desktop span { color: var(--t1); font-weight: 800; font-size: 1.05rem; letter-spacing: 1px; cursor: pointer; transition: color 0.3s; white-space: nowrap; }
+    .nav-desktop span:hover { color: var(--gold-l); }
+    .mobile-menu { position: fixed; inset: 0; z-index: 995; background: rgba(8,8,11,0.98); backdrop-filter: blur(10px); display: flex; flex-direction: column; padding: 2rem; transform: translateX(100%); transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    .mobile-menu.open { transform: translateX(0); }
+    .mobile-toggle { display: none; }
+
+    /* 進場動畫 */
+    .animate-on-scroll { opacity: 0; transform: translateY(40px) scale(0.95); transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1); }
+    .animate-on-scroll.is-visible { opacity: 1; transform: translateY(0) scale(1); }
+    .animate-delay-1 { transition-delay: 0.15s; }
+    .animate-delay-2 { transition-delay: 0.3s; }
+
+    /* Slider */
+    input[type=range].custom-slider { -webkit-appearance: none; background: rgba(255,255,255,0.1); border-radius: 8px; height: 6px; }
+    input[type=range].custom-slider::-webkit-slider-thumb { -webkit-appearance: none; height: 24px; width: 24px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 15px var(--gold); cursor: pointer; transition: transform 0.2s; margin-top: -9px; position: relative; z-index: 10; border: 2px solid #fff; }
+    input[type=range].custom-slider::-webkit-slider-thumb:hover { transform: scale(1.2); }
+
+    /* Section Dividers */
+    .section-divider { width: 60px; height: 2px; background: linear-gradient(90deg, transparent, var(--gold-d), transparent); margin: 0 auto; }
+
+    /* FAQ */
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+    .faq-answer.open { max-height: 500px; }
+
+    /* =========================================
+       Hero 區背景圖疊加方案
+       ========================================= */
+    #hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      /* 使用三區拼接 — longhand 寫法避免瀏覽器解析問題 */
+      background-image:
+        url('./images/Gemini_Generated_Image_n82p3cn82p3cn82p.png'),
+        url('./images/Gemini_Generated_Image_6tib796tib796tib.png'),
+        url('./images/Gemini_Generated_Image_416rrc416rrc416r.png'),
+        linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f0f1a 100%);
+      background-position: left center, center center, right center, center center;
+      background-size: 33.33% 100%, 33.34% 100%, 33.33% 100%, cover;
+      background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+      opacity: 0.25;
+      filter: blur(2px) saturate(0.7);
+      z-index: 0;
+    }
+    @media (max-width: 768px) {
+      #hero::before {
+        /* 手機版改為單張主圖避免切割感 */
+        background-image: url('./images/Gemini_Generated_Image_6tib796tib796tib.png');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.3;
+      }
+    }
+
+    /* Role Selector */
+    .role-btn { padding: 12px 32px; border-radius: 50px; font-size: 1.1rem; font-weight: 800; display: flex; align-items: center; gap: 8px; transition: all 0.3s; }
+    .role-btn.active { background: linear-gradient(135deg,var(--gold),var(--gold-d)); color: #000; box-shadow: 0 4px 15px rgba(201,169,110,0.3); }
+    .role-btn:not(.active) { border: 1px solid var(--bdr); background: rgba(255,255,255,0.05); color: var(--gold-l); }
+
+    /* Footer */
+    .footer-container { background: #000; color: #a0a0a0; padding: 4rem 2rem 10rem; border-top: 1px solid rgba(255,255,255,0.1); position: relative; z-index: 10; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-top { display: flex; flex-wrap: wrap; gap: 3rem; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 3rem; margin-bottom: 2rem; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 2rem; flex: 1; justify-content: flex-end; }
+    .footer-col { flex: 1; min-width: 130px; }
+    .footer-col .title { color: #fff; font-weight: 700; font-size: 1.05rem; margin-bottom: 1.5rem; }
+    .footer-col .link { margin-bottom: 1rem; font-size: 0.9rem; }
+    .footer-col a:hover { color: var(--gold-l); }
+    .footer-middle { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 2rem; margin-bottom: 3rem; }
+    .footer-meta-links { display: flex; gap: 1.5rem; margin-bottom: 1rem; flex-wrap: wrap; }
+    .footer-meta-links a { font-size: 0.85rem; display: flex; align-items: center; gap: 6px; }
+    .footer-meta-links a:hover { color: #fff; }
+    .footer-info, .footer-copyright { font-size: 0.85rem; line-height: 1.8; color: #666; }
+    .footer-bottom { display: flex; flex-wrap: wrap; gap: 2rem; align-items: flex-start; }
+    .footer-warning-title { font-size: clamp(1.8rem, 4vw, 2.2rem); font-weight: 900; color: #fff; flex: 0 0 auto; letter-spacing: 2px; }
+    .footer-warning-text { font-size: 0.8rem; color: #666; line-height: 1.8; flex: 1; min-width: 300px; }
+
+    /* =========================================
+       RWD — Tablet (<=768px)
+       ========================================= */
+    @media (max-width: 768px) {
+      .nav-desktop, .nav-cta-btn { display: none !important; }
+      .mobile-toggle { display: flex !important; }
+      .hero-panel { padding: 2.5rem 1.2rem !important; }
+      .desktop-br { display: none; }
+      .btn-group { flex-direction: column !important; width: 100%; gap: 1rem !important; }
+      .btn-group > button { width: 100% !important; justify-content: center !important; }
+      .stat-grid { flex-direction: column !important; width: 100%; gap: 0.8rem !important; }
+      .stat-item { max-width: 100% !important; flex: 1 1 auto !important; }
+      .step-icon { width: 44px !important; height: 44px !important; }
+      .glow-btn { padding: 0.85rem 2rem; font-size: 1rem; letter-spacing: 1px; }
+      .outline-btn { padding: 0.8rem 1.8rem; font-size: 1rem; }
+      .role-btn { padding: 10px 20px; font-size: 0.95rem; }
+      .fido-phone-mockup { flex: 0 0 160px !important; }
+      section { padding-left: 1.2rem !important; padding-right: 1.2rem !important; }
+    }
+
+    /* =========================================
+       RWD — iPhone SE / Small phones (<=375px)
+       ========================================= */
+    @media (max-width: 375px) {
+      #hero { padding: 120px 12px 80px !important; min-height: auto !important; }
+      .hero-panel { padding: 2rem 1rem !important; border-radius: 16px !important; }
+      .hero-panel h1 { font-size: 2rem !important; letter-spacing: 0 !important; }
+      .hero-panel .stat-grid h4 { font-size: 1.15rem !important; }
+      .hero-panel .stat-grid .hover-icon { width: 44px !important; height: 44px !important; }
+      .glow-btn { padding: 0.75rem 1.4rem !important; font-size: 0.9rem !important; }
+      .outline-btn { padding: 0.7rem 1.2rem !important; font-size: 0.9rem !important; }
+      #role-buttons { flex-wrap: nowrap !important; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; justify-content: flex-start !important; padding: 0 0.5rem; gap: 8px !important; }
+      #role-buttons::-webkit-scrollbar { display: none; }
+      .role-btn { padding: 8px 14px !important; font-size: 0.82rem !important; white-space: nowrap; flex-shrink: 0; }
+      .role-btn svg { width: 16px; height: 16px; }
+      #step-timeline .step-icon { width: 38px !important; height: 38px !important; }
+      #step-timeline span { font-size: 0.95rem !important; }
+      #dual-card-section h2 { font-size: 1.6rem !important; }
+      #dual-card-section h3 { font-size: 1.1rem !important; }
+      .grid-responsive-3 .glass-panel { padding: 2rem 1.2rem !important; }
+      .grid-responsive-3 .glass-panel h4 { font-size: 1.4rem !important; }
+      #speed-remit-section .glass-panel { padding: 2.5rem 1.2rem !important; }
+      #faq-section .glass-panel { padding: 0.8rem 1rem !important; }
+      .faq-btn span:first-child { font-size: 0.95rem !important; }
+      .fido-phone-mockup { display: none !important; }
+      .footer-warning-text { min-width: auto !important; }
+      .footer-container { padding: 3rem 1.2rem 8rem !important; }
+      section { padding-left: 0.8rem !important; padding-right: 0.8rem !important; }
+      .nav-inner { padding-left: 1rem !important; padding-right: 1rem !important; }
+      /* 底部CTA小螢幕優化 */
+      #cta-bar button { font-size: 0.95rem !important; padding: 0.75rem 1.5rem !important; }
+      #cta-boost { padding: 1.5rem 1rem !important; }
+      #cta-boost .glow-btn { padding: 0.8rem 1.8rem !important; font-size: 0.95rem !important; }
+      #cta-boost .outline-btn { padding: 0.8rem 1.5rem !important; font-size: 0.9rem !important; }
+    }
+    @media (max-width: 900px) { .footer-links { justify-content: flex-start; gap: 2rem; } .footer-col { flex: 1 1 calc(50% - 2rem); } }
+    @media (max-width: 600px) { .footer-middle { flex-direction: column; align-items: flex-start; } .footer-warning-title { white-space: normal; } .footer-col { flex: 1 1 100%; } }
+  </style>
+
+  <!-- JSON-LD: FAQPage 結構化資料 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "留學生如果沒有財力證明，可以辦信用卡嗎？", "acceptedAnswer": {"@type": "Answer", "text": "家長可使用主卡額度申辦附卡給留學生使用。或是留學生本人申請 DAWHO 多幣 Debit 卡，戶頭有多少刷多少，完全免除透支風險。"}},
+      {"@type": "Question", "name": "家長從台灣匯款到國外，手續費怎麼算？", "acceptedAnswer": {"@type": "Answer", "text": "使用大戶速匯全額匯出，手續費僅需 NT$130，最快 58 秒即可到帳。"}},
+      {"@type": "Question", "name": "換了當地SIM卡後，海外網購收不到簡訊OTP怎麼辦？", "acceptedAnswer": {"@type": "Answer", "text": "DAWHO APP 支援 FIDO 驗證，只需輸入專屬密碼後以實體金融卡感應手機即可完成身分驗證，完全不需要台灣門號收 OTP。"}},
+      {"@type": "Question", "name": "如果在國外卡片遺失怎麼辦？", "acceptedAnswer": {"@type": "Answer", "text": "您可以立刻打開 DAWHO APP，使用信用卡/簽帳卡一鍵鎖卡功能，立即暫停卡片交易。也可撥打 24 小時客服專線。"}},
+      {"@type": "Question", "name": "ISIC 國際學生證卡跟 DAWHO Debit卡有什麼不同？", "acceptedAnswer": {"@type": "Answer", "text": "ISIC 卡多了三大優勢：國外消費 2% 回饋、卡片本身就是國際學生證享全球 130 國 15 萬項學生優惠、海外提款每月最高補貼 NT$300 手續費。"}}
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ================= 載入畫面 ================= -->
+  <div id="loader" style="position: fixed; inset: 0; z-index: 9999; background: var(--bg); display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.8s cubic-bezier(0.65, 0, 0.35, 1);">
+    <div style="animation: float 2s infinite ease-in-out;">
+      <img src="./images/logo_dawho.svg" onerror="this.onerror=null; this.src='https://dawho.tw/hot/2026h1offer/images/logo_dawho.svg';" alt="DAWHO" style="height: 60px; width: auto;">
+    </div>
+    <div style="margin-top: 2rem; width: 200px; height: 2px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden;">
+      <div style="height: 100%; background: linear-gradient(90deg, var(--gold-d), var(--gold-l), var(--gold)); animation: loadingBar 1.5s ease-in-out forwards;"></div>
+    </div>
+    <div style="margin-top: 1rem; font-size: 0.85rem; color: var(--gold); letter-spacing: 4px; text-transform: uppercase;">準備留學，即刻啟程</div>
+  </div>
+
+  <!-- ================= 導覽列 ================= -->
+  <nav id="navbar" aria-label="主導覽列">
+    <div class="nav-inner">
+      <div style="display: flex; align-items: center; flex-shrink: 0; cursor: pointer;" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <img src="./images/logo_dawho.svg" onerror="this.onerror=null; this.src='https://dawho.tw/hot/2026h1offer/images/logo_dawho.svg';" alt="DAWHO" id="nav-logo" style="height: 38px; width: auto; transition: height 0.4s ease;">
+      </div>
+      <div style="display: flex; gap: clamp(1rem, 2.5vw, 2.5rem); align-items: center; justify-content: flex-end; flex: 1;">
+        <div class="nav-desktop" style="display: flex; gap: clamp(1rem, 2.5vw, 2.5rem); align-items: center;">
+          <span onclick="scrollToSec('journey-section')">留學攻略</span>
+          <span onclick="scrollToSec('dual-card-section')">刷卡配置</span>
+          <span onclick="scrollToSec('rewards-section')">刷卡回饋</span>
+          <span onclick="scrollToSec('faq-section')">常見問題</span>
+        </div>
+        <button class="nav-cta-btn glow-btn" style="padding: 10px 28px; font-size: 1.05rem; flex-shrink: 0;" onclick="trackAndGo('https://applydawho.sinopac.com/OpenAccount/OpenAccount/WhichOne?', 'Click_Nav_Account')">辦卡/開戶</button>
+        <button class="mobile-toggle" onclick="document.getElementById('mobile-menu').classList.add('open')">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 手機版選單 -->
+  <div id="mobile-menu" class="mobile-menu">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3rem;">
+      <img src="./images/logo_dawho.svg" onerror="this.onerror=null; this.src='https://dawho.tw/hot/2026h1offer/images/logo_dawho.svg';" alt="DAWHO" style="height: 32px;">
+      <button onclick="document.getElementById('mobile-menu').classList.remove('open')">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 2rem;">
+      <button style="color: var(--t1); font-family: var(--font-serif); font-size: 1.8rem; font-weight: 800; text-align: left; border-bottom: 1px solid var(--bdr); padding-bottom: 1rem;" onclick="scrollToSec('journey-section'); document.getElementById('mobile-menu').classList.remove('open')">留學攻略</button>
+      <button style="color: var(--t1); font-family: var(--font-serif); font-size: 1.8rem; font-weight: 800; text-align: left; border-bottom: 1px solid var(--bdr); padding-bottom: 1rem;" onclick="scrollToSec('dual-card-section'); document.getElementById('mobile-menu').classList.remove('open')">刷卡配置</button>
+      <button style="color: var(--t1); font-family: var(--font-serif); font-size: 1.8rem; font-weight: 800; text-align: left; border-bottom: 1px solid var(--bdr); padding-bottom: 1rem;" onclick="scrollToSec('rewards-section'); document.getElementById('mobile-menu').classList.remove('open')">刷卡回饋</button>
+      <button style="color: var(--t1); font-family: var(--font-serif); font-size: 1.8rem; font-weight: 800; text-align: left; border-bottom: 1px solid var(--bdr); padding-bottom: 1rem;" onclick="scrollToSec('faq-section'); document.getElementById('mobile-menu').classList.remove('open')">常見問題</button>
+    </div>
+    <div style="margin-top: auto;">
+      <button class="glow-btn full" style="padding: 16px; font-size: 1.2rem;" onclick="trackAndGo('https://applydawho.sinopac.com/OpenAccount/OpenAccount/WhichOne?', 'Click_Nav_Mobile_Account')">立即開戶</button>
+    </div>
+  </div>
+
+  <main>
+  <!-- ================= Hero ================= -->
+  <section id="hero" style="position: relative; min-height: 100vh; background: var(--bg); display: flex; align-items: center; justify-content: center; padding: 140px 20px 100px; overflow: hidden;">
+    <div style="position: absolute; top: 20%; left: 50%; transform: translate(-50%, -50%); width: 80vw; height: 80vw; background: radial-gradient(circle, rgba(201,169,110,0.15) 0%, transparent 60%); filter: blur(60px); pointer-events: none; z-index: 1;"></div>
+    <div style="position: absolute; bottom: -10%; left: -10%; width: 50vw; height: 50vw; background: radial-gradient(circle, rgba(244,160,160,0.1) 0%, transparent 60%); filter: blur(80px); pointer-events: none; z-index: 1;"></div>
+
+    <div class="glass-panel hero-panel animate-on-scroll" style="position: relative; z-index: 3; text-align: center; padding: 4rem 3rem; border-radius: 24px; max-width: 1100px; width: 95%;">
+      <div style="font-size: 0.85rem; color: var(--gold); letter-spacing: 6px; margin-bottom: 16px; text-transform: uppercase; font-weight: 800;">Study Abroad</div>
+      
+      <!-- 優化：標題使用 Flex 排版使其並排 -->
+      <h1 style="font-family: var(--font-serif); font-size: clamp(2.5rem,6vw,4.5rem); font-weight: 900; color: var(--t1); line-height: 1.3; margin: 0; text-shadow: 0 10px 40px rgba(0,0,0,0.8); letter-spacing: 2px; display: flex; flex-wrap: wrap; justify-content: center; gap: 4px;">
+        <span>大戶留學．</span>
+        <span>海外生活<span class="text-gradient">神備援</span></span>
+      </h1>
+      
+      <!-- 優化：副標精簡化 -->
+      <p style="font-size: 1.15rem; color: var(--t2); margin: 1.5rem 0 3rem; letter-spacing: 1.5px; font-weight: 600;">
+        學費匯款、日常消費、緊急金援——一個帳戶、三張卡，全搞定
+      </p>
+
+      <div class="stat-grid" style="display: flex; gap: 2.5rem; flex-wrap: wrap; justify-content: center; margin-bottom: 3.5rem;">
+        <div class="stat-item hover-card" style="flex: 1 1 240px; max-width: 320px; position: relative; background: rgba(0,0,0,0.4); border: 1px solid var(--glass-bdr); border-radius: 20px; padding: 2rem 1.5rem; cursor: pointer;" onclick="goToCalc()">
+          <div style="font-size: 0.8rem; color: var(--gold-l); background: rgba(255,255,255,0.1); padding: 4px 12px; border-radius: 20px; letter-spacing: 1px; margin-bottom: 16px; font-weight: 800; display: inline-block;">出國前</div>
+          <div class="hover-icon" style="width: 54px; height: 54px; border-radius: 50%; margin: 0 auto 1rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(201,169,110,0.3); display: flex; align-items: center; justify-content: center;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--gold-l)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </div>
+          <h4 style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 800; margin: 0 0 10px;"><span style="color: var(--gold); margin-right: 6px;">1.</span>精準換匯</h4>
+          <p style="font-size: 0.95rem; color: var(--t3); line-height: 1.6;">大戶換匯減分，繳大筆學費省最多</p>
+          <div class="desktop-br" style="position: absolute; right: -1.5rem; top: 50%; transform: translateY(-50%); color: var(--gold); font-size: 2rem; font-weight: bold; z-index: 10; animation: arrowPulse 2s infinite ease-in-out;">→</div>
+        </div>
+        <div class="stat-item hover-card" style="flex: 1 1 240px; max-width: 320px; position: relative; background: rgba(0,0,0,0.4); border: 1px solid var(--glass-bdr); border-radius: 20px; padding: 2rem 1.5rem; cursor: pointer;" onclick="scrollToSec('dual-card-section')">
+          <div style="font-size: 0.8rem; color: var(--gold-l); background: rgba(255,255,255,0.1); padding: 4px 12px; border-radius: 20px; letter-spacing: 1px; margin-bottom: 16px; font-weight: 800; display: inline-block;">剛落地</div>
+          <div class="hover-icon" style="width: 54px; height: 54px; border-radius: 50%; margin: 0 auto 1rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(201,169,110,0.3); display: flex; align-items: center; justify-content: center;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--gold-l)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          </div>
+          <h4 style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 800; margin: 0 0 10px;"><span style="color: var(--gold); margin-right: 6px;">2.</span>無腦刷卡</h4>
+          <p style="font-size: 0.95rem; color: var(--t3); line-height: 1.6;">刷卡配置，海外生活費直扣免手續費</p>
+          <div class="desktop-br" style="position: absolute; right: -1.5rem; top: 50%; transform: translateY(-50%); color: var(--gold); font-size: 2rem; font-weight: bold; z-index: 10; animation: arrowPulse 2s infinite ease-in-out;">→</div>
+        </div>
+        <div class="stat-item hover-card" style="flex: 1 1 240px; max-width: 320px; position: relative; background: linear-gradient(135deg, var(--gold-l), var(--gold-d)); border: 1px solid transparent; border-radius: 20px; padding: 2rem 1.5rem; box-shadow: 0 15px 40px rgba(201,169,110,0.4); color: #000; cursor: pointer;" onclick="scrollToSec('speed-remit-section')">
+          <div style="font-size: 0.8rem; color: #000; background: rgba(255,255,255,0.3); padding: 4px 12px; border-radius: 20px; letter-spacing: 1px; margin-bottom: 16px; font-weight: 800; display: inline-block;">就學中</div>
+          <div class="hover-icon" style="width: 54px; height: 54px; border-radius: 50%; margin: 0 auto 1rem; background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.5); display: flex; align-items: center; justify-content: center;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="#000" stroke="none"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h4 style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 800; margin: 0 0 10px;"><span style="color: #333; margin-right: 6px;">3.</span>極速金援</h4>
+          <p style="font-size: 0.95rem; color: #222; line-height: 1.6; font-weight: 600;">大戶速匯 58 秒到帳，家長匯款不斷線</p>
+        </div>
+      </div>
+
+      <div class="btn-group" style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+        <button class="outline-btn" onclick="trackAndGo('https://applydawho.sinopac.com/OpenAccount/OpenAccount/WhichOne?', 'Click_Hero_Account')">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11m16-11v11"/></svg>
+          立即開戶準備
+        </button>
+        <button class="glow-btn" onclick="scrollToSec('journey-section')">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          探索留學攻略
+        </button>
+      </div>
+    </div>
+    <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 150px; background: linear-gradient(to top,var(--bg),transparent); z-index: 4; pointer-events: none;"></div>
+  </section>
+
+  <!-- ================= 大虎過場 ================= -->
+  <div class="animate-on-scroll" style="width: 100%; background: var(--bg); display: flex; justify-content: center; padding: 6rem 0 4rem; position: relative; z-index: 5;">
+    <div style="position: relative; display: inline-flex; flex-direction: column; align-items: center; animation: float 3s ease-in-out infinite 1s;">
+      <div style="position: absolute; top: -45px; left: 50%; transform: translateX(-50%); background: rgba(255,255,255,0.95); border-radius: 16px; padding: 8px 14px; white-space: nowrap; box-shadow: 0 8px 24px rgba(0,0,0,0.2); z-index: 2; font-size: 0.8rem; color: #3a3020; font-weight: 700; animation: float 3s ease-in-out infinite;">
+        準備好出國留學了嗎！
+        <div style="position: absolute; bottom: -6px; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent; border-top: 6px solid rgba(255,255,255,0.95);"></div>
+      </div>
+      <img src="./images/tiger-sprite.gif" onerror="this.onerror=null; this.src='https://dawho.tw/hot/2026h1offer/images/tiger-sprite.gif';" alt="DAWHO 大虎" width="220" height="220" style="object-fit: contain; filter: drop-shadow(0 10px 15px rgba(0,0,0,0.3));" loading="lazy">
+    </div>
+  </div>
+
+  <!-- ================= Journey Section (Tabs) ================= -->
+  <section id="journey-section" style="position: relative; padding: 6rem 2rem; background: var(--bg);">
+    <div style="text-align: center; margin-bottom: 2rem;">
+      <h2 style="font-family: var(--font-serif); font-size: clamp(2.2rem, 6vw, 3.5rem); font-weight: 900; margin: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 4px;">
+        <span>成長航路：</span>
+        <span>海外生活<span class="text-gradient">支援站</span></span>
+      </h2>
+      <p style="font-size: 1.15rem; color: var(--t2); margin-top: 16px; font-weight: 600;">留學、交換、遊學，DAWHO 陪你安心探索世界</p>
+    </div>
+
+    <!-- Role Selector -->
+    <div style="display: flex; justify-content: center; gap: 12px; margin-bottom: 3rem; flex-wrap: wrap;" id="role-buttons">
+      <button class="role-btn active" onclick="selectRole('student')">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        長期留學
+      </button>
+      <button class="role-btn" onclick="selectRole('shortterm')">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        短期遊學交換
+      </button>
+      <button class="role-btn" onclick="selectRole('parent')">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        我是家長
+      </button>
+    </div>
+
+    <!-- Step Timeline -->
+    <div style="display: flex; justify-content: center; max-width: 800px; margin: 0 auto 3rem; position: relative;" id="step-timeline">
+      <div style="position: absolute; top: 26px; left: 15%; right: 15%; height: 2px; background: linear-gradient(90deg, var(--bdr), rgba(201,169,110,0.4), var(--bdr)); z-index: 0;"></div>
+    </div>
+
+    <!-- Dynamic Content -->
+    <div id="journey-content-container" style="max-width: 1000px; margin: 0 auto;"></div>
+  </section>
+
+  <!-- ================= FIDO 專區 ================= -->
+  <section class="animate-on-scroll" style="position: relative; padding: 6rem 2rem; background: var(--bg);">
+    <div class="glass-panel hover-card" style="max-width: 960px; margin: 0 auto; border-radius: 30px; padding: 4rem 3rem; display: flex; align-items: center; gap: 5rem; flex-wrap: wrap; justify-content: center;">
+      <div style="flex: 1 1 400px; max-width: 500px;">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 16px; flex-wrap: wrap;">
+          <span style="padding: 4px 12px; background: linear-gradient(135deg,var(--gold),var(--gold-d)); border-radius: 50px; font-size: 0.85rem; color: #000; font-weight: 800;">留學生海外驗證救星</span>
+        </div>
+        <h2 style="font-family: var(--font-serif); font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 800; margin: 0 0 16px; line-height: 1.4;">告別收不到簡訊的窘境<br/>海外網購免驗證碼 ✈️</h2>
+        <p style="font-size: 1.05rem; color: var(--t2); line-height: 1.8; margin-bottom: 2.5rem;">
+          換了當地SIM卡收不到台灣OTP？DAWHO APP 內建 FIDO 驗證，只需手機與實體金融卡感應，宿舍網購、訂教科書都順暢
+        </p>
+        <div style="display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
+          <div style="flex: 1; background: rgba(255,255,255,0.05); border-radius: 12px; padding: 1rem; border: 1px solid var(--bdr); min-width: 140px;">
+            <span style="font-size: 0.8rem; color: var(--gold); font-weight: 700;">Step 1</span>
+            <div style="font-size: 1rem; font-weight: 700; margin: 4px 0;">輸入專屬密碼</div>
+            <div style="font-size: 0.85rem; color: var(--t3);">FIDO 固定密碼</div>
+          </div>
+          <div style="flex: 1; background: rgba(255,255,255,0.05); border-radius: 12px; padding: 1rem; border: 1px solid var(--bdr); min-width: 140px;">
+            <span style="font-size: 0.8rem; color: var(--gold); font-weight: 700;">Step 2</span>
+            <div style="font-size: 1rem; font-weight: 700; margin: 4px 0;">NFC 靠卡感應</div>
+            <div style="font-size: 0.85rem; color: var(--t3);">實體卡貼近手機</div>
+          </div>
+        </div>
+        <button class="outline-btn" onclick="trackAndGo('https://bank.sinopac.com/sinopacBT/webevents/dawhofidocard/', 'Click_FIDO')">了解更多 FIDO 驗證 ➔</button>
+      </div>
+      <div class="fido-phone-mockup" style="flex: 0 0 200px; display: flex; flex-direction: column; align-items: center; position: relative; margin-top: 1rem;">
+        <div style="width: 140px; height: 280px; border-radius: 24px; background: #111; padding: 6px; border: 2px solid #333; box-shadow: 0 20px 50px rgba(0,0,0,0.8); position: relative;">
+          <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%; border-radius: 24px; border: 2px solid var(--gold); opacity: 0; animation: nfcPulse 2s infinite;"></div>
+          <div style="width: 100%; height: 100%; border-radius: 18px; background: linear-gradient(180deg, #1a1a2e, #0d0d1a); display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; z-index: 2;">
+            <img src="./images/tiger-sprite.gif" onerror="this.onerror=null; this.src='https://dawho.tw/hot/2026h1offer/images/tiger-sprite.gif';" alt="Tiger" style="width: 70px; height: auto;" loading="lazy">
+            <div style="font-size: 0.85rem; color: var(--gold-l); margin-top: 10px; letter-spacing: 2px;">DAWHO</div>
+          </div>
+        </div>
+        <div style="padding: 8px 20px; background: var(--gold); border-radius: 20px; color: #000; font-size: 0.9rem; font-weight: 800; margin-top: -15px; z-index: 3;">NFC 感應中</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 刷卡配置 ================= -->
+  <section id="dual-card-section" class="animate-on-scroll" style="padding: 6rem 2rem; background: var(--bg);">
+    <div style="text-align: center; margin-bottom: 4rem;">
+      <div style="font-size: 0.85rem; color: var(--gold); letter-spacing: 4px; margin-bottom: 12px; text-transform: uppercase; font-weight: 800;">Smart Payments</div>
+      <!-- 優化行銷標題 -->
+      <h2 style="font-family: var(--font-serif); font-size: clamp(2rem, 5vw, 2.8rem); font-weight: 900; line-height: 1.4; margin: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 4px;">
+        <span>一個帳戶，</span><span class="text-gradient">三張卡出國</span>
+      </h2>
+      <h3 style="font-family: var(--font-serif); font-size: clamp(1.4rem, 3.5vw, 1.8rem); font-weight: 800; color: var(--t1); margin: 8px 0 0;">大額刷信用卡、小額扣 Debit、學生身分用 ISIC</h3>
+      <p style="font-size: 1rem; color: var(--t2); margin-top: 12px; font-weight: 600;">每張卡各司其職，讓你海外消費零死角、手續費省到底</p>
+    </div>
+    <div class="grid-responsive-3" style="max-width: 1200px; margin: 0 auto; gap: 1.5rem;">
+      <!-- 卡片 1 (信用卡) -->
+      <div class="glass-panel hover-card flex-col-equal" style="border-radius: 24px; padding: 3rem 2rem; background: linear-gradient(135deg, rgba(201,169,110,0.1), rgba(0,0,0,0.6)); border: 1px solid var(--glass-bdr); align-items: center; text-align: center;">
+        <div style="background: rgba(0,0,0,0.5); padding: 6px 18px; border-radius: 20px; color: var(--gold); font-size: 0.9rem; font-weight: 800; margin-bottom: 2rem; border: 1px solid rgba(201,169,110,0.33);">海外高額主力</div>
+        <div class="hover-icon" style="height: 180px; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem;">
+          <img src="./images/card_bibei.png" onerror="this.onerror=null; this.src='https://bank.sinopac.com/upload/sinopac/picture/197b103f02e000003a66.png';" alt="幣倍卡" style="max-height: 100%; max-width: 80%; object-fit: contain; filter: drop-shadow(0 15px 25px rgba(0,0,0,0.6));" loading="lazy" />
+        </div>
+        <h4 style="font-family: var(--font-serif); font-size: 1.8rem; font-weight: 800; margin: 0 0 1.5rem;">幣倍卡（信用卡）</h4>
+        <div class="flex-grow-content" style="display: flex; flex-direction: column; gap: 12px; width: 100%; padding: 0 1rem; text-align: left;">
+          <div style="display: flex; align-items: flex-start; gap: 10px; color: var(--t2); font-size: 1.05rem;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" style="flex-shrink:0;margin-top:3px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span>訂房、買機票、付學費首選</span></div>
+          <div style="display: flex; align-items: flex-start; gap: 10px; color: var(--t2); font-size: 1.05rem;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" style="flex-shrink:0;margin-top:3px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span>國外最高 6% 現金回饋</span></div>
+          <div style="display: flex; align-items: flex-start; gap: 10px; color: var(--t2); font-size: 1.05rem;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" style="flex-shrink:0;margin-top:3px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span>折抵下次帳單最有感</span></div>
+          
+          <button class="outline-btn" style="margin-top: auto; width: 100%; padding: 0.7rem 1.2rem; font-size: 0.95rem; border-radius: 12px;" onclick="trackAndGo('https://bank.sinopac.com/sinopacBT/webevents/2003_dualcc/index.html?Branch=bankpage', 'Click_DualCard_Bibei')">立即申辦幣倍卡 ➔</button>
+        </div>
+      </div>
+
+      <!-- 卡片 2 (Debit 卡) -->
+      <div class="glass-panel hover-card flex-col-equal" style="border-radius: 24px; padding: 3rem 2rem; background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(0,0,0,0.6)); border: 1px solid var(--glass-bdr); align-items: center; text-align: center;">
+        <div style="background: rgba(0,0,0,0.5); padding: 6px 18px; border-radius: 20px; color: #d1d5db; font-size: 0.9rem; font-weight: 800; margin-bottom: 2rem; border: 1px solid rgba(209,213,219,0.33);">日常小額必備</div>
+        <div class="hover-icon" style="height: 180px; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem;">
+          <img src="./images/card_debit.png" onerror="this.onerror=null; this.src='https://dawho.tw/hot/2026h1-dawho-plus/images/benefits/img_debit-card.png';" alt="多幣 Debit 卡" style="max-height: 100%; max-width: 80%; object-fit: contain; filter: drop-shadow(0 15px 25px rgba(0,0,0,0.6));" loading="lazy" />
+        </div>
+        <h4 style="font-family: var(--font-serif); font-size: 1.8rem; font-weight: 800; margin: 0 0 1.5rem;">多幣 Debit 卡</h4>
+        <div class="flex-grow-content" style="display: flex; flex-direction: column; gap: 12px; width: 100%; padding: 0 1rem; text-align: left;">
+          <div style="display: flex; align-items: flex-start; gap: 10px; color: var(--t2); font-size: 1.05rem;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d1d5db" stroke-width="2" style="flex-shrink:0;margin-top:3px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span>超市、交通、日常小額直扣</span></div>
+          <div style="display: flex; align-items: flex-start; gap: 10px; color: var(--t2); font-size: 1.05rem;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d1d5db" stroke-width="2" style="flex-shrink:0;margin-top:3px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span>12幣別直扣免 1.5% 手續費</span></div>
+          <div style="display: flex; align-items: flex-start; gap: 10px; color: var(--t2); font-size: 1.05rem;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d1d5db" stroke-width="2" style="flex-shrink:0;margin-top:3px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span>帳戶有多少刷多少，控管預算</span></div>
+          
+          <button class="outline-btn" style="margin-top: auto; width: 100%; padding: 0.7rem 1.2rem; font-size: 0.95rem; border-radius: 12px; color: #d1d5db; border-color: rgba(209,213,219,0.5);" onclick="trackAndGo('https://applydawho.sinopac.com/OpenAccount/OpenAccount/WhichOne?', 'Click_DualCard_Debit')">立即開戶領卡 ➔</button>
+        </div>
+      </div>
+
+      <!-- 卡片 3 (ISIC 國際學生證 Debit 卡) -> 已優化為與另外兩張相同的版型與視覺 -->
+      <div class="glass-panel hover-card flex-col-equal" style="border-radius: 24px; padding: 3rem 2rem; background: linear-gradient(135deg, rgba(66, 165, 245, 0.08), rgba(0,0,0,0.6)); border: 1px solid rgba(66, 165, 245, 0.2); align-items: center; text-align: center;">
+        <div style="background: rgba(0,0,0,0.5); padding: 6px 18px; border-radius: 20px; color: #90CAF9; font-size: 0.9rem; font-weight: 800; margin-bottom: 2rem; border: 1px solid rgba(144, 202, 249, 0.33);">身分證明 × 金融一卡通</div>
+        <div class="hover-icon" style="height: 180px; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem;">
+          <img src="./images/card_isic.png" onerror="this.onerror=null; this.src='./images/19b0b1fa05a00000b074.png';" alt="ISIC 國際學生證 Debit 卡" style="max-height: 100%; max-width: 85%; object-fit: contain; filter: drop-shadow(0 15px 30px rgba(30,136,229,0.4)) drop-shadow(0 5px 15px rgba(0,0,0,0.5)); border-radius: 10px;" loading="lazy" />
+        </div>
+        <h4 style="font-family: var(--font-serif); font-size: 1.8rem; font-weight: 800; margin: 0 0 1.5rem;">ISIC 國際學生證卡</h4>
+        <div class="flex-grow-content" style="display: flex; flex-direction: column; gap: 12px; width: 100%; padding: 0 1rem; text-align: left;">
+          <div style="display: flex; align-items: flex-start; gap: 10px; color: var(--t2); font-size: 1.05rem;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#90CAF9" stroke-width="2" style="flex-shrink:0;margin-top:3px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span><strong style="color:#90CAF9;">國外 2%</strong> 現金回饋（高於一般 Debit）</span></div>
+          <div style="display: flex; align-items: flex-start; gap: 10px; color: var(--t2); font-size: 1.05rem;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#90CAF9" stroke-width="2" style="flex-shrink:0;margin-top:3px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span>全球 <strong style="color:#90CAF9;">130國 15萬項</strong> 專屬特店優惠</span></div>
+          <div style="display: flex; align-items: flex-start; gap: 10px; color: var(--t2); font-size: 1.05rem;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#90CAF9" stroke-width="2" style="flex-shrink:0;margin-top:3px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span>學生證＋Debit＋多幣＋悠遊卡 四合一</span></div>
+          <div style="display: flex; align-items: flex-start; gap: 10px; color: var(--t2); font-size: 1.05rem;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#90CAF9" stroke-width="2" style="flex-shrink:0;margin-top:3px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span>海外提款手續費每月最高補貼 $300</span></div>
+          
+          <button class="outline-btn" style="margin-top: auto; width: 100%; padding: 0.7rem 1.2rem; font-size: 0.95rem; border-radius: 12px; color: #90CAF9; border-color: rgba(144, 202, 249, 0.5);" onclick="trackAndGo('https://bank.sinopac.com/sinopacBT/personal/credit-card/introduction/debit/ISIC-Debit-Card.html', 'Click_TriCard_ISIC')">了解 ISIC 學生證卡 ➔</button>
+        </div>
+      </div>
+    </div>
+    <!-- 學生證法遵備註 -->
+    <div style="text-align: center; margin-top: 3rem; font-size: 0.9rem; color: var(--t3); opacity: 0.8;">※ 註：ISIC 國際學生證卡為全日制學生專屬申辦，詳細資格請參閱官網說明。</div>
+  </section>
+
+  <!-- ================= 大戶速匯 ================= -->
+  <section id="speed-remit-section" class="animate-on-scroll" style="position: relative; padding: 6rem 2rem; overflow: hidden; background: linear-gradient(135deg,#120f0a,#1a150d,var(--bg));">
+    <div class="glass-panel hover-card" style="max-width: 960px; margin: 0 auto; padding: 4rem; border-radius: 30px; position: relative; z-index: 1; text-align: center; border: 1px solid var(--gold-d);">
+      <div style="font-size: 1.1rem; color: var(--gold); letter-spacing: 4px; margin-bottom: 16px; font-weight: 700;">Speed Remittance</div>
+      <h2 style="font-family: var(--font-serif); font-size: clamp(2rem,5vw,3rem); font-weight: 900; line-height: 1.3; margin: 0 0 20px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px;">
+        <span>家人的愛，</span>
+        <span><span class="text-gradient">58秒</span>全額抵達</span>
+      </h2>
+      <p style="font-size: 1.15rem; color: var(--t2); max-width: 600px; margin: 0 auto 3rem; line-height: 1.8;">傳統匯款等 3-5 天。大戶速匯最快 58 秒到帳，手續費僅 NT$130，電話還沒掛生活費已入帳</p>
+      <div class="grid-responsive-3" style="margin: 0 auto 3rem; max-width: 800px;">
+        <div class="stat-item hover-card" style="background: rgba(0,0,0,0.5); padding: 1.5rem; border-radius: 16px; border: 1px solid rgba(201,169,110,0.3);">
+          <div style="font-family: var(--font-serif); font-size: 2.5rem; font-weight: 900; color: var(--gold-l); margin-bottom: 6px;">58<span style="font-size: 1rem;">秒</span></div>
+          <div style="font-size: 0.95rem; color: var(--t2);">最快到帳時間</div>
+        </div>
+        <div class="stat-item hover-card" style="background: rgba(0,0,0,0.5); padding: 1.5rem; border-radius: 16px; border: 1px solid rgba(201,169,110,0.3);">
+          <div style="font-family: var(--font-serif); font-size: 2.5rem; font-weight: 900; color: var(--gold-l);">$130</div>
+          <div style="font-size: 0.95rem; color: var(--t2);">全額匯出手續費</div>
+        </div>
+        <div class="stat-item hover-card" style="background: rgba(0,0,0,0.5); padding: 1.5rem; border-radius: 16px; border: 1px solid rgba(201,169,110,0.3);">
+          <div style="font-family: var(--font-serif); font-size: 2.5rem; font-weight: 900; color: var(--gold-l);">24H</div>
+          <div style="font-size: 0.95rem; color: var(--t2);">APP 隨時操作</div>
+        </div>
+      </div>
+      <button class="glow-btn" onclick="trackAndGo('https://dawho.tw/about/remit/', 'Click_SpeedRemit')">了解大戶速匯 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
+    </div>
+  </section>
+
+  <!-- ================= 專屬回饋 ================= -->
+  <section id="rewards-section" style="position: relative; padding: 6rem 2rem; background: radial-gradient(circle at 50% 100%, #1a1a24 0%, var(--bg) 80%);">
+    <div class="glass-panel animate-on-scroll" style="position: relative; z-index: 3; text-align: center; padding: 4rem 3rem; border-radius: 24px; max-width: 1000px; margin: 0 auto 6rem;">
+      <div style="display: inline-flex; align-items: center; gap: 10px; padding: 8px 20px; background: rgba(0,0,0,0.6); border: 1px solid rgba(201,169,110,0.33); border-radius: 50px; margin-bottom: 2.5rem;">
+        <span style="width: 8px; height: 8px; border-radius: 50%; background: var(--gold-l); box-shadow: 0 0 12px var(--gold-l);"></span>
+        <span style="font-size: 0.9rem; letter-spacing: 2px; font-weight: 700;">限時專屬加碼</span>
+      </div>
+      <h2 style="font-family: var(--font-serif); font-size: clamp(2.5rem,7vw,4.5rem); font-weight: 900; line-height: 1.3; margin: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px;">
+        <span>海外消費<span class="text-gradient">幣倍</span>，</span>
+        <span>現金回饋<span style="color: var(--cherry);">翻倍</span></span>
+      </h2>
+      <p style="font-size: 1.2rem; color: var(--t2); margin: 1.8rem 0 1rem; letter-spacing: 3px; font-weight: 600;">國外實體 ｜ 網購消費 ｜ 生活通路</p>
+      <p style="font-size: 0.8rem; color: var(--t3); margin: 0 0 3rem; opacity: 0.7;">活動期間與回饋上限依各期公告為準，詳情請見活動頁面</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center;">
+        <div class="stat-item hover-card flex-col-equal" style="flex: 1 1 200px; max-width: 280px; text-align: center; padding: 2rem 1.5rem; background: rgba(0,0,0,0.4); border-radius: 16px; border: 1px solid var(--glass-bdr);">
+          <div style="display: flex; align-items: center; justify-content: center; gap: 6px; margin-bottom: 12px;"><span style="font-size: 1rem; color: var(--t3); font-weight: 600;">國外</span><span style="background: rgba(253,251,247,0.12); color: var(--t1); font-size: 0.8rem; padding: 4px 12px; border-radius: 4px; font-weight: 800;">最高</span></div>
+          <div style="font-family: var(--font-serif); font-size: 4.5rem; font-weight: 900; color: var(--t1); line-height: 1;">6<span style="font-size: 2rem;">%</span></div>
+          <div style="font-size: 0.78rem; color: var(--t3); margin-top: auto; padding-top: 10px; line-height: 1.5; opacity: 0.8;">基本2%＋精選通路加碼4%<br/>精選通路回饋每月有上限</div>
+        </div>
+        <div class="stat-item hover-card flex-col-equal" style="flex: 1 1 200px; max-width: 280px; text-align: center; padding: 2rem 1.5rem; background: rgba(0,0,0,0.4); border-radius: 16px; border: 1px solid var(--glass-bdr);">
+          <div style="display: flex; align-items: center; justify-content: center; gap: 6px; margin-bottom: 12px;"><span style="font-size: 1rem; color: var(--t3); font-weight: 600;">新戶</span><span style="background: rgba(244,160,160,0.12); color: var(--cherry); font-size: 0.8rem; padding: 4px 12px; border-radius: 4px; font-weight: 800;">最高</span></div>
+          <div style="font-family: var(--font-serif); font-size: 4.5rem; font-weight: 900; color: var(--cherry); line-height: 1;">10<span style="font-size: 2rem;">%</span></div>
+          <div style="font-size: 0.78rem; color: var(--t3); margin-top: auto; padding-top: 10px; line-height: 1.5; opacity: 0.8;">核卡45天內國外實體消費<br/>基本2%＋精選4%＋新戶4%</div>
+        </div>
+        <div class="stat-item hover-card flex-col-equal" style="flex: 1 1 200px; max-width: 280px; text-align: center; padding: 2rem 1.5rem; background: rgba(0,0,0,0.4); border-radius: 16px; border: 1px solid var(--glass-bdr);">
+          <div style="display: flex; align-items: center; justify-content: center; gap: 6px; margin-bottom: 12px;"><span style="font-size: 1rem; color: var(--t3); font-weight: 600;">生態系</span><span style="background: rgba(201,169,110,0.12); color: var(--gold); font-size: 0.8rem; padding: 4px 12px; border-radius: 4px; font-weight: 800;">最高</span></div>
+          <div style="font-family: var(--font-serif); font-size: 4.5rem; font-weight: 900; color: var(--gold); line-height: 1;">20<span style="font-size: 2rem;">%</span></div>
+          <div style="font-size: 0.78rem; color: var(--t3); margin-top: auto; padding-top: 10px; line-height: 1.5; opacity: 0.8;">限大戶DAWHO生態系指定通路<br/>需符合活動條件</div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 1.5rem;">
+        <p style="font-size: 0.75rem; color: var(--t3); opacity: 0.6; line-height: 1.6;">※ 各級回饋皆有每月/活動期間回饋上限，實際回饋依持卡等級與消費類型而異。詳細條件請參閱 <a href="https://dawho.tw/hot/blog/dual-currency-card/" target="_blank" rel="noreferrer" style="color: var(--gold-d); text-decoration: underline;">幣倍卡權益說明</a></p>
+      </div>
+    </div>
+
+    <!-- Cashback Details -->
+    <div class="animate-on-scroll" style="text-align: center; margin-bottom: 3rem;">
+      <div style="font-size: 0.85rem; color: var(--gold); letter-spacing: 6px; margin-bottom: 10px; text-transform: uppercase; font-weight: 800;">Cashback Details</div>
+      <h3 style="font-family: var(--font-serif); font-size: clamp(1.8rem,4.5vw,2.5rem); font-weight: 900;">新戶最高 <span class="text-gradient">10%</span> 現金回饋</h3>
+      <p style="font-size: 1.15rem; color: var(--t2); font-weight: 600; max-width: 650px; margin: 1.2rem auto 0;">懂回饋的信用卡，留學生活每筆消費都精打細算</p>
+    </div>
+    <div class="grid-responsive-3" style="max-width: 1050px; margin: 0 auto;">
+      <div class="glass-panel hover-card stat-item flex-col-equal animate-on-scroll" style="max-width: 320px; width: 100%; border-radius: 24px; padding: 2.5rem 1.8rem; margin: 0 auto;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.8rem;">
+          <div style="background: #555; color: #fff; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 700;">全民回饋</div>
+        </div>
+        <div style="font-size: 1.1rem; color: var(--t2); margin-bottom: 6px; font-weight: 700;">基本回饋</div>
+        <div style="font-family: var(--font-serif); font-size: 3.2rem; font-weight: 900; color: var(--gold);">2%</div>
+        <div style="font-size: 0.95rem; color: var(--t3); line-height: 1.8; margin-top: auto; padding-top: 14px;">回饋無上限<br/>國內1%、國外2%</div>
+      </div>
+      <div class="glass-panel hover-card stat-item flex-col-equal animate-on-scroll animate-delay-1" style="max-width: 320px; width: 100%; border-radius: 24px; padding: 2.5rem 1.8rem; margin: 0 auto;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.8rem;">
+          <div style="background: var(--gold-d); color: #fff; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 700;">幣倍加碼</div>
+        </div>
+        <div style="font-size: 1.1rem; color: var(--t2); margin-bottom: 6px; font-weight: 700;">精選通路</div>
+        <div style="font-family: var(--font-serif); font-size: 3.2rem; font-weight: 900; color: var(--gold);">+4%</div>
+        <div style="font-size: 0.95rem; color: var(--t3); line-height: 1.8; margin-top: auto; padding-top: 14px;">Level 1：上限300元/月<br/>Level 2：上限800元/月</div>
+      </div>
+      <div class="glass-panel hover-card stat-item flex-col-equal animate-on-scroll animate-delay-2" style="max-width: 320px; width: 100%; border-radius: 24px; padding: 2.5rem 1.8rem; margin: 0 auto;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.8rem;">
+          <div style="background: var(--cherry); color: #fff; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 700;">新戶加碼</div>
+        </div>
+        <div style="font-size: 1.1rem; color: var(--t2); margin-bottom: 6px; font-weight: 700;">國外實體</div>
+        <div style="font-family: var(--font-serif); font-size: 3.2rem; font-weight: 900; color: var(--gold);">+4%</div>
+        <div style="font-size: 0.95rem; color: var(--t3); line-height: 1.8; margin-top: auto; padding-top: 14px;">核卡45天內，上限300元</div>
+      </div>
+    </div>
+    <div class="btn-group" style="text-align: center; margin-top: 4rem; display: flex; justify-content: center;">
+      <button class="glow-btn" onclick="trackAndGo('https://applydawho.sinopac.com/OpenAccount/OpenAccount/WhichOne?', 'Click_Rewards_Apply_Card')">立即辦卡，解鎖回饋</button>
+    </div>
+  </section>
+
+  <!-- ================= 留學理財寶典 ================= -->
+  <section class="animate-on-scroll" style="padding: 4rem 2rem 2rem; background: var(--bg);">
+    <div style="text-align: center; margin-bottom: 2.5rem;">
+      <div style="font-size: 0.85rem; color: var(--gold); letter-spacing: 4px; margin-bottom: 10px; text-transform: uppercase; font-weight: 800;">Resources</div>
+      <h2 style="font-family: var(--font-serif); font-size: clamp(1.8rem,4.5vw,2.5rem); font-weight: 900;">留學理財<span class="text-gradient">寶典</span></h2>
+      <p style="font-size: 1rem; color: var(--t2); margin-top: 12px; font-weight: 600;">出國前必讀的金融知識，點擊免費下載</p>
+    </div>
+    <div class="grid-responsive" style="max-width: 1000px; margin: 0 auto; gap: 1.2rem;">
+      <!-- ISIC 特別推薦 -->
+      <a href="https://bank.sinopac.com/sinopacBT/personal/credit-card/introduction/debit/ISIC-Debit-Card.html" target="_blank" rel="noreferrer" class="glass-panel hover-card" style="display:flex;align-items:center;gap:16px;padding:1.5rem;border-radius:16px;text-decoration:none;grid-column:1/-1;background:linear-gradient(135deg,rgba(66, 165, 245,0.1),rgba(25,25,35,0.4));border:1px solid rgba(66, 165, 245,0.25);">
+        <div style="flex-shrink:0;width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,rgba(66, 165, 245,0.3),rgba(66, 165, 245,0.1));display:flex;align-items:center;justify-content:center;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#90CAF9" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        </div>
+        <div style="flex:1;min-width:0;">
+          <div style="font-size:1.05rem;font-weight:800;color:var(--t1);">🎓 ISIC 國際學生證 Debit卡｜學生出國必辦</div>
+          <div style="font-size:0.85rem;color:var(--t3);margin-top:4px;">學生專屬｜國際學生證＋Debit卡四合一，國外2%回饋、全球130國15萬項優惠</div>
+        </div>
+        <span style="flex-shrink:0;padding:5px 14px;background:rgba(66, 165, 245,0.2);border:1px solid rgba(66, 165, 245,0.3);border-radius:20px;color:#90CAF9;font-weight:700;font-size:0.85rem;white-space:nowrap;">了解申辦 →</span>
+      </a>
+      <a href="https://bank.sinopac.com/upload/sinopac/fileResources/198cfde6063000009412.pdf" target="_blank" rel="noreferrer" class="glass-panel hover-card" style="display:flex;align-items:center;gap:16px;padding:1.5rem;border-radius:16px;text-decoration:none;">
+        <div style="flex-shrink:0;width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,rgba(201,169,110,0.2),rgba(201,169,110,0.05));display:flex;align-items:center;justify-content:center;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+        </div>
+        <div style="flex:1;min-width:0;">
+          <div style="font-size:1.05rem;font-weight:800;color:var(--t1);">出國前必備 DAWHO Debit卡的5大理由</div>
+          <div style="font-size:0.85rem;color:var(--t3);margin-top:4px;">學生視角｜多幣直扣、免手續費、海外提款一次搞懂</div>
+        </div>
+        <span style="flex-shrink:0;color:var(--gold);font-weight:700;font-size:0.9rem;">閱讀 →</span>
+      </a>
+      <a href="https://bank.sinopac.com/upload/sinopac/fileResources/198cfec7c7900000a65a.pdf" target="_blank" rel="noreferrer" class="glass-panel hover-card" style="display:flex;align-items:center;gap:16px;padding:1.5rem;border-radius:16px;text-decoration:none;">
+        <div style="flex-shrink:0;width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,rgba(244,160,160,0.2),rgba(244,160,160,0.05));display:flex;align-items:center;justify-content:center;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--cherry)" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <div style="flex:1;min-width:0;">
+          <div style="font-size:1.05rem;font-weight:800;color:var(--t1);">留遊學4大用錢挑戰 省錢秘辛大公開</div>
+          <div style="font-size:0.85rem;color:var(--t3);margin-top:4px;">家長視角｜換匯時機、生活費管理、緊急預備金策略</div>
+        </div>
+        <span style="flex-shrink:0;color:var(--cherry);font-weight:700;font-size:0.9rem;">閱讀 →</span>
+      </a>
+      <a href="https://bank.sinopac.com/upload/sinopac/fileResources/198cfed0404000004fb7.pdf" target="_blank" rel="noreferrer" class="glass-panel hover-card" style="display:flex;align-items:center;gap:16px;padding:1.5rem;border-radius:16px;text-decoration:none;">
+        <div style="flex-shrink:0;width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,rgba(201,169,110,0.2),rgba(201,169,110,0.05));display:flex;align-items:center;justify-content:center;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div style="flex:1;min-width:0;">
+          <div style="font-size:1.05rem;font-weight:800;color:var(--t1);">為孩子贏在人生起跑點：大學新生家長理財指南</div>
+          <div style="font-size:0.85rem;color:var(--t3);margin-top:4px;">家長視角｜教育金規劃、親子帳戶、長期理財布局</div>
+        </div>
+        <span style="flex-shrink:0;color:var(--gold);font-weight:700;font-size:0.9rem;">閱讀 →</span>
+      </a>
+      <a href="https://bank.sinopac.com/upload/sinopac/fileResources/198cfed4b350000095be.pdf" target="_blank" rel="noreferrer" class="glass-panel hover-card" style="display:flex;align-items:center;gap:16px;padding:1.5rem;border-radius:16px;text-decoration:none;">
+        <div style="flex-shrink:0;width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,rgba(244,160,160,0.2),rgba(244,160,160,0.05));display:flex;align-items:center;justify-content:center;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--cherry)" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        </div>
+        <div style="flex:1;min-width:0;">
+          <div style="font-size:1.05rem;font-weight:800;color:var(--t1);">錢進未來 3件必學的理財事</div>
+          <div style="font-size:0.85rem;color:var(--t3);margin-top:4px;">學生視角｜存錢心法、投資入門、信用建立指南</div>
+        </div>
+        <span style="flex-shrink:0;color:var(--cherry);font-weight:700;font-size:0.9rem;">閱讀 →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= Social Proof ================= -->
+  <section class="animate-on-scroll" style="padding: 3rem 2rem 1rem; background: var(--bg);">
+    <div style="max-width: 900px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; align-items: center;">
+      <div style="display: flex; align-items: center; gap: 12px; padding: 1.2rem 2rem; background: linear-gradient(135deg, rgba(201,169,110,0.08), rgba(201,169,110,0.02)); border: 1px solid rgba(201,169,110,0.2); border-radius: 16px; flex: 1 1 300px; max-width: 420px;">
+        <div style="width: 48px; height: 48px; border-radius: 50%; background: linear-gradient(135deg, var(--gold), var(--gold-d)); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div>
+          <div style="display: flex; align-items: baseline; gap: 4px;">
+            <span id="social-proof-count" style="font-family: var(--font-serif); font-size: 2.2rem; font-weight: 900; color: var(--gold-l);">0</span>
+            <span style="font-size: 1rem; color: var(--gold-l); font-weight: 700;">+</span>
+          </div>
+          <div style="font-size: 0.9rem; color: var(--t2); font-weight: 600;">位留學生選擇 DAWHO 出國</div>
+        </div>
+      </div>
+      <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: center; flex: 1 1 400px;">
+        <div style="display: flex; align-items: center; gap: 8px; padding: 10px 16px; background: rgba(255,255,255,0.03); border: 1px solid var(--bdr); border-radius: 10px;">
+          <span style="font-size: 1.2rem;">🌍</span>
+          <span style="font-size: 0.85rem; color: var(--t2); font-weight: 600;">覆蓋 <strong style="color: var(--gold-l);">30+</strong> 留學國家</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px; padding: 10px 16px; background: rgba(255,255,255,0.03); border: 1px solid var(--bdr); border-radius: 10px;">
+          <span style="font-size: 1.2rem;">⭐</span>
+          <span style="font-size: 0.85rem; color: var(--t2); font-weight: 600;">APP 評分 <strong style="color: var(--gold-l);">4.7</strong></span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px; padding: 10px 16px; background: rgba(255,255,255,0.03); border: 1px solid var(--bdr); border-radius: 10px;">
+          <span style="font-size: 1.2rem;">⚡</span>
+          <span style="font-size: 0.85rem; color: var(--t2); font-weight: 600;">速匯最快 <strong style="color: var(--gold-l);">58秒</strong></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section id="faq-section" style="padding: 6rem 2rem; background: var(--bg);">
+    <div class="animate-on-scroll" style="text-align: center; margin-bottom: 3rem;">
+      <div style="font-size: 0.85rem; color: var(--gold); letter-spacing: 6px; margin-bottom: 10px; text-transform: uppercase; font-weight: 800;">FAQ</div>
+      <h2 style="font-family: var(--font-serif); font-size: clamp(1.8rem,4.5vw,2.5rem); font-weight: 900;">留學前必看常見問題</h2>
+    </div>
+    <div class="glass-panel animate-on-scroll" style="border-radius: 24px; padding: 1rem 2rem; max-width: 800px; margin: 0 auto;">
+      <div style="border-bottom: 1px solid var(--bdr);">
+        <button class="faq-btn" style="width: 100%; text-align: left; color: var(--t1); font-size: 1.1rem; padding: 1.5rem 0; display: flex; justify-content: space-between; align-items: center;"><span style="font-weight: 700; padding-right: 1rem; line-height: 1.4;">留學生如果沒有財力證明，可以辦信用卡嗎？</span><span class="faq-icon" style="color: var(--gold); font-size: 1.5rem; font-weight: 300;">+</span></button>
+        <div class="faq-answer"><p style="color: var(--t2); padding-bottom: 1.5rem; line-height: 1.6;">家長可使用主卡額度申辦「附卡」給留學生使用。或是留學生本人申請「DAWHO 多幣 Debit 卡」，戶頭有多少刷多少，完全免除透支風險，且同樣享有免 1.5% 手續費優惠。</p></div>
+      </div>
+      <div style="border-bottom: 1px solid var(--bdr);">
+        <button class="faq-btn" style="width: 100%; text-align: left; color: var(--t1); font-size: 1.1rem; padding: 1.5rem 0; display: flex; justify-content: space-between; align-items: center;"><span style="font-weight: 700; padding-right: 1rem; line-height: 1.4;">家長從台灣匯款到國外，手續費怎麼算？</span><span class="faq-icon" style="color: var(--gold); font-size: 1.5rem; font-weight: 300;">+</span></button>
+        <div class="faq-answer"><p style="color: var(--t2); padding-bottom: 1.5rem; line-height: 1.6;">使用「大戶速匯」全額匯出，手續費僅需 NT$130，最快 58 秒即可到帳，非常適合給留學生緊急生活費金援。</p></div>
+      </div>
+      <div style="border-bottom: 1px solid var(--bdr);">
+        <button class="faq-btn" style="width: 100%; text-align: left; color: var(--t1); font-size: 1.1rem; padding: 1.5rem 0; display: flex; justify-content: space-between; align-items: center;"><span style="font-weight: 700; padding-right: 1rem; line-height: 1.4;">換了當地SIM卡後，海外網購收不到簡訊OTP怎麼辦？</span><span class="faq-icon" style="color: var(--gold); font-size: 1.5rem; font-weight: 300;">+</span></button>
+        <div class="faq-answer"><p style="color: var(--t2); padding-bottom: 1.5rem; line-height: 1.6;">DAWHO APP 支援 FIDO 驗證。只需輸入專屬密碼後以實體金融卡感應手機即可完成身分驗證，完全不需要台灣門號收 OTP。出發前記得先在 APP 設定好。</p></div>
+      </div>
+      <div>
+        <button class="faq-btn" style="width: 100%; text-align: left; color: var(--t1); font-size: 1.1rem; padding: 1.5rem 0; display: flex; justify-content: space-between; align-items: center;"><span style="font-weight: 700; padding-right: 1rem; line-height: 1.4;">如果在國外卡片遺失怎麼辦？</span><span class="faq-icon" style="color: var(--gold); font-size: 1.5rem; font-weight: 300;">+</span></button>
+        <div class="faq-answer"><p style="color: var(--t2); padding-bottom: 1.5rem; line-height: 1.6;">不用慌張！您可以立刻打開 DAWHO APP，使用「信用卡/簽帳卡一鍵鎖卡」功能，立即暫停卡片交易，保護您的帳戶安全。也可撥打 24 小時客服專線。</p></div>
+      </div>
+      <div style="border-top: 1px solid var(--bdr);">
+        <button class="faq-btn" style="width: 100%; text-align: left; color: var(--t1); font-size: 1.1rem; padding: 1.5rem 0; display: flex; justify-content: space-between; align-items: center;"><span style="font-weight: 700; padding-right: 1rem; line-height: 1.4;">ISIC 國際學生證卡跟 DAWHO Debit卡有什麼不同？</span><span class="faq-icon" style="color: var(--gold); font-size: 1.5rem; font-weight: 300;">+</span></button>
+        <div class="faq-answer"><p style="color: var(--t2); padding-bottom: 1.5rem; line-height: 1.6;">兩張都是永豐銀行的多幣簽帳金融卡，但 ISIC 卡多了三大優勢：（1）國外消費 2% 回饋，比 DAWHO Debit 的 1.5% 更高；（2）卡片本身就是 UNESCO 認證的國際學生證，在全球 130 國享 15 萬項學生優惠（博物館、交通、住宿等）；（3）海外提款每月最高補貼 NT$300 手續費。如果你是全日制學生，建議優先辦 ISIC 卡作為日常消費主力，再搭配幣倍信用卡處理大額消費。</p></div>
+      </div>
+      <div style="border-top: 1px solid var(--bdr);">
+        <button class="faq-btn" style="width: 100%; text-align: left; color: var(--t1); font-size: 1.1rem; padding: 1.5rem 0; display: flex; justify-content: space-between; align-items: center;"><span style="font-weight: 700; padding-right: 1rem; line-height: 1.4;">我已經有 DAWHO 數位帳戶，還能辦 ISIC 學生證卡嗎？</span><span class="faq-icon" style="color: var(--gold); font-size: 1.5rem; font-weight: 300;">+</span></button>
+        <div class="faq-answer"><p style="color: var(--t2); padding-bottom: 1.5rem; line-height: 1.6;">可以！但已持有 DAWHO 數位帳戶的同學，需至永豐指定分行（新竹、台中興大、台南東台南、高雄分行）臨櫃辦理 ISIC 聯名卡實體帳戶開戶，無法再透過線上申請。建議出國前預留時間辦理，需先至 ISIC 官網取得國際學生證核准授權編號後，再前往分行開戶。</p></div>
+      </div>
+      <div style="border-top: 1px solid var(--bdr);">
+        <button class="faq-btn" style="width: 100%; text-align: left; color: var(--t1); font-size: 1.1rem; padding: 1.5rem 0; display: flex; justify-content: space-between; align-items: center;"><span style="font-weight: 700; padding-right: 1rem; line-height: 1.4;">只去短期交換（1-6個月），需要特別準備金融工具嗎？</span><span class="faq-icon" style="color: var(--gold); font-size: 1.5rem; font-weight: 300;">+</span></button>
+        <div class="faq-answer"><p style="color: var(--t2); padding-bottom: 1.5rem; line-height: 1.6;">非常建議！短期出國也會遇到匯率差、海外手續費等問題。DAWHO 開戶線上完成，Debit卡12幣別直扣免1.5%手續費，即使只去幾個月也能省下可觀費用。回國後帳戶持續享有優惠，沒有任何額外成本。</p></div>
+      </div>
+      <div style="border-top: 1px solid var(--bdr);">
+        <button class="faq-btn" style="width: 100%; text-align: left; color: var(--t1); font-size: 1.1rem; padding: 1.5rem 0; display: flex; justify-content: space-between; align-items: center;"><span style="font-weight: 700; padding-right: 1rem; line-height: 1.4;">回國後剩餘的外幣怎麼處理最好？</span><span class="faq-icon" style="color: var(--gold); font-size: 1.5rem; font-weight: 300;">+</span></button>
+        <div class="faq-answer"><p style="color: var(--t2); padding-bottom: 1.5rem; line-height: 1.6;">不用急著換回台幣！DAWHO多幣帳戶讓您自由持有外幣，等匯率好再換。也可以用「百元外幣定存」讓剩餘外幣持續生息，門檻超低，是管理閒置外幣的好方法。</p></div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ================= Footer ================= -->
+  <footer class="footer-container">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div style="flex: 0 0 auto; display: flex; align-items: center; gap: 8px;">
+          <img src="./images/logo_dawho.svg" onerror="this.onerror=null; this.src='https://dawho.tw/hot/2026h1offer/images/logo_dawho.svg';" alt="DAWHO" style="height: 40px; width: auto;">
+        </div>
+        <div class="footer-links">
+          <ul class="footer-col"><li class="title">成為DAWHO</li><li class="link"><a href="https://applydawho.sinopac.com/OpenAccount/OpenAccount/WhichOne?" target="_blank">申請DAWHO數位帳戶</a></li><li class="link"><a href="https://applydawho.sinopac.com/OpenAccount/appendandinquiry/inquiry#" target="_blank">開戶進度查詢</a></li><li class="link"><a href="https://dawho.tw/hot/dawhotou/" target="_blank">申請大戶投證券戶</a></li></ul>
+          <ul class="footer-col"><li class="title">生活與消費</li><li class="link"><a href="https://dawho.tw/about/card/" target="_blank">DAWHO 現金回饋卡</a></li><li class="link"><a href="https://dawho.tw/about/debitcard/" target="_blank">DAWHO Debit卡</a></li></ul>
+          <ul class="footer-col"><li class="title">理財與理債</li><li class="link"><a href="https://dawho.tw/about/fund/" target="_blank">基金</a></li><li class="link"><a href="https://dawho.tw/about/personalloan/" target="_blank">信貸</a></li><li class="link"><a href="https://dawho.tw/about/mortgage/" target="_blank">房貸</a></li></ul>
+          <ul class="footer-col"><li class="title">聯絡我們</li><li class="link"><a href="https://dawho.tw/faq/apply/" target="_blank">常見問題</a></li><li class="link"><a href="https://bank.sinopac.com/MMA8/bank/service/service-index.html" target="_blank">客服專線</a></li><li class="link"><a href="https://www.instagram.com/dawho.tw/" target="_blank">Instagram</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-middle">
+        <div>
+          <div class="footer-meta-links">
+            <a href="https://www.cdic.gov.tw/main_ch/chinese.html" target="_blank">存款人存保權益</a>
+            <a href="https://bank.sinopac.com/sinopacBT/about/introduction/announcement/legal-disclaimers.html" target="_blank">法定公告事項</a>
+            <a href="https://bank.sinopac.com/sinopacBT/footer/privacy-statement.html" target="_blank">隱私權保護聲明</a>
+          </div>
+          <div class="footer-info">營業人名稱：永豐商業銀行股份有限公司　統一編號：86517384<br/>登記地址：臺北市中山區南京東路3段36號</div>
+        </div>
+        <div class="footer-copyright">©永豐銀行版權所有</div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-warning-title">謹慎理財 信用至上</div>
+        <div class="footer-warning-text">銀行客服24小時服務專線：(02)2505-9999、0203-08989<br/>信用卡客服24小時服務專線：(02)2528-7776、0800-058-888(限市話)<br/>循環信用利率5%~15% (基準日2025/9/1)；預借現金手續費：預借現金金額X3.5%+指定金額<br/>(100元新臺幣/3.5美元/350日圓/3歐元) 其他費用請上 <a href="https://bank.sinopac.com/sinopacBT/index.html" target="_blank" style="color:#fff; text-decoration:underline;">永豐銀行</a> 網站查詢</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= 底部懸浮 CTA ================= -->
+  <div id="bottom-cta" style="position: fixed; bottom: 0; left: 0; right: 0; z-index: 997; transform: translateY(100%); transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease; pointer-events: none;">
+    <!-- 常態模式：毛玻璃底欄 -->
+    <div id="cta-bar" style="background: rgba(8,8,11,0.85); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-top: 1px solid rgba(201,169,110,0.3); padding: 0.75rem 1.2rem calc(0.75rem + env(safe-area-inset-bottom, 0px)); transition: all 0.4s ease;">
+      <button onclick="trackAndGo('https://applydawho.sinopac.com/OpenAccount/OpenAccount/WhichOne?', 'Click_StickyBar_Account')" style="display: flex; width: 100%; max-width: 420px; margin: 0 auto; align-items: center; justify-content: center; gap: 8px; padding: 0.85rem 2rem; background: linear-gradient(135deg, var(--gold-l), var(--gold)); color: #1A150D; border: none; border-radius: 50px; font-family: var(--font-sans); font-size: 1.05rem; font-weight: 900; cursor: pointer; box-shadow: 0 2px 12px rgba(201,169,110,0.4); transition: transform 0.2s ease; letter-spacing: 0.5px;">
+        開戶即享留學金融優惠
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </button>
+    </div>
+    <!-- 底部加強模式：滑到最底時顯示 -->
+    <div id="cta-boost" style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(135deg, #1a150d, #0d0b08); border-top: 2px solid var(--gold); padding: 2rem 1.5rem calc(2rem + env(safe-area-inset-bottom, 0px)); text-align: center; opacity: 0; pointer-events: none; transition: opacity 0.5s ease, transform 0.5s ease; transform: translateY(10px);">
+      <div style="max-width: 600px; margin: 0 auto;">
+        <div style="font-family: var(--font-serif); font-size: clamp(1.3rem, 4vw, 1.8rem); font-weight: 900; color: var(--t1); margin-bottom: 8px; line-height: 1.4;">
+          <span style="display: inline-block; white-space: nowrap;">留學準備，從</span><span class="text-gradient" style="display: inline-block; white-space: nowrap;">開戶</span><span style="display: inline-block; white-space: nowrap;">起步</span>
+        </div>
+        <p style="font-size: 0.95rem; color: var(--t3); margin-bottom: 1.2rem;">換匯減分 ＋ 最高 6% 海外回饋 ＋ 速匯 58 秒到帳，60 秒線上開戶即享</p>
+        <div style="display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap;">
+          <button class="glow-btn" onclick="trackAndGo('https://applydawho.sinopac.com/OpenAccount/OpenAccount/WhichOne?', 'Click_StickyBoost_Account')" style="padding: 1rem 2.5rem; font-size: 1.1rem;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; vertical-align: -2px;"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            <span style="white-space: nowrap;">立即免費開戶</span>
+          </button>
+          <button class="outline-btn" onclick="openAppOrQR('Click_StickyBoost_App')" style="padding: 1rem 2rem; font-size: 1.05rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; vertical-align: -2px;"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+            <span style="white-space: nowrap;">下載 APP</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= 側邊小 FAB（APP 按鈕）================= -->
+  <div id="side-fab" style="position: fixed; bottom: 100px; right: 20px; z-index: 998; transform: translateX(150%); transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); pointer-events: none;">
+    <button class="hover-card" onclick="openAppOrQR('Click_FAB_App')" style="width: 54px; height: 54px; border-radius: 50%; background: var(--card); color: var(--gold); border: 1.5px solid var(--gold); display: flex; align-items: center; justify-content: center; flex-direction: column; box-shadow: 0 8px 20px rgba(0,0,0,0.5); font-weight: 800; font-size: 0.7rem; line-height: 1.1;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 2px;"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>APP
+    </button>
+  </div>
+
+  <!-- ================= QR Modal ================= -->
+  <div id="qr-modal" style="position: fixed; inset: 0; z-index: 9999; background: rgba(0,0,0,0.85); backdrop-filter: blur(10px); display: none; justify-content: center; align-items: center;" onclick="closeQRModal()">
+    <div style="background: var(--card); padding: 2.5rem; border-radius: 24px; text-align: center; border: 1px solid var(--gold); box-shadow: 0 20px 50px rgba(0,0,0,0.5); max-width: 90%;" onclick="event.stopPropagation()">
+      <h3 style="font-family: var(--font-serif); font-size: 1.6rem; color: var(--gold-l); margin: 0 0 8px; font-weight: 800;">打開你的留學任意門</h3>
+      <p style="font-size: 1rem; color: var(--t3); margin-bottom: 1.5rem;">請拿起手機掃描 QR Code，立即下載 DAWHO APP</p>
+      <div style="width: 200px; height: 200px; background: #fff; margin: 0 auto; display: flex; align-items: center; justify-content: center; border-radius: 16px;">
+        <img src="./images/qrcode.png" onerror="this.onerror=null; this.src='https://dawho.tw/hot/2026h1offer/images/popup/qrcode.png';" alt="QR Code" style="width: 100%; height: 100%; object-fit: contain; border-radius: 16px;" loading="lazy" />
+      </div>
+      <button onclick="closeQRModal()" style="margin-top: 2rem; padding: 10px 30px; background: transparent; color: var(--t2); border: 1px solid var(--t3); border-radius: 50px; font-size: 1rem; cursor: pointer;">關閉</button>
+    </div>
+  </div>
+
+  <!-- ================= JavaScript ================= -->
+  <script>
+    /* === 載入動畫 === */
+    const loadStart = Date.now();
+    window.addEventListener('load', () => {
+      const elapsed = Date.now() - loadStart;
+      setTimeout(() => {
+        const loader = document.getElementById('loader');
+        loader.style.opacity = '0';
+        loader.style.transform = 'translateY(-100%)';
+        setTimeout(() => loader.style.display = 'none', 800);
+      }, Math.max(0, 1000 - elapsed));
+    });
+
+    /* === 追蹤 === */
+    function trackAndGo(url, eventName) {
+      console.log(`[Tracking] ${eventName}`);
+      if (typeof window.gtag === 'function') window.gtag('event', 'conversion', { 'send_to': 'YOUR_GTAG_ID/' + eventName });
+      if (url) window.open(url, '_blank');
+    }
+
+    /* === 滾動 / Nav / FAB / 底部CTA === */
+    window.addEventListener('scroll', () => {
+      const isScrolled = window.scrollY > 50;
+      const nav = document.getElementById('navbar');
+      const fab = document.getElementById('side-fab');
+      const bottomCTA = document.getElementById('bottom-cta');
+      const ctaBar = document.getElementById('cta-bar');
+      const ctaBoost = document.getElementById('cta-boost');
+
+      // 計算是否接近頁尾
+      const docHeight = document.documentElement.scrollHeight;
+      const viewHeight = window.innerHeight;
+      const scrollBottom = window.scrollY + viewHeight;
+      const nearBottom = (docHeight - scrollBottom) < 600;
+
+      if (isScrolled) {
+        nav.classList.add('scrolled');
+        fab.style.transform = 'translateX(0)'; fab.style.pointerEvents = 'auto';
+        bottomCTA.style.transform = 'translateY(0)'; bottomCTA.style.pointerEvents = 'auto';
+      } else {
+        nav.classList.remove('scrolled');
+        fab.style.transform = 'translateX(150%)'; fab.style.pointerEvents = 'none';
+        bottomCTA.style.transform = 'translateY(100%)'; bottomCTA.style.pointerEvents = 'none';
+      }
+
+      // 底部加強模式
+      if (nearBottom && isScrolled) {
+        ctaBar.style.opacity = '0'; ctaBar.style.pointerEvents = 'none';
+        ctaBoost.style.opacity = '1'; ctaBoost.style.pointerEvents = 'auto'; ctaBoost.style.transform = 'translateY(0)';
+        bottomCTA.style.boxShadow = '0 -8px 40px rgba(201,169,110,0.3)';
+      } else {
+        ctaBar.style.opacity = '1'; ctaBar.style.pointerEvents = 'auto';
+        ctaBoost.style.opacity = '0'; ctaBoost.style.pointerEvents = 'none'; ctaBoost.style.transform = 'translateY(10px)';
+        bottomCTA.style.boxShadow = 'none';
+      }
+    });
+
+    function scrollToSec(id) {
+      const el = document.getElementById(id);
+      if (el) { const y = el.getBoundingClientRect().top + window.scrollY - 100; window.scrollTo({top: y, behavior: 'smooth'}); }
+    }
+
+    function goToCalc() {
+      currentStep = 0;
+      renderTimeline(); renderContent();
+      scrollToSec('journey-section');
+      setTimeout(() => {
+        const cfg = document.getElementById('config-section');
+        if (cfg) { const y = cfg.getBoundingClientRect().top + window.scrollY - 120; window.scrollTo({top: y, behavior: 'smooth'}); }
+      }, 600);
+    }
+
+    /* === APP / QR 備用連結更新 === */
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    function openAppOrQR(event) {
+      trackAndGo('', event);
+      if (isMobile) { window.location.href = "dawho://"; setTimeout(() => { if (document.hasFocus()) window.open('https://applydawho.sinopac.com/OpenAccount/OpenAccount/WhichOne?', '_blank'); }, 1500); }
+      else { document.getElementById('qr-modal').style.display = 'flex'; }
+    }
+    function closeQRModal() { document.getElementById('qr-modal').style.display = 'none'; }
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') { document.getElementById('mobile-menu').classList.remove('open'); closeQRModal(); } });
+
+    /* === Intersection Observer === */
+    const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('is-visible'); }); }, { threshold: 0.15 });
+    document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+    /* === 數字動畫 === */
+    function animateValue(obj, start, end, duration) {
+      let startTS = null;
+      const step = (ts) => { if (!startTS) startTS = ts; const p = Math.min((ts - startTS) / duration, 1); const ease = 1 - Math.pow(2, -10 * p); obj.innerHTML = Math.floor(ease * (end - start) + start).toLocaleString(); if (p < 1) requestAnimationFrame(step); };
+      requestAnimationFrame(step);
+    }
+
+    /* === Journey Data === */
+    const R = {
+      usa: { c: "USD", defB: 25000, r: 32.3, n: "美國", f: "🇺🇸", fx: 0.003, items: [{n: "教科書", c: 2500, i: "📚", u: "本"}, {n: "學生餐", c: 400, i: "🍔", u: "餐"}, {n: "月票", c: 1500, i: "🚇", u: "月"}] },
+      uk: { c: "GBP", defB: 18000, r: 40.5, n: "英國", f: "🇬🇧", fx: 0.005, items: [{n: "下午茶", c: 1000, i: "🫖", u: "套"}, {n: "學生月票", c: 2000, i: "🚇", u: "月"}, {n: "博物館年票", c: 3000, i: "🏛️", u: "張"}] },
+      eur: { c: "EUR", defB: 12000, r: 34.5, n: "歐洲", f: "🇪🇺", fx: 0.006, items: [{n: "咖啡可頌", c: 250, i: "🥐", u: "套"}, {n: "跨國火車票", c: 2000, i: "🚄", u: "張"}, {n: "美術館門票", c: 600, i: "🖼️", u: "張"}] },
+      aus: { c: "AUD", defB: 22000, r: 21.2, n: "澳洲", f: "🇦🇺", fx: 0.002, items: [{n: "咖啡", c: 120, i: "☕", u: "杯"}, {n: "超市週採購", c: 600, i: "🛒", u: "次"}, {n: "語言課程", c: 8000, i: "📖", u: "期"}] },
+      japan: { c: "JPY", defB: 1500000, r: 0.22, n: "日本", f: "🇯🇵", fx: 0.0006, items: [{n: "定食", c: 250, i: "🍱", u: "份"}, {n: "電車月票", c: 3000, i: "🚃", u: "月"}, {n: "教材費", c: 5000, i: "📕", u: "學期"}] },
+    };
+    let currentDest = 'usa', currentBudget = R['usa'].defB, currentRatio = 70;
+
+    const studentData = [
+      { tag: "申請期", title: "放大留學本金", sub: "即刻準備：匯率折上折，讓台幣變更大",
+        emoji: '<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>',
+        pain: "「財力證明怎麼開？要帶多少錢出國？」", painD: "學費動輒數萬美金，匯率差一點就是好幾天生活費。DAWHO 不用看存款等級，開戶即享優惠。",
+        sols: [{ t: "財力證明快速開立", d: "線上申請，3個工作天寄達。", link: "https://bank.sinopac.com/searchmb/FAQ/content.aspx?sid=存款貸款&catID=其它綜合&subCatID=服務諮詢&no=577" }, { t: "匯率折上折", d: "美元減3分、歐元減6分。", link: "https://applydawho.sinopac.com/OpenAccount/OpenAccount/WhichOne?" }],
+        prods: [{ n: "百元外幣定存", d: "學費也能生利息" }, { n: "週三匯元日", d: "歐元減10分" }, { n: "留學貸款", d: "最高NT$300萬" }], hasConfig: true,
+        resources: [{ title: "留遊學4大用錢挑戰 省錢秘辛大公開", url: "https://bank.sinopac.com/upload/sinopac/fileResources/198cfec7c7900000a65a.pdf", tag: "省錢攻略" }] },
+      { tag: "行前期", title: "落地現金即刻救援", sub: "行前檢核：24小時外幣ATM＋APP預約提領",
+        emoji: '<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>',
+        pain: "「出發前太忙沒時間跑銀行，剛落地沒現金搭車」", painD: "善用24小時外幣ATM領5種現鈔；或APP預約外幣現鈔，網銀優惠匯率換好再提領。",
+        sols: [{ t: "24小時外幣ATM", d: "半夜也能領現鈔。", link: "https://bank.sinopac.com/MMA8/CustomerService/BranchService/ATM.html" }, { t: "APP預約外幣現鈔", d: "先換好再去分行快速提領。" }],
+        prods: [{ n: "大戶速匯", d: "免臨櫃約定帳號", link: "https://dawho.tw/about/remit/" }, { n: "多幣Debit卡", d: "出發前記得開通", link: "https://dawho.tw/about/debitcard/" }, { n: "FIDO驗證", d: "換SIM卡安心交易", link: "https://bank.sinopac.com/sinopacBT/webevents/dawhofidocard/" }, { n: "ISIC學生證卡", d: "國外2%回饋＋學生優惠", link: "https://bank.sinopac.com/sinopacBT/personal/credit-card/introduction/debit/ISIC-Debit-Card.html" }],
+        resources: [{ title: "出國前必備 DAWHO Debit卡的5大理由", url: "https://bank.sinopac.com/upload/sinopac/fileResources/198cfde6063000009412.pdf", tag: "行前必讀" }] },
+      { tag: "就學中", title: "比當地人更懂刷", sub: "落地應用：免手續費＋2.5%回饋無上限",
+        emoji: '<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>',
+        pain: "「在宿舍想網購，卻收不到台灣手機簡訊驗證碼」", painD: "DAWHO 內建 FIDO 驗證，NFC 感應卡片即可。Debit卡「帳戶有多少才能刷多少」，免透支是學習預算管理的最佳工具。",
+        sols: [{ t: "Debit卡12幣別直扣", d: "免1.5%海外交易手續費。", link: "https://dawho.tw/about/debitcard/" }, { t: "ISIC學生證卡 國外2%回饋", d: "比一般Debit多0.5%，全球130國15萬項學生優惠再加碼。", link: "https://bank.sinopac.com/sinopacBT/personal/credit-card/introduction/debit/ISIC-Debit-Card.html" }, { t: "告別OTP焦慮", d: "FIDO感應卡片驗證身分。", link: "https://bank.sinopac.com/sinopacBT/webevents/dawhofidocard/#sec2" }],
+        prods: [{ n: "大戶速匯", d: "最快58秒到帳", link: "https://dawho.tw/about/remit/" }, { n: "全額匯出", d: "手續費僅NT$130", link: "https://dawho.tw/about/remit/" }, { n: "即時推播", d: "台幣換算一目瞭然" }],
+        resources: [{ title: "錢進未來 3件必學的理財事", url: "https://bank.sinopac.com/upload/sinopac/fileResources/198cfed4b350000095be.pdf", tag: "理財入門" }] }
+    ];
+
+    const parentData = [
+      { tag: "準備期", title: "學費與財力準備", sub: "即刻準備：協助孩子完成申請，財務不卡關",
+        emoji: '<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>',
+        pain: "「學費這麼貴，怎麼籌錢？不了解跨國匯款」", painD: "一年學費加生活費動輒 150-300 萬。DAWHO 提供完整的留學資金規劃與優惠換匯方案。",
+        sols: [{ t: "留學資金規劃指南", d: "外幣定期定額分批換匯。" }, { t: "財力證明快速開立", d: "線上申請，免跑分行。", link: "https://bank.sinopac.com/searchmb/FAQ/content.aspx?sid=存款貸款&catID=其它綜合&subCatID=服務諮詢&no=577" }],
+        prods: [{ n: "外幣定期定額", d: "分批換匯降低風險" }, { n: "週三匯元日", d: "放大留學本金" }, { n: "留學貸款", d: "最高NT$300萬" }], hasConfig: true,
+        resources: [{ title: "留遊學4大用錢挑戰 省錢秘辛大公開", url: "https://bank.sinopac.com/upload/sinopac/fileResources/198cfec7c7900000a65a.pdf", tag: "省錢攻略" }, { title: "為孩子贏在人生起跑點：大學新生家長理財指南", url: "https://bank.sinopac.com/upload/sinopac/fileResources/198cfed0404000004fb7.pdf", tag: "家長必讀" }] },
+      { tag: "行前期", title: "親子帳戶與安心機制", sub: "行前檢核：出發前幫孩子打點好金融需求",
+        emoji: '<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',
+        pain: "「怎麼確保孩子錢夠用又不亂花？」", painD: "DAWHO Debit卡「有多少刷多少」的特性，是最好的預算控制工具。免財力證明不會透支。",
+        sols: [{ t: "Debit卡預算工具", d: "直接圈存帳戶金額，安全理財。", link: "https://dawho.tw/about/debitcard/" }, { t: "APP掌握消費狀況", d: "海外刷卡即時推播通知。" }],
+        prods: [{ n: "24H外幣ATM", d: "提前準備落地現金", link: "https://bank.sinopac.com/MMA8/CustomerService/BranchService/ATM.html" }, { n: "國外提款開通", d: "出發前記得開通" }, { n: "附卡申請", d: "彈性調配信用額度" }],
+        resources: [{ title: "出國前必備 DAWHO Debit卡的5大理由", url: "https://bank.sinopac.com/upload/sinopac/fileResources/198cfde6063000009412.pdf", tag: "必讀" }] },
+      { tag: "就學中", title: "定期匯款與緊急支援", sub: "落地應用：家人的愛，58秒全額抵達",
+        emoji: '<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>',
+        pain: "「匯款麻煩又花時間，緊急狀況不知如何應變」", painD: "傳統匯款等3-5天。大戶速匯最快58秒到帳，手續費僅NT$130，電話還沒掛生活費已入帳。",
+        sols: [{ t: "大戶速匯", d: "最快58秒到帳，手續費優惠 NT$130。", link: "https://dawho.tw/about/remit/" }, { t: "定期定額自動匯款", d: "設定每月自動匯款生活費。" }],
+        prods: [{ n: "全額匯出", d: "不被中間行扣款" }, { n: "免臨櫃約定", d: "APP直接設定" }, { n: "24小時客服", d: "跨時區緊急支援" }],
+        resources: [{ title: "為孩子贏在人生起跑點：大學新生家長理財指南", url: "https://bank.sinopac.com/upload/sinopac/fileResources/198cfed0404000004fb7.pdf", tag: "家長指南" }] }
+    ];
+
+    const shortTermData = [
+      { tag: "行前準備", title: "短期出國也要精打細算", sub: "1-6個月交換遊學：輕裝出發，錢包不輕",
+        emoji: '<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
+        pain: "「只去幾個月，有需要特別準備金融工具嗎？」", painD: "短期遊學也涉及學費匯款、當地消費、旅遊花費。不提前準備，光是匯率差與手續費就可能多花上千元。DAWHO 線上開戶即享優惠匯率，短期也值得。",
+        sols: [{ t: "免門檻匯率優惠", d: "DAWHO開戶即享減分優惠，不看存款等級，短期也划算。", link: "https://applydawho.sinopac.com/OpenAccount/OpenAccount/WhichOne?" }, { t: "多幣Debit卡出國必備", d: "12幣別直扣免1.5%海外交易手續費，短期旅行超省。", link: "https://dawho.tw/about/debitcard/" }],
+        prods: [{ n: "百元外幣定存", d: "短期也能小額換匯" }, { n: "週三匯元日", d: "出發前換好外幣" }, { n: "24H外幣ATM", d: "機場周邊也有" }], hasConfig: true,
+        resources: [{ title: "出國前必備 DAWHO Debit卡的5大理由", url: "https://bank.sinopac.com/upload/sinopac/fileResources/198cfde6063000009412.pdf", tag: "學生必讀" }, { title: "留遊學4大用錢挑戰 省錢秘辛大公開", url: "https://bank.sinopac.com/upload/sinopac/fileResources/198cfec7c7900000a65a.pdf", tag: "省錢攻略" }] },
+      { tag: "在地生活", title: "像當地人一樣消費", sub: "免換算、免手續費，專注體驗異國生活",
+        emoji: '<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>',
+        pain: "「短期交換每筆消費都被收手續費，感覺好虧」", painD: "一般銀行海外刷卡收1.5%手續費+匯差。DAWHO Debit卡12幣別直扣免手續費，信用卡再享2%以上回饋。短期密集消費更有感。",
+        sols: [{ t: "Debit卡直扣免手續費", d: "超市、餐廳、交通直接用，帳戶有多少刷多少。", link: "https://dawho.tw/about/debitcard/" }, { t: "幣倍卡高額回饋", d: "訂機票、住宿等大額消費用信用卡，享最高6%回饋。", link: "https://bank.sinopac.com/sinopacBT/webevents/2003_dualcc/index.html?Branch=bankpage" }],
+        prods: [{ n: "FIDO驗證", d: "換SIM卡也能交易", link: "https://bank.sinopac.com/sinopacBT/webevents/dawhofidocard/" }, { n: "即時推播", d: "每筆消費台幣換算" }, { n: "一鍵鎖卡", d: "卡片遺失不慌" }, { n: "ISIC學生證", d: "博物館門票學生折扣", link: "https://bank.sinopac.com/sinopacBT/personal/credit-card/introduction/debit/ISIC-Debit-Card.html" }],
+        resources: [{ title: "出國前必備 DAWHO Debit卡的5大理由", url: "https://bank.sinopac.com/upload/sinopac/fileResources/198cfde6063000009412.pdf", tag: "必讀" }] },
+      { tag: "歸國理財", title: "回國後，讓錢繼續旅行", sub: "剩餘外幣不浪費，開啟人生第一桶金計畫",
+        emoji: '<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>',
+        pain: "「回國後帳戶裡的外幣怎麼處理最划算？」", painD: "多數人回國後急著換回台幣，卻在匯率低點虧損。DAWHO多幣帳戶讓你自由持有外幣，等好匯率再換，或直接用百元外幣定存讓錢生錢。",
+        sols: [{ t: "外幣帳戶自由持有", d: "不急著換回台幣，等匯率好再出手。" }, { t: "百元外幣定存", d: "剩餘外幣也能存定存，門檻超低。", link: "https://applydawho.sinopac.com/OpenAccount/OpenAccount/WhichOne?" }],
+        prods: [{ n: "大戶投", d: "開始定期定額基金" }, { n: "台幣高利活存", d: "回國資金也有好利率" }, { n: "信貸服務", d: "職涯起步資金支援" }],
+        resources: [{ title: "錢進未來 3件必學的理財事", url: "https://bank.sinopac.com/upload/sinopac/fileResources/198cfed4b350000095be.pdf", tag: "理財入門" }] }
+    ];
+
+    let currentRole = sessionStorage.getItem('dawho_role') || 'student', currentStep = parseInt(sessionStorage.getItem('dawho_step') || '0');
+
+    function selectRole(role) {
+      if (currentRole === role) return;
+      currentRole = role; currentStep = 0;
+      sessionStorage.setItem('dawho_role', role);
+      sessionStorage.setItem('dawho_step', '0');
+      const roleLabels = { student: '長期留學', shortterm: '短期遊學交換', parent: '家長' };
+      document.querySelectorAll('#role-buttons .role-btn').forEach(b => {
+        const isTarget = b.innerText.includes(roleLabels[role] || '');
+        b.className = 'role-btn' + (isTarget ? ' active' : '');
+      });
+      renderTimeline(); renderContent();
+    }
+
+    function setStep(i) { if (currentStep === i) return; currentStep = i; sessionStorage.setItem('dawho_step', String(i)); renderTimeline(); renderContent(); }
+
+    /* Restore role button active state on load */
+    (function restoreRoleUI() {
+      const roleLabels = { student: '長期留學', shortterm: '短期遊學交換', parent: '家長' };
+      document.querySelectorAll('#role-buttons .role-btn').forEach(b => {
+        const isTarget = b.innerText.includes(roleLabels[currentRole] || '');
+        b.className = 'role-btn' + (isTarget ? ' active' : '');
+      });
+    })();
+
+    function renderTimeline() {
+      const data = currentRole === 'student' ? studentData : currentRole === 'shortterm' ? shortTermData : parentData;
+      const container = document.getElementById('step-timeline');
+      container.innerHTML = `<div style="position: absolute; top: 26px; left: 15%; right: 15%; height: 2px; background: linear-gradient(90deg, var(--bdr), rgba(201,169,110,0.4), var(--bdr)); z-index: 0;"></div>`;
+      data.forEach((s, i) => {
+        const isActive = i === currentStep, isPast = i < currentStep;
+        const bg = isActive ? 'linear-gradient(135deg, var(--gold-l), var(--gold))' : 'var(--card)';
+        const bdr = isActive ? 'var(--gold)' : 'var(--bdr)';
+        const col = isActive ? '#000' : 'var(--gold)';
+        const shadow = isActive ? '0 0 20px rgba(201,169,110,0.4)' : 'none';
+        const btn = document.createElement('button');
+        btn.style.cssText = 'flex:1; display:flex; flex-direction:column; align-items:center; gap:10px; position:relative; z-index:1; cursor:pointer; background:none; border:none;';
+        btn.onclick = () => setStep(i);
+        btn.innerHTML = `<div class="step-icon" style="width:54px;height:54px;border-radius:50%;background:${bg};border:2px solid ${bdr};display:flex;align-items:center;justify-content:center;box-shadow:${shadow};transition:all 0.3s;"><span style="font-size:1.6rem;font-weight:900;color:${col};font-style:italic;">${isPast ? '✓' : i+1}</span></div><span style="font-family:var(--font-serif);font-size:1.25rem;font-weight:${isActive ? 900 : 500};color:${isActive ? 'var(--gold-l)' : 'var(--t3)'};transition:all 0.3s;">${s.tag}</span>`;
+        container.appendChild(btn);
+      });
+    }
+
+    function renderContent() {
+      const data = currentRole === 'student' ? studentData : currentRole === 'shortterm' ? shortTermData : parentData;
+      const cur = data[currentStep];
+      const container = document.getElementById('journey-content-container');
+
+      let solsHTML = cur.sols.map(s => `
+        <div class="hover-card stat-item flex-col-equal" style="background: rgba(0,0,0,0.3); border-radius: 16px; padding: 1.8rem; border: 1px solid var(--glass-bdr);">
+          <h4 style="font-family: var(--font-serif); font-size: 1.2rem; font-weight: 800; color: var(--gold-l); margin: 0 0 8px;">${s.t}</h4>
+          <p class="flex-grow-content" style="font-size: 0.95rem; color: var(--t2); line-height: 1.8; margin: 0 0 16px;">${s.d}</p>
+          ${s.link ? `<button class="outline-btn" style="margin-top: auto;" onclick="trackAndGo('${s.link}', 'Click_Sol_${s.t}')">了解更多 →</button>` : ''}
+        </div>
+      `).join('');
+
+      // 搭配方案使用 Flex 行內置中設計確保等高伸展
+      let prodsHTML = cur.prods.map(p => {
+        const isLink = !!p.link;
+        const tag = isLink ? 'a' : 'div';
+        const linkAttr = isLink ? ` href="${p.link}" target="_blank" rel="noreferrer"` : '';
+        const linkStyle = isLink ? 'cursor:pointer;text-decoration:none;' : '';
+        const arrow = isLink ? `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2.5" style="flex-shrink:0;margin-left:auto;opacity:0.6;"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>` : '';
+        return `
+        <${tag}${linkAttr} class="hover-card stat-item flex-col-equal" style="display:flex; align-items:flex-start; justify-content:center; flex-direction:column; gap:6px; padding:1.2rem 1rem; border-radius:12px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.05); height: 100%; ${linkStyle}">
+          <div style="display:flex; align-items:center; width:100%; gap:6px;">
+            <div style="font-size:1.05rem; font-weight:800; color:var(--t1);">${p.n}</div>
+            ${arrow}
+          </div>
+          <div style="font-size:0.85rem; color:var(--t3); line-height:1.4;">${p.d}</div>
+        </${tag}>`;
+      }).join('');
+
+      let resourcesHTML = '';
+      if (cur.resources && cur.resources.length > 0) {
+        const resItems = cur.resources.map(r => `
+          <a href="${r.url}" target="_blank" rel="noreferrer" class="hover-card" style="display:flex;align-items:center;gap:14px;padding:1rem 1.2rem;border-radius:12px;background:linear-gradient(135deg,rgba(201,169,110,0.08),rgba(201,169,110,0.02));border:1px solid rgba(201,169,110,0.2);text-decoration:none;transition:all 0.3s;">
+            <div style="flex-shrink:0;width:40px;height:40px;border-radius:10px;background:rgba(201,169,110,0.15);display:flex;align-items:center;justify-content:center;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            </div>
+            <div style="flex:1;min-width:0;">
+              <div style="font-size:0.95rem;font-weight:700;color:var(--t1);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${r.title}</div>
+              <div style="font-size:0.78rem;color:var(--t3);margin-top:2px;">PDF 閱讀指南</div>
+            </div>
+            <span style="flex-shrink:0;padding:3px 10px;background:rgba(201,169,110,0.15);border-radius:4px;font-size:0.75rem;color:var(--gold);font-weight:700;">${r.tag}</span>
+          </a>
+        `).join('');
+        resourcesHTML = `
+          <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--bdr);">
+            <div style="display:flex; align-items:center; gap:8px; font-size:0.95rem; color:var(--gold); letter-spacing:2px; margin-bottom:12px; font-weight:700;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+              延伸閱讀
+            </div>
+            <div style="display:flex;flex-direction:column;gap:10px;">${resItems}</div>
+          </div>`;
+      }
+
+      let toolsHTML = '';
+      if (cur.hasConfig) {
+        const destBtns = Object.entries(R).map(([k, v]) => `
+          <button class="dest-btn" data-key="${k}" style="padding:8px 16px;border-radius:8px;background:${k===currentDest?'var(--gold)':'rgba(255,255,255,0.05)'};color:${k===currentDest?'var(--bg)':'var(--t2)'};border:1px solid ${k===currentDest?'var(--gold)':'var(--glass-bdr)'};font-size:0.95rem;cursor:pointer;transition:all 0.2s;font-weight:${k===currentDest?'800':'400'};">${v.f} ${v.n}</button>
+        `).join('');
+
+        toolsHTML = `
+          <div id="config-section" style="margin-top:1.5rem;">
+            <div class="glass-panel" style="border-radius:24px;padding:2.5rem;display:flex;flex-wrap:wrap;gap:2.5rem;overflow:hidden;">
+              <div style="flex:1 1 350px;display:flex;flex-direction:column;gap:2rem;">
+                <div>
+                  <div style="display:inline-flex;align-items:center;gap:8px;padding:6px 14px;background:rgba(244,160,160,0.15);border-radius:50px;border:1px solid rgba(244,160,160,0.3);margin-bottom:12px;">
+                    <span style="font-size:0.85rem;color:var(--cherry);font-weight:800;letter-spacing:1px;">✨ 留學資金試算</span>
+                  </div>
+                  <h3 class="highlight-gradient" style="font-family:var(--font-serif);font-size:2.2rem;font-weight:900;margin:0;">自訂你的「留學金流配置」</h3>
+                </div>
+                <div><div style="font-size:0.9rem;color:var(--t3);margin-bottom:10px;font-weight:700;">1. 選擇留學國家</div><div id="dest-btns-container" style="display:flex;gap:8px;flex-wrap:wrap;">${destBtns}</div></div>
+                <div><div style="font-size:0.9rem;color:var(--t3);margin-bottom:10px;font-weight:700;">2. 預估一學期花費總額</div>
+                  <div style="display:flex;align-items:center;background:rgba(0,0,0,0.4);border:1px solid var(--bdr);border-radius:12px;padding:10px 16px;">
+                    <span id="calc-currency" style="color:var(--gold);font-family:var(--font-serif);font-size:1.2rem;font-weight:800;margin-right:12px;">${R[currentDest].c}</span>
+                    <input id="calc-budget" type="number" value="${currentBudget}" style="width:100%;background:transparent;border:none;color:var(--t1);font-size:1.4rem;font-weight:700;outline:none;" />
+                  </div>
+                  <div id="calc-twd-total" style="font-size:0.85rem;color:var(--gold-d);margin-top:8px;font-weight:700;"></div>
+                </div>
+                <div style="padding:1.5rem;background:rgba(255,255,255,0.03);border-radius:16px;border:1px solid var(--glass-bdr);">
+                  <div style="font-size:0.9rem;color:var(--t3);margin-bottom:16px;font-weight:700;">3. 調整刷卡與現金比例</div>
+                  <div style="display:flex;justify-content:space-between;margin-bottom:16px;font-size:1rem;font-weight:700;">
+                    <span style="color:var(--t2);">現金備用 <span id="lbl-cash-ratio">${100-currentRatio}%</span></span>
+                    <span style="color:var(--gold);">主力刷卡 <span id="lbl-card-ratio">${currentRatio}%</span></span>
+                  </div>
+                  <div style="position:relative;">
+                    <input id="calc-ratio" type="range" min="0" max="100" step="5" value="${currentRatio}" class="custom-slider" style="width:100%;outline:none;position:relative;z-index:2;" />
+                    <div style="display:flex;position:absolute;top:0;left:0;width:100%;height:6px;z-index:1;">
+                      <div id="slider-bg-left" style="width:${100-currentRatio}%;background:#4b5563;border-radius:6px 0 0 6px;"></div>
+                      <div id="slider-bg-right" style="width:${currentRatio}%;background:linear-gradient(90deg,var(--gold-d),var(--gold));border-radius:0 6px 6px 0;box-shadow:0 0 10px rgba(201,169,110,0.4);"></div>
+                    </div>
+                  </div>
+                  <div style="display:flex;justify-content:space-between;margin-top:16px;font-size:0.95rem;color:var(--t3);"><span id="calc-cash-amt"></span><span id="calc-card-amt"></span></div>
+                </div>
+              </div>
+              <div class="hover-card" style="flex:1 1 350px;background:linear-gradient(135deg,var(--card),#050505);border-radius:24px;padding:3rem 2.5rem;border:1px solid rgba(244,160,160,0.3);position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:center;box-shadow:0 20px 40px rgba(0,0,0,0.6);">
+                <div style="font-size:0.9rem;color:var(--cherry);letter-spacing:4px;text-transform:uppercase;font-weight:800;margin-bottom:8px;">Estimated Win</div>
+                <div style="font-size:1.1rem;color:var(--t2);font-weight:700;margin-bottom:12px;">大戶幫你多省了</div>
+                <div style="font-family:var(--font-serif);font-size:clamp(3rem,5vw,4.5rem);font-weight:900;line-height:1;margin-bottom:1rem;display:flex;align-items:baseline;gap:8px;">
+                  <span style="font-size:1.5rem;color:var(--cherry);">NT$</span>
+                  <span id="anim-total-save" class="highlight-gradient">0</span>
+                </div>
+                <div id="calc-equivalents" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:2rem;min-height:40px;"></div>
+                <div style="border-top:1px solid var(--bdr);padding-top:2rem;display:flex;flex-direction:column;gap:1rem;">
+                  <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span style="color:var(--t3);font-size:0.95rem;">換匯減分節省</span>
+                    <span id="calc-fx-save" style="font-weight:800;color:var(--t1);font-size:1.1rem;"></span>
+                  </div>
+                  <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span style="color:var(--t3);font-size:0.95rem;">刷卡回饋估計 (2%+4%)</span>
+                    <span id="anim-card-save" style="font-weight:800;color:var(--t1);font-size:1.1rem;"></span>
+                  </div>
+                  <div id="calc-card-detail" style="text-align:right;min-height:18px;margin-top:4px;"></div>
+                </div>
+                <div style="margin-top:1.5rem;padding:12px 16px;background:rgba(255,255,255,0.03);border-radius:12px;border:1px solid rgba(255,255,255,0.05);">
+                  <div style="font-size:0.72rem;color:var(--t3);opacity:0.6;line-height:1.6;">⚠️ 試算僅供參考：換匯減分以當日牌告匯率為準；刷卡回饋依實際消費通路、持卡等級及當期活動條件計算。</div>
+                </div>
+              </div>
+            </div>
+          </div>`;
+      }
+
+      container.innerHTML = `
+        <div class="glass-panel" style="border-radius:24px;overflow:hidden;animation:fadeIn 0.5s ease-out;">
+          <div style="background:linear-gradient(135deg,rgba(255,255,255,0.05),transparent);padding:2.5rem;border-bottom:1px solid var(--bdr);display:flex;justify-content:space-between;align-items:center;">
+            <div>
+              <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:8px;">
+                ${cur.emoji}
+                <h3 style="font-family:var(--font-serif);font-size:1.8rem;font-weight:800;margin:0;display:flex;align-items:center;gap:12px;">
+                  <span style="font-size:0.85rem;color:#000;letter-spacing:2px;background:var(--gold);padding:4px 14px;border-radius:4px;font-weight:700;">${cur.tag}</span>
+                  ${cur.title}
+                </h3>
+              </div>
+              <p style="font-size:1.05rem;color:var(--t2);margin:8px 0 0;">${cur.sub}</p>
+            </div>
+            <img src="./images/tiger-sprite.gif" onerror="this.onerror=null; this.src='https://dawho.tw/hot/2026h1offer/images/tiger-sprite.gif';" alt="Tiger" style="width:80px;height:auto;display:${window.innerWidth<600?'none':'block'};" loading="lazy">
+          </div>
+          <div style="padding:2.5rem;">
+            <div style="padding:1.5rem;background:linear-gradient(90deg,rgba(211,47,47,0.15),transparent);border-radius:12px;border-left:4px solid var(--red);margin-bottom:2.5rem;">
+              <div style="font-family:var(--font-serif);font-size:1.2rem;font-weight:700;color:var(--cherry);margin-bottom:8px;">${cur.pain}</div>
+              <div style="font-size:1rem;color:var(--t1);line-height:1.8;">${cur.painD}</div>
+            </div>
+            
+            <div style="display:flex; align-items:center; gap:8px; font-size:1.1rem; color:var(--gold); letter-spacing:2px; margin-bottom:16px; font-weight:700;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+              DAWHO 解方
+            </div>
+            <div class="grid-responsive" style="margin-bottom:2.5rem;">${solsHTML}</div>
+            
+            <div style="display:flex; align-items:center; gap:8px; font-size:0.95rem; color:var(--gold); letter-spacing:2px; margin-bottom:12px; font-weight:700;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+              搭配方案
+            </div>
+            <!-- 修改為 CSS Grid 版式解決高度與寬度對齊問題 -->
+            <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:1rem;">${prodsHTML}</div>
+            
+            ${resourcesHTML}
+          </div>
+        </div>
+        ${toolsHTML}
+      `;
+
+      if (cur.hasConfig) { bindCalcEvents(); updateCalc(); }
+    }
+
+    function bindCalcEvents() {
+      document.querySelectorAll('.dest-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          currentDest = e.target.getAttribute('data-key');
+          currentBudget = R[currentDest].defB;
+          document.getElementById('calc-budget').value = currentBudget;
+          document.querySelectorAll('.dest-btn').forEach(b => {
+            const m = b.getAttribute('data-key') === currentDest;
+            b.style.background = m ? 'var(--gold)' : 'rgba(255,255,255,0.05)';
+            b.style.color = m ? 'var(--bg)' : 'var(--t2)';
+            b.style.borderColor = m ? 'var(--gold)' : 'var(--glass-bdr)';
+            b.style.fontWeight = m ? '800' : '400';
+          });
+          updateCalc();
+        });
+      });
+      document.getElementById('calc-budget').addEventListener('input', (e) => { currentBudget = Number(e.target.value) || 0; updateCalc(); });
+      document.getElementById('calc-ratio').addEventListener('input', (e) => {
+        currentRatio = Number(e.target.value);
+        document.getElementById('lbl-cash-ratio').textContent = `${100 - currentRatio}%`;
+        document.getElementById('lbl-card-ratio').textContent = `${currentRatio}%`;
+        document.getElementById('slider-bg-left').style.width = `${100 - currentRatio}%`;
+        document.getElementById('slider-bg-right').style.width = `${currentRatio}%`;
+        updateCalc();
+      });
+    }
+
+    function updateCalc() {
+      const rt = R[currentDest];
+      const cardAmt = Math.round(currentBudget * (currentRatio / 100));
+      const cashAmt = currentBudget - cardAmt;
+      const fxSave = Math.round(currentBudget * rt.fx * rt.r);
+      const baseRate = 0.02, selectRate = 0.04;
+      const cardSaveBase = Math.round(cardAmt * rt.r * baseRate);
+      const cardSaveSelect = Math.min(Math.round(cardAmt * rt.r * selectRate), 800);
+      const cardSave = cardSaveBase + cardSaveSelect;
+      const totalSave = fxSave + cardSave;
+      const twdTotal = Math.round(currentBudget * rt.r);
+
+      document.getElementById('calc-currency').textContent = rt.c;
+      document.getElementById('calc-twd-total').textContent = `約合 TWD ${twdTotal.toLocaleString()}`;
+      document.getElementById('calc-cash-amt').textContent = `${rt.c} ${cashAmt.toLocaleString()}`;
+      document.getElementById('calc-card-amt').textContent = `${rt.c} ${cardAmt.toLocaleString()}`;
+      document.getElementById('calc-fx-save').textContent = `+ ${fxSave.toLocaleString()}`;
+
+      const totalEl = document.getElementById('anim-total-save');
+      const cardEl = document.getElementById('anim-card-save');
+      animateValue(totalEl, parseInt(totalEl.innerHTML.replace(/,/g, '')) || 0, totalSave, 1000);
+      animateValue(cardEl, parseInt(cardEl.innerHTML.replace(/,/g,'').replace('+ ','')) || 0, cardSave, 1000);
+      setTimeout(() => { cardEl.innerHTML = `+ ${cardSave.toLocaleString()}`; }, 1050);
+
+      const detailEl = document.getElementById('calc-card-detail');
+      if (detailEl) detailEl.innerHTML = `<span style="font-size:0.78rem;color:var(--t3);opacity:0.7;">基本${(baseRate*100)}% = ${cardSaveBase.toLocaleString()} ＋ 精選${(selectRate*100)}% = ${cardSaveSelect.toLocaleString()}${cardSaveSelect >= 800 ? ' (已達上限)' : ''}</span>`;
+
+      const eqC = document.getElementById('calc-equivalents');
+      if (eqC && totalSave > 0) {
+        eqC.innerHTML = rt.items.map(item => {
+          let count = (totalSave / item.c).toFixed(1).replace('.0', '');
+          return `<div style="background:rgba(244,160,160,0.1);border:1px solid rgba(244,160,160,0.3);border-radius:8px;padding:6px 12px;display:flex;align-items:center;gap:6px;"><span style="font-size:1.2rem;">${item.i}</span><span style="font-size:0.85rem;color:var(--t2);">約等值 <strong style="color:var(--cherry);font-size:1.05rem;font-weight:900;">${count}</strong> ${item.u}${item.n}</span></div>`;
+        }).join('');
+      }
+    }
+
+    /* === FAQ === */
+    document.querySelectorAll('.faq-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const answer = btn.nextElementSibling;
+        const icon = btn.querySelector('.faq-icon');
+        const isOpen = answer.classList.contains('open');
+        document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+        document.querySelectorAll('.faq-icon').forEach(i => i.textContent = '+');
+        if (!isOpen) { answer.classList.add('open'); icon.textContent = '−'; }
+      });
+    });
+
+    /* === 初始渲染 === */
+    renderTimeline();
+    renderContent();
+
+    /* === Social Proof Counter Animation === */
+    const socialProofEl = document.getElementById('social-proof-count');
+    if (socialProofEl) {
+      const spObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animateValue(socialProofEl, 0, 12800, 2000);
+            setTimeout(() => { socialProofEl.textContent = '12,800'; }, 2100);
+            spObserver.disconnect();
+          }
+        });
+      }, { threshold: 0.3 });
+      spObserver.observe(socialProofEl.closest('section'));
+    }
+  </script>
+</body>
+</html>
